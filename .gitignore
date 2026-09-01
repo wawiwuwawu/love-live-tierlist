@@ -2,7 +2,10 @@
 __pycache__/
 *.pyc
 .venv/
-enrich_progress.json
-enrich2_progress.json
-# scratch
-site/covers/_src/
+# scratch / ignore
+missing.json
+missing2.json
+suspicious_covers.json
+docs/covers/_src/
+ll_book.xlsx
+ll_sheet.csv
