@@ -1,0 +1,8 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+enrich_progress.json
+enrich2_progress.json
+# scratch
+site/covers/_src/

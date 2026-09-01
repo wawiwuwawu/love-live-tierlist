@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Love Live! All-Series Song Tierlist</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <h1>🎀 Love Live! <span>Song Tierlist</span></h1>
+    <p class="sub">µ's · Aqours · Nijigasaki · Liella! · Hasunosora — semua lagu, satu tierlist</p>
+  </header>
+
+  <!-- Series nav -->
+  <nav id="seriesnav" class="series"></nav>
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="stats" id="stats"></div>
+    <div class="actions">
+      <button id="btn-reset" class="ghost">Reset tier</button>
+      <label class="switch"><input type="checkbox" id="dark-toggle" checked /><span>Dark</span></label>
+    </div>
+  </div>
+
+  <!-- Album grid -->
+  <section id="grid" class="grid"></section>
+
+  <!-- Tierlist -->
+  <section id="tierlist" class="tiers">
+    <div class="tier-head">Tierlist Global</div>
+    <div id="tiers"></div>
+  </section>
+</div>
+
+<!-- Album modal -->
+<div id="modal" class="modal hidden">
+  <div class="modal-box">
+    <button id="modal-close" class="close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
