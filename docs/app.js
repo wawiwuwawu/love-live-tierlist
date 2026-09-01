@@ -336,6 +336,7 @@ function openSongDetailModal(id){
       <img src="${artSrc}" alt="" class="song-detail-img" onerror="this.classList.add('missing-img')">
       <div class="song-detail-meta">
         <h2>${esc(s.title)}</h2>
+        ${m.jp_title ? `<p class="song-detail-jp">🇯🇵 <span class="jp-text">${esc(m.jp_title)}</span> <button class="ghost" id="btn-copy-jp" title="Salin judul kanji">📋 Salin</button></p>` : ''}
         <p class="song-detail-artist">🎤 ${esc(s.artist || 'Love Live!')}</p>
         <p class="song-detail-album">💿 Album: <strong>${esc(albumName)}</strong> <mark class="tag">${sSeries}</mark></p>
         ${s.date ? `<p class="song-detail-extra">📅 Rilis: ${esc(s.date)}</p>` : ''}
@@ -371,6 +372,11 @@ function openSongDetailModal(id){
   document.getElementById('btn-copy-full').onclick = () => {
     copyToClipboard(`${s.title} - ${s.artist || ''}`, '✅ (Judul - Artis) berhasil disalin!');
   };
+
+  const jpBtn = document.getElementById('btn-copy-jp');
+  if (jpBtn && m.jp_title) {
+    jpBtn.onclick = () => copyToClipboard(m.jp_title, '✅ Judul kanji berhasil disalin!');
+  }
 }
 
 document.getElementById('song-detail-close').onclick = () => document.getElementById('song-detail-modal').classList.add('hidden');

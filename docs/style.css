@@ -221,3 +221,6 @@ body.dark .toast{
 .empty{padding:20px;text-align:center;color:var(--muted)}
 .missing-img{object-fit:cover;filter:grayscale(.6)}
 mark.tag{background:none;color:var(--muted);font-size:10px;border:1px solid var(--border);padding:1px 5px;border-radius:6px}
+.song-detail-jp{color:var(--accent);font-size:14px;display:flex;align-items:center;gap:8px;margin:4px 0 2px}
+.song-detail-jp .jp-text{font-weight:600}
+.song-detail-jp button{font-size:11px;padding:2px 8px}

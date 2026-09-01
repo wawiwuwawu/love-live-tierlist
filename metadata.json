@@ -1,34 +1,4 @@
 {
- "52": {
-  "song": "kasumi solo for niji movie 3?",
-  "artist": "",
-  "album": null,
-  "art": "",
-  "source": null
- },
- "53": {
-  "song": "karin solo for niji movie 3?",
-  "artist": "",
-  "album": null,
-  "art": "",
-  "source": null
- },
- "54": {
-  "song": "group song for niji movie 3?",
-  "artist": "",
-  "album": null,
-  "art": "",
-  "source": null,
-  "albumId": 1839482605
- },
- "55": {
-  "song": "another group song for niji movie 3?",
-  "artist": "",
-  "album": null,
-  "art": "",
-  "source": null,
-  "albumId": 1839482605
- },
  "56": {
   "song": "Bokura no LIVE Kimi to no LIFE",
   "artist": "µ's",
@@ -36,7 +6,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/50/db/55/50db55f5-16b0-d619-df9a-d23f8ce5532e/4540774407385.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1765317039,
-  "album_orig": "Bokura no LIVE Kimi to no LIFE - EP"
+  "album_orig": "Bokura no LIVE Kimi to no LIFE - EP",
+  "jp_title": "僕らのLIVE 君とのLIFE"
  },
  "57": {
   "song": "Yuujou no Change",
@@ -46,7 +17,8 @@
   "source": null,
   "albumId": 1537419723,
   "mbid": "bbbf5569-e4f3-4cf9-b5b5-64bcd344b791",
-  "mb_release": "The Fourth One"
+  "mb_release": "The Fourth One",
+  "jp_title": "チェンジ!!!!!"
  },
  "58": {
   "song": "baby maybe Koi no Button",
@@ -55,7 +27,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/0e/24/530e24f8-cd49-fd12-80ed-49a00b826837/4540774407743.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891050044,
-  "album_orig": "Snow halation - EP"
+  "album_orig": "Snow halation - EP",
+  "jp_title": "baby maybe 恋のボタン"
  },
  "59": {
   "song": "Snow halation",
@@ -66,7 +39,8 @@
   "albumId": 1891050044,
   "album_orig": "Snow halation - EP",
   "mbid": "b554915a-54b5-4800-b211-449d5bec5503",
-  "mb_release": "Snow Halation"
+  "mb_release": "Snow Halation",
+  "jp_title": "Snow halation"
  },
  "60": {
   "song": "Love marginal",
@@ -77,7 +51,8 @@
   "albumId": 1891344309,
   "album_orig": "Love marginal - EP",
   "mbid": "7769ce0d-8011-4bda-a644-b415106a94cd",
-  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX"
+  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX",
+  "jp_title": "Love marginal"
  },
  "61": {
   "song": "sweet&sweet holiday",
@@ -88,7 +63,8 @@
   "albumId": 1891344309,
   "album_orig": "Love marginal - EP",
   "mbid": "f582e0ce-c477-412c-ab65-99d7e622f747",
-  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX"
+  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX",
+  "jp_title": "sweet&sweet holiday"
  },
  "62": {
   "song": "Diamond Princess no Yuutsu",
@@ -97,7 +73,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6d/de/8a/6dde8a02-db42-11e2-24d6-b09fb7bd1910/4540774408160.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891344397,
-  "album_orig": "Diamond Princess no Yuutsu - EP"
+  "album_orig": "Diamond Princess no Yuutsu - EP",
+  "jp_title": "ダイヤモンドプリンセスの憂鬱"
  },
  "63": {
   "song": "Love Novels",
@@ -106,7 +83,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6d/de/8a/6dde8a02-db42-11e2-24d6-b09fb7bd1910/4540774408160.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891344397,
-  "album_orig": "Diamond Princess no Yuutsu - EP"
+  "album_orig": "Diamond Princess no Yuutsu - EP",
+  "jp_title": "ラブノベルス"
  },
  "64": {
   "song": "A-NO-NE-GA-N-BA-RE!",
@@ -115,7 +93,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/93/55/bf/9355bffa-e101-55e5-24d6-e989420fbd2f/4540774408320.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891345049,
-  "album_orig": "Shiranai Love* Oshiete Love - EP"
+  "album_orig": "Shiranai Love* Oshiete Love - EP",
+  "jp_title": "あ・の・ね・が・ん・ば・れ!"
  },
  "65": {
   "song": "Shiranai Love*Oshiete Love",
@@ -124,7 +103,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/93/55/bf/9355bffa-e101-55e5-24d6-e989420fbd2f/4540774408320.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891345049,
-  "album_orig": "Shiranai Love* Oshiete Love - EP"
+  "album_orig": "Shiranai Love* Oshiete Love - EP",
+  "jp_title": "知らないLove*教えてLove (UMI Mix)"
  },
  "66": {
   "song": "Mermaid festa vol.1",
@@ -135,7 +115,8 @@
   "albumId": 1891048643,
   "album_orig": "Natsuiro Egao de 1, 2, Jump! - EP",
   "mbid": "d913d970-3cc5-434d-a7fb-c8f80475aeb3",
-  "mb_release": "ラブライブ！μ's →NEXT LoveLive! 2014 〜ENDLESS PARADE〜 0209"
+  "mb_release": "ラブライブ！μ's →NEXT LoveLive! 2014 〜ENDLESS PARADE〜 0209",
+  "jp_title": "Mermaid festa vol.1"
  },
  "67": {
   "song": "Natsuiro Egao de 1,2,Jump!",
@@ -144,7 +125,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/b6/3d/89b63dc5-c717-6312-b37c-138f98f4abed/4540774408450.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891048643,
-  "album_orig": "Natsuiro Egao de 1, 2, Jump! - EP"
+  "album_orig": "Natsuiro Egao de 1, 2, Jump! - EP",
+  "jp_title": "夏色えがおで1,2,Jump!"
  },
  "68": {
   "song": "Watashitachi wa Mirai no Hana",
@@ -155,7 +137,8 @@
   "albumId": 1891325607,
   "album_orig": "LoveLive! Solo Live! from μ's Umi Sonoda: Umiiro Shojo ni Miserarete",
   "mbid": "69a28304-0eec-4c28-b1db-1118dc1561fc",
-  "mb_release": "Music C.R.A.F.T!!"
+  "mb_release": "Music C.R.A.F.T!!",
+  "jp_title": "私たちは未来の花"
  },
  "69": {
   "song": "Spicaterrible",
@@ -166,7 +149,8 @@
   "albumId": 1891351160,
   "album_orig": "LoveLive! Solo Live! from μ's Kotori Minami: Kotori Lovin' you",
   "mbid": "9c1915a5-5777-4778-976d-8946a7a8db7e",
-  "mb_release": "Getting Gruvy"
+  "mb_release": "Getting Gruvy",
+  "jp_title": "スピカテリブル"
  },
  "70": {
   "song": "Ai wa Taiyou Ja Nai？",
@@ -174,7 +158,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1469863217
+  "albumId": 1469863217,
+  "jp_title": "マッチョ オブ ザ ワールド"
  },
  "71": {
   "song": "Mou Hitori Ja Nai yo",
@@ -183,7 +168,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/17/bb/b817bb54-72df-a35e-8491-e018a983d513/4540774151707.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891328337,
-  "album_orig": "LoveLive! Solo Live! from μ's Honoka Kosaka: Honnori Honokairo!"
+  "album_orig": "LoveLive! Solo Live! from μ's Honoka Kosaka: Honnori Honokairo!",
+  "jp_title": "もうひとりじゃないよ"
  },
  "72": {
   "song": "Aishiteru Banzai!",
@@ -194,7 +180,8 @@
   "albumId": 1891594185,
   "album_orig": "μ's Complete BEST BOX Chapter.01",
   "mbid": "b3f2e816-25cf-467d-808f-2c5214af4021",
-  "mb_release": "Yumi Matsuzawa AnimeSong Cover Album"
+  "mb_release": "Yumi Matsuzawa AnimeSong Cover Album",
+  "jp_title": "愛してるばんざーい! (ELI Mix)"
  },
  "73": {
   "song": "Mogyutto \"love\" de Sekkin Chuu!",
@@ -212,7 +199,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/48/61/62486133-9de7-0e0e-1a4c-775db498f04a/4540774409242.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891345564,
-  "album_orig": "Mermaid festa vol.2: Passionate - EP"
+  "album_orig": "Mermaid festa vol.2: Passionate - EP",
+  "jp_title": "恋のシグナルRin rin rin!"
  },
  "75": {
   "song": "Mermaid festa vol.2 ~Passionate~",
@@ -223,7 +211,8 @@
   "albumId": 1891345564,
   "album_orig": "Mermaid festa vol.2: Passionate - EP",
   "mbid": "04e3fccf-b389-4283-bc16-70b4671a2d5d",
-  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX"
+  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX",
+  "jp_title": "Mermaid festa vol.2 ～Passionate～"
  },
  "76": {
   "song": "Someday of my life",
@@ -234,7 +223,8 @@
   "albumId": 1891345564,
   "album_orig": "Mermaid festa vol.2: Passionate - EP",
   "mbid": "7611417c-7e43-4203-b5a2-652bb161bd26",
-  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX"
+  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX",
+  "jp_title": "Someday of my life"
  },
  "77": {
   "song": "Junai Lens",
@@ -243,7 +233,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/e2/a4/d0e2a454-b951-c321-0999-cf567aff8a42/4540774409433.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891345205,
-  "album_orig": "Otomeshiki Renai Juku - EP"
+  "album_orig": "Otomeshiki Renai Juku - EP",
+  "jp_title": "純愛レンズ"
  },
  "78": {
   "song": "Mahoutsukai Hajimemashita!",
@@ -252,7 +243,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/e2/a4/d0e2a454-b951-c321-0999-cf567aff8a42/4540774409433.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891345205,
-  "album_orig": "Otomeshiki Renai Juku - EP"
+  "album_orig": "Otomeshiki Renai Juku - EP",
+  "jp_title": "まほうつかいはじめました!"
  },
  "79": {
   "song": "Otome Shiki Ren'ai Juku",
@@ -261,7 +253,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b2/c9/2b/b2c92b7c-80bc-b658-b4e6-f8707a68e81b/4540774907304.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891568884,
-  "album_orig": "μ's Complete BEST BOX Chapter.10"
+  "album_orig": "μ's Complete BEST BOX Chapter.10",
+  "jp_title": "乙女式れんあい塾"
  },
  "80": {
   "song": "Blueberry♥Train",
@@ -270,7 +263,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/2e/30/0c2e3045-c39a-9b78-dc8c-8e1456cb57d9/4540774409464.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891346081,
-  "album_orig": "Kokuhaku Biyori, desu! - EP"
+  "album_orig": "Kokuhaku Biyori, desu! - EP",
+  "jp_title": "ぶる〜べりぃ♡とれいん"
  },
  "81": {
   "song": "Kodoku na Heaven",
@@ -279,7 +273,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/2e/30/0c2e3045-c39a-9b78-dc8c-8e1456cb57d9/4540774409464.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891346081,
-  "album_orig": "Kokuhaku Biyori, desu! - EP"
+  "album_orig": "Kokuhaku Biyori, desu! - EP",
+  "jp_title": "孤独なHeaven"
  },
  "82": {
   "song": "Kokuhaku Biyori, desu!",
@@ -289,7 +284,8 @@
   "source": "itunes",
   "albumId": 1891346081,
   "album_orig": "Kokuhaku Biyori, desu! - EP",
-  "mbid": "d1a91b16-9c69-4b00-a537-9598674c7c99"
+  "mbid": "d1a91b16-9c69-4b00-a537-9598674c7c99",
+  "jp_title": "告白日和、です! (HANAYO Mix)"
  },
  "83": {
   "song": "Arifureta Kanashimi no Hate",
@@ -300,7 +296,8 @@
   "albumId": 1891345947,
   "album_orig": "soldier game",
   "mbid": "f7d418dd-90c1-4947-9443-817d90e5415c",
-  "mb_release": "Arifureta Kanashimi No Hate (Slax Remix)"
+  "mb_release": "Arifureta Kanashimi No Hate (Slax Remix)",
+  "jp_title": "ありふれた悲しみの果て"
  },
  "84": {
   "song": "Daring!!",
@@ -311,7 +308,8 @@
   "albumId": 1891345947,
   "album_orig": "soldier game",
   "mbid": "ba78635d-832a-4a5c-81b8-90318990ec4a",
-  "mb_release": "Glow"
+  "mb_release": "Glow",
+  "jp_title": "Darling"
  },
  "85": {
   "song": "soldier game",
@@ -322,7 +320,8 @@
   "albumId": 1891345947,
   "album_orig": "soldier game",
   "mbid": "94647f7d-fb7e-40ad-bf96-756ab1b7408f",
-  "mb_release": "Children: Fun & Laughter"
+  "mb_release": "Children: Fun & Laughter",
+  "jp_title": "soldier game"
  },
  "86": {
   "song": "Yuuki no Reason",
@@ -332,7 +331,8 @@
   "source": null,
   "albumId": 1498896065,
   "mbid": "82457c35-cf89-428b-92d6-9b46ac249d94",
-  "mb_release": "Music C.R.A.F.T!!"
+  "mb_release": "Music C.R.A.F.T!!",
+  "jp_title": "ex ダーリン"
  },
  "87": {
   "song": "Oh,Love&Peace!",
@@ -343,7 +343,8 @@
   "albumId": 1891594185,
   "album_orig": "μ's Complete BEST BOX Chapter.01",
   "mbid": "0e37c0aa-b1a2-472b-b5ab-a7cf9dba8614",
-  "mb_release": "Notes of School idol days ～Glory～"
+  "mb_release": "Notes of School idol days ～Glory～",
+  "jp_title": "Oh,Love&Peace!"
  },
  "88": {
   "song": "Wonderful Rush",
@@ -354,7 +355,8 @@
   "albumId": 1891049134,
   "album_orig": "Wonderful Rush - EP",
   "mbid": "f0d9de20-91d1-4886-be29-f64759917eba",
-  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX"
+  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX",
+  "jp_title": "Wonderful Rush"
  },
  "89": {
   "song": "After school NAVIGATORS",
@@ -365,7 +367,8 @@
   "albumId": 1891326193,
   "album_orig": "LoveLive Radio Kagai Katsudo: NICORINPANA Theme Song - EP",
   "mbid": "086969fd-38cf-482b-9afd-7f4d165e3ead",
-  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX"
+  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX",
+  "jp_title": "after school NAVIGATORS"
  },
  "90": {
   "song": "Listen to my heart!!",
@@ -376,7 +379,8 @@
   "albumId": 1891326193,
   "album_orig": "LoveLive Radio Kagai Katsudo: NICORINPANA Theme Song - EP",
   "mbid": "32303990-c300-4bd3-8211-309975f45a3b",
-  "mb_release": "In Subtle Tones"
+  "mb_release": "In Subtle Tones",
+  "jp_title": "LISTEN TO MY HEART"
  },
  "91": {
   "song": "Bokura wa Ima no Naka de",
@@ -385,7 +389,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/2d/51/9e2d513c-62e2-33d4-7e32-a396eaf7e0be/4540774140534.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891247380,
-  "album_orig": "Bokura wa Ima no Naka de - EP"
+  "album_orig": "Bokura wa Ima no Naka de - EP",
+  "jp_title": "僕らは今のなかで"
  },
  "92": {
   "song": "WILD STARS",
@@ -396,7 +401,8 @@
   "albumId": 1891593976,
   "album_orig": "μ's Complete BEST BOX Chapter.02",
   "mbid": "57bfe5ac-3da1-4b0c-9335-39284f8e88a7",
-  "mb_release": "The Beautiful Cosmos"
+  "mb_release": "The Beautiful Cosmos",
+  "jp_title": "WILD STARS (ELI Mix)"
  },
  "93": {
   "song": "Kaguya no Shiro de Odoritai",
@@ -405,7 +411,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f2/b3/ca/f2b3cad9-f95a-80ef-dc78-0c4a97a92827/4540774140541.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891245999,
-  "album_orig": "Kitto Seishun ga Kikoeru - EP"
+  "album_orig": "Kitto Seishun ga Kikoeru - EP",
+  "jp_title": "輝夜の城で踊りたい"
  },
  "94": {
   "song": "Kitto Seishun ga Kikoeru",
@@ -416,7 +423,8 @@
   "albumId": 1891245999,
   "album_orig": "Kitto Seishun ga Kikoeru - EP",
   "mbid": "7dfeb3f0-be33-4c21-bfce-4d0b71f74a5f",
-  "mb_release": "Music C.R.A.F.T!!"
+  "mb_release": "Music C.R.A.F.T!!",
+  "jp_title": "きっと青春が聞こえる (ELI Mix)"
  },
  "95": {
   "song": "START:DASH!!",
@@ -427,7 +435,8 @@
   "albumId": 1891272361,
   "album_orig": "No brand girls / START:DASH!! - EP",
   "mbid": "ad1db08f-0754-435e-8455-95a7c5b4078d",
-  "mb_release": "ROCKET MODE"
+  "mb_release": "ROCKET MODE",
+  "jp_title": "ススメ→トゥモロウ"
  },
  "96": {
   "song": "Susume→Tomorrow",
@@ -436,7 +445,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/77/bc/09/77bc094a-e8c4-012f-7242-0078775a21d8/4540774140558.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891566587,
-  "album_orig": "Susume→Tomorrow / START:DASH!! - EP"
+  "album_orig": "Susume→Tomorrow / START:DASH!! - EP",
+  "jp_title": "ススメ→トゥモロウ (KOTORI Mix)"
  },
  "97": {
   "song": "Korekara no Someday",
@@ -445,7 +455,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/2c/0b/e82c0b46-059b-0c32-81d7-a5725473e438/4540774907229.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891593976,
-  "album_orig": "μ's Complete BEST BOX Chapter.02"
+  "album_orig": "μ's Complete BEST BOX Chapter.02",
+  "jp_title": "これからのSomeday"
  },
  "98": {
   "song": "Wonder zone",
@@ -455,7 +466,8 @@
   "source": "itunes",
   "albumId": 1891593976,
   "album_orig": "μ's Complete BEST BOX Chapter.02",
-  "mbid": "8903be45-fb01-4929-b01b-2fb8261b7ae4"
+  "mbid": "8903be45-fb01-4929-b01b-2fb8261b7ae4",
+  "jp_title": "Wonder zone [第9話挿入歌] [TVサイズ]"
  },
  "99": {
   "song": "Yume Naki Yume wa Yume ja nai",
@@ -464,7 +476,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/6e/17/c26e1733-68b6-64b8-ba4b-22719d173e5f/4540774907236.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891595221,
-  "album_orig": "μ's Complete BEST BOX Chapter.03"
+  "album_orig": "μ's Complete BEST BOX Chapter.03",
+  "jp_title": "夢なき夢は夢じゃない"
  },
  "100": {
   "song": "No brand girls",
@@ -474,7 +487,8 @@
   "source": "itunes",
   "albumId": 1891272361,
   "album_orig": "No brand girls / START:DASH!! - EP",
-  "mbid": "2d664b73-c6a0-470d-b4a7-3f94c8023968"
+  "mbid": "2d664b73-c6a0-470d-b4a7-3f94c8023968",
+  "jp_title": "No brand girls"
  },
  "101": {
   "song": "Private Wars",
@@ -485,7 +499,8 @@
   "albumId": 1891339409,
   "album_orig": "TV Animation \"LoveLive!\" Original Soundtrack: Notes of School idol days",
   "mbid": "ccbc4b7e-699e-4ca7-860f-32f35dd2a865",
-  "mb_release": "TVアニメ「ラブライブ！」オリジナルサウンドトラック「Notes of School idol days」"
+  "mb_release": "TVアニメ「ラブライブ！」オリジナルサウンドトラック「Notes of School idol days」",
+  "jp_title": "Private Wars [第1話挿入歌]"
  },
  "102": {
   "song": "Anemone heart",
@@ -495,7 +510,8 @@
   "source": "itunes",
   "albumId": 1891595221,
   "album_orig": "μ's Complete BEST BOX Chapter.03",
-  "mbid": "ad7d5373-60ac-4101-b68a-19caca88261c"
+  "mbid": "ad7d5373-60ac-4101-b68a-19caca88261c",
+  "jp_title": "Anemone heart"
  },
  "103": {
   "song": "Hane wa Shitte Shimatta no?",
@@ -504,7 +520,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/aa/28/0daa2874-2f2a-40cf-7474-d3372993f7fb/4540774152933.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1765297203,
-  "album_orig": "Tenshitachi no Fukuin: feat.μ's <LoveLive!>"
+  "album_orig": "Tenshitachi no Fukuin: feat.μ's <LoveLive!>",
+  "jp_title": "羽は知ってしまったの?"
  },
  "104": {
   "song": "Himitsu to Hanazono",
@@ -513,7 +530,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/aa/28/0daa2874-2f2a-40cf-7474-d3372993f7fb/4540774152933.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1765297203,
-  "album_orig": "Tenshitachi no Fukuin: feat.μ's <LoveLive!>"
+  "album_orig": "Tenshitachi no Fukuin: feat.μ's <LoveLive!>",
+  "jp_title": "秘密と花園"
  },
  "105": {
   "song": "I’ll smile for yours",
@@ -524,7 +542,8 @@
   "albumId": 1440145574,
   "album_orig": "天使たちの福音〜 (feat. μ's) [ラブライブ!]",
   "mbid": "ab7458f2-d1b6-4725-a66c-c189692f1312",
-  "mb_release": "Kamisama to Unmei Kakumei no Paradox Character Song Album Tenshitachi no Fukuin~ feat.μ's"
+  "mb_release": "Kamisama to Unmei Kakumei no Paradox Character Song Album Tenshitachi no Fukuin~ feat.μ's",
+  "jp_title": "スマイル"
  },
  "106": {
   "song": "Kaku mo Yuubi na Hi to Narite",
@@ -541,7 +560,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/aa/28/0daa2874-2f2a-40cf-7474-d3372993f7fb/4540774152933.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1765297203,
-  "album_orig": "Tenshitachi no Fukuin: feat.μ's <LoveLive!>"
+  "album_orig": "Tenshitachi no Fukuin: feat.μ's <LoveLive!>",
+  "jp_title": "革命ですね?神様!"
  },
  "108": {
   "song": "Kodoku no Kairou",
@@ -549,7 +569,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1712661268
+  "albumId": 1712661268,
+  "jp_title": "狐独の才望"
  },
  "109": {
   "song": "Koko de Matteru yo",
@@ -558,7 +579,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/aa/28/0daa2874-2f2a-40cf-7474-d3372993f7fb/4540774152933.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1765297203,
-  "album_orig": "Tenshitachi no Fukuin: feat.μ's <LoveLive!>"
+  "album_orig": "Tenshitachi no Fukuin: feat.μ's <LoveLive!>",
+  "jp_title": "ここで待ってるよ"
  },
  "110": {
   "song": "NEURON,NEURON!!",
@@ -569,7 +591,8 @@
   "albumId": 1440145574,
   "album_orig": "天使たちの福音〜 (feat. μ's) [ラブライブ!]",
   "mbid": "c9c1576c-8a5b-4ef7-b3eb-1dec97f90515",
-  "mb_release": "Kamisama to Unmei Kakumei no Paradox Character Song Album Tenshitachi no Fukuin~ feat.μ's"
+  "mb_release": "Kamisama to Unmei Kakumei no Paradox Character Song Album Tenshitachi no Fukuin~ feat.μ's",
+  "jp_title": "NEURON,NEURON!!"
  },
  "111": {
   "song": "Senkou Resolution",
@@ -577,7 +600,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1562144211
+  "albumId": 1562144211,
+  "jp_title": "閃光"
  },
  "112": {
   "song": "Yume☆ONCE AGAIN",
@@ -617,7 +641,8 @@
   "albumId": 1891342914,
   "album_orig": "Binetsu kara Mystery - EP",
   "mbid": "4dc6f320-2a81-434d-9d65-80f03aab79f7",
-  "mb_release": "Instrumentals Vol. 1"
+  "mb_release": "Instrumentals Vol. 1",
+  "jp_title": "微熱からMystery (UMI Mix)"
  },
  "116": {
   "song": "Kimi no Kuse ni!",
@@ -626,7 +651,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d6/70/33/d67033d4-e38d-7e1f-d432-d4df445e304f/4540774141012.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891342914,
-  "album_orig": "Binetsu kara Mystery - EP"
+  "album_orig": "Binetsu kara Mystery - EP",
+  "jp_title": "キミのくせに! (UMI Mix)"
  },
  "117": {
   "song": "Cutie Panther",
@@ -637,7 +663,8 @@
   "albumId": 1891343614,
   "album_orig": "Cutie Panther - EP",
   "mbid": "189d6cda-2e64-47d0-ab3e-a7ca6756ab32",
-  "mb_release": "ラブライブ！μ's →NEXT LoveLive! 2014 〜ENDLESS PARADE〜 0209"
+  "mb_release": "ラブライブ！μ's →NEXT LoveLive! 2014 〜ENDLESS PARADE〜 0209",
+  "jp_title": "Cutie Panther"
  },
  "118": {
   "song": "Natsu, Owaranai de.",
@@ -646,7 +673,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/ad/19/9ead19a6-5242-5a2b-782d-d6abbee43d9f/4540774907281.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891597994,
-  "album_orig": "μ's Complete BEST BOX Chapter.08"
+  "album_orig": "μ's Complete BEST BOX Chapter.08",
+  "jp_title": "終わらないで、夏"
  },
  "119": {
   "song": "Niko puri♥Joshi dou",
@@ -664,7 +692,8 @@
   "albumId": 1891343021,
   "album_orig": "Pure girls project - EP",
   "mbid": "9a0544e3-3c12-472e-b75c-09fc0f0cc485",
-  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX"
+  "mb_release": "μ's Memorial CD-BOX Complete BEST BOX",
+  "jp_title": "Pure girls project"
  },
  "121": {
   "song": "UNBALANCED LOVE",
@@ -708,7 +737,8 @@
   "albumId": 1891598671,
   "album_orig": "μ's Complete BEST BOX Chapter.07",
   "mbid": "78a687f0-5de6-422e-89e2-76adec094bcb",
-  "mb_release": "Grey Sky"
+  "mb_release": "Grey Sky",
+  "jp_title": "ぷわぷわーお!"
  },
  "125": {
   "song": "LOVELESS WORLD",
@@ -891,7 +921,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/17/aa/2b17aab0-9ca6-a79f-117c-c0516ae08722/4540774903566.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891349026,
-  "album_orig": "\"LoveLive!\" TV Animation 2nd Season Original Soundtrack: Notes of School idol days Glory"
+  "album_orig": "\"LoveLive!\" TV Animation 2nd Season Original Soundtrack: Notes of School idol days Glory",
+  "jp_title": "これまでのラブライブ!～ミュージカル ver.～"
  },
  "143": {
   "song": "Kururin MIRACLE",
@@ -959,7 +990,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1883875615
+  "albumId": 1883875615,
+  "jp_title": "永縁 (feat. Lloyd the max)"
  },
  "150": {
   "song": "Nightingale Love Song",
@@ -985,7 +1017,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1495498241
+  "albumId": 1495498241,
+  "jp_title": "真夜中に私を連れ出して"
  },
  "153": {
   "song": "Futari Happiness",
@@ -1336,7 +1369,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d6/70/2f/d6702f7d-a9f5-b5d4-0ddb-e43f990db542/4540774907809.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891569575,
-  "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2015～2017)"
+  "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2015～2017)",
+  "jp_title": "届かない星だとしても"
  },
  "189": {
   "song": "Genki Zenkai DAY! DAY! DAY!",
@@ -1356,7 +1390,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f0/ec/1d/f0ec1d32-41e5-a140-21be-5b9145973b92/4540774158812.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891331591,
-  "album_orig": "Aru Hi... Eien mitai ni!"
+  "album_orig": "Aru Hi... Eien mitai ni!",
+  "jp_title": "夜空はなんでも知ってるの?"
  },
  "191": {
   "song": "Tokimeki Bunruigaku",
@@ -2052,7 +2087,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c1/94/d1/c194d170-596c-3ccc-2fe7-c0e450baa37c/4540774157709.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891330611,
-  "album_orig": "TOKIMEKI Runners"
+  "album_orig": "TOKIMEKI Runners",
+  "jp_title": "ドキピポ☆エモーション"
  },
  "263": {
   "song": "Evergreen",
@@ -2149,7 +2185,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/23/65/5a/23655aa2-514a-998e-2c42-51aa55155dfd/4540774906659.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891342212,
-  "album_orig": "\"LOVELIVE! SUNSHINE!! The School Idol Movie Over the Rainbow\" ORIGINAL SOUNDTRACK: Sailing to the Rainbow"
+  "album_orig": "\"LOVELIVE! SUNSHINE!! The School Idol Movie Over the Rainbow\" ORIGINAL SOUNDTRACK: Sailing to the Rainbow",
+  "jp_title": "僕らの走ってきた道は…"
  },
  "273": {
   "song": "Next SPARKLING!!",
@@ -2179,7 +2216,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1455044248
+  "albumId": 1455044248,
+  "jp_title": "逃走迷走メビウスループ(オルゴール)"
  },
  "276": {
   "song": "Believe again",
@@ -2619,7 +2657,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1891013504
+  "albumId": 1891013504,
+  "jp_title": "無敵級*ビリーバー"
  },
  "319": {
   "song": "Never giving up!",
@@ -2694,7 +2733,8 @@
   "albumId": 1883021078,
   "album_orig": "Analog Heart - Single",
   "mbid": "2c80b0bd-ee8b-4c75-bdad-ccb235eb610c",
-  "mb_release": "cold, east and blue"
+  "mb_release": "cold, east and blue",
+  "jp_title": "アナログハート"
  },
  "326": {
   "song": "Fire Bird",
@@ -2767,7 +2807,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ac/2b/d9/ac2bd99a-4132-95b8-4f62-67ded26a0de5/4540774158409.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891331019,
-  "album_orig": "Just Believe!!!"
+  "album_orig": "Just Believe!!!",
+  "jp_title": "Say Good-Bye 涙"
  },
  "333": {
   "song": "Tanoshii no Tensai",
@@ -2804,7 +2845,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1580888455
+  "albumId": 1580888455,
+  "jp_title": "コットン・キャンディー"
  },
  "337": {
   "song": "Future flight",
@@ -2907,7 +2949,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1891923968
+  "albumId": 1891923968,
+  "jp_title": "ガチ夢中!"
  },
  "347": {
   "song": "Tsunagaru Connect",
@@ -3318,7 +3361,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/ff/52/e2ff5271-8ec1-145b-47f3-55d71d84163f/4540774907762.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1891287720,
-  "album_orig": "LoveLive! Sunshine!! Tsushima Yoshiko First Solo Concert Album: in this unstable world"
+  "album_orig": "LoveLive! Sunshine!! Tsushima Yoshiko First Solo Concert Album: in this unstable world",
+  "jp_title": "タテホコツバサ"
  },
  "387": {
   "song": "Not Sad",
@@ -3329,7 +3373,8 @@
   "albumId": 1891006075,
   "album_orig": "Swinging! - EP",
   "mbid": "12e2087e-3e71-4580-a125-b27414e618d7",
-  "mb_release": "As Much As I Forget"
+  "mb_release": "As Much As I Forget",
+  "jp_title": "エンドロールは悲しくない"
  },
  "388": {
   "song": "Swinging!",
@@ -3830,7 +3875,8 @@
   "albumId": 1536008055,
   "album_orig": "Message - Single",
   "mbid": "30043c8a-c1b1-4136-99a7-3620123b0505",
-  "mb_release": "New Repertoire"
+  "mb_release": "New Repertoire",
+  "jp_title": "MESSAGE -メッセージ-"
  },
  "437": {
   "song": "Oh! Ready Steady Positive",
@@ -3861,7 +3907,8 @@
   "albumId": 1851128954,
   "album_orig": "Ringing - Single",
   "mbid": "9f2f95bf-e5b6-447a-a6e3-6d220b05e0f5",
-  "mb_release": "Ringing"
+  "mb_release": "Ringing",
+  "jp_title": "鈴々"
  },
  "440": {
   "song": "LIVE with a smile!",
@@ -3872,7 +3919,8 @@
   "albumId": 1891029905,
   "album_orig": "LIVE with a smile! - EP",
   "mbid": "fb97e8a4-3649-495b-8719-6f9476d23e8e",
-  "mb_release": "LoveLive! Sunshine!! Fourth Solo Concert Album ～THE STORY OF SUNSHINE!!～ starring Sakurauchi Riko"
+  "mb_release": "LoveLive! Sunshine!! Fourth Solo Concert Album ～THE STORY OF SUNSHINE!!～ starring Sakurauchi Riko",
+  "jp_title": "LIVE with a smile! (黒澤ダイヤ Solo Ver.)"
  },
  "441": {
   "song": "Miracle STAY TUNE!",
@@ -4617,7 +4665,8 @@
   "albumId": 1822746414,
   "album_orig": "People People",
   "mbid": "557e8f89-c631-4b0b-addb-f8db4a0677bd",
-  "mb_release": "Pass the Ammo"
+  "mb_release": "Pass the Ammo",
+  "jp_title": "君だけを見ていた"
  },
  "517": {
   "song": "Dreamer Coaster",
@@ -4628,7 +4677,8 @@
   "albumId": 1822746950,
   "album_orig": "リエラのうた2",
   "mbid": "d810d3e1-7977-45e9-9ee7-0e5c7d46beee",
-  "mb_release": "リエラのうた2"
+  "mb_release": "リエラのうた2",
+  "jp_title": "Dreamer Coaster (澁谷かのん Ver.)"
  },
  "518": {
   "song": "Endless Circuit",
@@ -4637,7 +4687,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/27/bf/2427bfb0-858a-6724-71e6-b7fe51c69700/cover.jpg/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1768094318,
-  "album_orig": "Endless Circuit / Path Home (Extended Mix) - Single"
+  "album_orig": "Endless Circuit / Path Home (Extended Mix) - Single",
+  "jp_title": "エンドレスサーキット (唐 可可 Ver.)"
  },
  "519": {
   "song": "Kakeru Merry-Go-Round",
@@ -4646,7 +4697,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/35/bd/a035bd8f-a4b4-8880-78bf-a3bb5e150095/4540774250066.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1822746950,
-  "album_orig": "Liella! no Uta 2"
+  "album_orig": "Liella! no Uta 2",
+  "jp_title": "駆けるメリーゴーランド (澁谷かのん Ver.)"
  },
  "520": {
   "song": "Meikyuu Sanka",
@@ -4654,7 +4706,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1822746950
+  "albumId": 1822746950,
+  "jp_title": "迷宮讃歌 (鬼塚夏美 Ver.)"
  },
  "521": {
   "song": "Parade wa Itsumo",
@@ -4663,7 +4716,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/35/bd/a035bd8f-a4b4-8880-78bf-a3bb5e150095/4540774250066.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1822746950,
-  "album_orig": "Liella! no Uta 2"
+  "album_orig": "Liella! no Uta 2",
+  "jp_title": "パレードはいつも (米女メイ Ver.)"
  },
  "522": {
   "song": "Prime Adventure",
@@ -4772,7 +4826,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5e/0a/76/5e0a76f8-abd6-88cf-1504-b54d91a16f4a/4540774202959.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1838420966,
-  "album_orig": "Mikansei Dream! - EP"
+  "album_orig": "Mikansei Dream! - EP",
+  "jp_title": "未完成ドリーム!"
  },
  "533": {
   "song": "Hoshizora Monologue",
@@ -4814,7 +4869,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/62/34/e6/6234e6ba-6c2e-48a7-7cd2-cacec447b556/cover.jpg/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1618485322,
-  "album_orig": "Wachu Gonna Do - Single"
+  "album_orig": "Wachu Gonna Do - Single",
+  "jp_title": "ラヴ"
  },
  "537": {
   "song": "Sentimental Lemonade",
@@ -4900,7 +4956,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1765297122
+  "albumId": 1765297122,
+  "jp_title": "星屑クルージング"
  },
  "546": {
   "song": "Kimi o Omou Hana ni Naru",
@@ -5080,7 +5137,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/23/5b/6a/235b6a23-89dc-16e9-f208-349dc8514c42/4540774250516.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1838424570,
-  "album_orig": "School Idol Musical"
+  "album_orig": "School Idol Musical",
+  "jp_title": "あなたがセンター"
  },
  "564": {
   "song": "Ashita wa Kitto",
@@ -5091,7 +5149,8 @@
   "albumId": 1838424570,
   "album_orig": "TV Drama \"Otona no Natsuyasumi\" Original Soundtrack",
   "mbid": "fa98755e-2ea0-4d6d-a5f5-16014f7c66e4",
-  "mb_release": "Rihwa The Singles"
+  "mb_release": "Rihwa The Singles",
+  "jp_title": "明日はきっと"
  },
  "565": {
   "song": "Atarashii Chance",
@@ -5100,7 +5159,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/23/5b/6a/235b6a23-89dc-16e9-f208-349dc8514c42/4540774250516.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1838424570,
-  "album_orig": "School Idol Musical"
+  "album_orig": "School Idol Musical",
+  "jp_title": "新しいチャンス"
  },
  "566": {
   "song": "Dentou no Keifu",
@@ -5108,7 +5168,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1838424570
+  "albumId": 1838424570,
+  "jp_title": "伝統の系譜"
  },
  "567": {
   "song": "Fukamaru Naka",
@@ -5116,7 +5177,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1838424570
+  "albumId": 1838424570,
+  "jp_title": "深まる仲"
  },
  "568": {
   "song": "Heibon na Mirai",
@@ -5134,7 +5196,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/23/5b/6a/235b6a23-89dc-16e9-f208-349dc8514c42/4540774250516.png/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1838424570,
-  "album_orig": "School Idol Musical"
+  "album_orig": "School Idol Musical",
+  "jp_title": "発足!椿咲花アイドル部"
  },
  "570": {
   "song": "Itsuka Watashi mo",
@@ -5142,7 +5205,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1838424570
+  "albumId": 1838424570,
+  "jp_title": "いつかわたしも"
  },
  "571": {
   "song": "Kagayakashii Mirai",
@@ -5173,7 +5237,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1392449221
+  "albumId": 1392449221,
+  "jp_title": "アイデンティティ"
  },
  "575": {
   "song": "Mezase Major Debut",
@@ -5181,7 +5246,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1838424570
+  "albumId": 1838424570,
+  "jp_title": "目指せメジャーデビュー"
  },
  "576": {
   "song": "Nakushite Hajimete Kizuku Koto",
@@ -5399,7 +5465,8 @@
   "albumId": 1765319924,
   "album_orig": "SINGING, DREAMING, NOW! - EP",
   "mbid": "e731f817-9741-4e14-9066-0ff915f95978",
-  "mb_release": "SINGING, DREAMING, NOW!"
+  "mb_release": "SINGING, DREAMING, NOW!",
+  "jp_title": "SINGING, DREAMING, NOW! (オルゴール)"
  },
  "599": {
   "song": "Wawawa☆What's up!",
@@ -5511,7 +5578,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1538265733
+  "albumId": 1538265733,
+  "jp_title": "眠れぬ森の君のため"
  },
  "610": {
   "song": "SILENT PAIN",
@@ -5542,7 +5610,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ab/42/39/ab4239ed-ce48-f2b0-212f-988160798a7a/jacket_BVCL30005B00Z_550.jpg/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1538117950,
-  "album_orig": "Super Best Records -15th Celebration-"
+  "album_orig": "Super Best Records -15th Celebration-",
+  "jp_title": "DEEPNESS(MISIA 星空のライヴVII@日本武道館)"
  },
  "613": {
   "song": "Genyou Yakou",
@@ -5661,7 +5730,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1692923271
+  "albumId": 1692923271,
+  "jp_title": "古今東西"
  },
  "625": {
   "song": "Legato",
@@ -5734,7 +5804,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 397091887
+  "albumId": 397091887,
+  "jp_title": "ずっと好きだった"
  },
  "633": {
   "song": "Wonder sea breeze",
@@ -5811,7 +5882,8 @@
   "source": null,
   "albumId": 1384341676,
   "mbid": "0a85ce86-3b30-49fa-890b-a95284ba21d0",
-  "mb_release": "Best Singles Collection"
+  "mb_release": "Best Singles Collection",
+  "jp_title": "幸福論 (悦楽編)"
  },
  "641": {
   "song": "Lemonade",
@@ -6257,7 +6329,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/71/1b/8c/mzi.osgucytc.jpg/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1738893540,
-  "album_orig": "The Master and Margarita"
+  "album_orig": "The Master and Margarita",
+  "jp_title": "みらくりえーしょん"
  },
  "687": {
   "song": "Camellia no Sasayaki",
@@ -6486,7 +6559,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1769567429
+  "albumId": 1769567429,
+  "jp_title": "夢見ガチガール"
  },
  "713": {
   "song": "Tsukuyomi Kurage",
@@ -6703,7 +6777,8 @@
   "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/24/37/2b/24372b65-396b-bda1-f61e-6ce535f5b253/jacket_ESCL05210B00Z_550.jpg/1000x1000bb.jpg",
   "source": "itunes",
   "albumId": 1814765964,
-  "album_orig": "Aqua Timez FINAL LIVE - last dance"
+  "album_orig": "Aqua Timez FINAL LIVE - last dance",
+  "jp_title": "恋の上昇気流(オルゴール)"
  },
  "734": {
   "song": "Dazzling Game",
@@ -6753,7 +6828,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1780265302
+  "albumId": 1780265302,
+  "jp_title": "永久hours"
  },
  "739": {
   "song": "Bokura no Tabi wa Owaranai",
@@ -6838,7 +6914,8 @@
   "albumId": 1726874627,
   "album_orig": "Dolce - Single",
   "mbid": "8eb02f1f-ba87-4cfb-acf1-640a398f255f",
-  "mb_release": "Infanzia Oggi"
+  "mb_release": "Infanzia Oggi",
+  "jp_title": "dolce (ウィーン・マルガレーテ Ver.)"
  },
  "748": {
   "song": "Summer Escape!!",
@@ -7052,7 +7129,8 @@
   "albumId": 1374952426,
   "album_orig": "REFLECTION{Drip}",
   "mbid": "f5c6a39a-36ac-44c9-92fd-5675eec5722b",
-  "mb_release": "Non_rem_sleeps"
+  "mb_release": "Non_rem_sleeps",
+  "jp_title": "REM (feat. 柏)"
  },
  "769": {
   "song": "Haji wa Jinsei no Kakisute",
@@ -7114,7 +7192,8 @@
   "albumId": 1501621232,
   "album_orig": "Asterism - Single",
   "mbid": "cb7f7e54-87dc-466e-8e8a-1527e078c442",
-  "mb_release": "The EVA EP"
+  "mb_release": "The EVA EP",
+  "jp_title": "アステリズム"
  },
  "776": {
   "song": "Tsumi DA・YO・NE",
@@ -7122,7 +7201,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 417931480
+  "albumId": 417931480,
+  "jp_title": "Still I Love You〜みつめるよりは幸せ〜"
  },
  "777": {
   "song": "Nijiiro☆Lumiere",
@@ -7168,7 +7248,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 946885411
+  "albumId": 946885411,
+  "jp_title": "踊れマリオネット"
  },
  "782": {
   "song": "Edelied",
@@ -8071,7 +8152,8 @@
   "albumId": 1849595242,
   "album_orig": "ちょ、尊いLOVE / Nεw Black",
   "mbid": "1c11d940-2ea8-47ac-9f1f-cfbca59e1772",
-  "mb_release": "ちょ、尊いLOVE / Nεw Black"
+  "mb_release": "ちょ、尊いLOVE / Nεw Black",
+  "jp_title": "平成ギャルズ!!!!"
  },
  "875": {
   "song": "IcHiGo milK love",
@@ -8285,7 +8367,8 @@
   "album": null,
   "art": "",
   "source": null,
-  "albumId": 1585848047
+  "albumId": 1585848047,
+  "jp_title": "東京女子"
  },
  "897": {
   "song": "Echoes Beyond",
@@ -8360,7 +8443,8 @@
   "albumId": 1321237801,
   "album_orig": "Reboot - Single",
   "mbid": "b928dd88-8803-4794-8abc-14ba38a9a6fb",
-  "mb_release": "Optimus Rhyme"
+  "mb_release": "Optimus Rhyme",
+  "jp_title": "リブート"
  },
  "904": {
   "song": "Reijou Mob!",
