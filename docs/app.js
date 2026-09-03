@@ -5,22 +5,25 @@ let currentSeries='All', currentView='songs', searchQuery='', hideTiered=true;
 const TIERS=['S','A','B','C','D','F'];
 const TIER_COLOR={S:'var(--s)',A:'var(--a)',B:'var(--b)',C:'var(--c)',D:'var(--d)',F:'var(--f)'};
 const SERIES_KEYWORDS={
- 'µs':['µ','printemps','bibi','lily white','\u00b5','muse','a-rise','stray'],
- 'Aqours':['aqours','cyaron','azalea','guilty','saint aqours'],
- 'Niji':['nijigasaki','qu4rtz','diverdiva','azuna','a・zu','r3birth','yuuki','setsuna','ayumu'],
- 'Liella':['liella','catchu','kaleidoscope','5yncri5e','sunny','kanon','chisato'],
- 'Hasunosora':['hasu','nyaovenus','cerise','dollchestra','edel','giiter']
+ 'µs':['µ','printemps','bibi','lily white','\u00b5','muse','a-rise','stray','honoka','kotori','umi','hanayo','rin','maki','nico','eli','nozomi'],
+ 'Aqours':['aqours','cyazalea','yyy','wai wai wai','cyaron','azalea','guilty','saint aqours','saint snow','chika','riko','kanan','dia','yoshiko','yohane','hanamaru','mari','ruby'],
+ 'Niji':['nijigasaki','nijigaku','qu4rtz','diverdiva','azuna','a・zu','r3birth','yuuki','setsuna','ayumu','kasumi','shizuku','karin','ai','kanata','emma','rina','shioriko','mia','lanzhu'],
+ 'Liella':['liella','catchu','kaleidoscope','5yncri5e','sunny','kanon','keke','chisato','sumire','ren','kinako','mei','shiki','natsumi','wien','margarete','tomari'],
+ 'Hasunosora':['hasu','hasunosora','nyaovenus','cerise','dollchestra','edel','giiter','kaho','sayaka','kozue','tsuzuri','rurino','megumi','ginko','kosuzu','hime']
 };
 
 function seriesOf(artist){
   const a=(artist||'').toLowerCase();
   if(!a) return 'Lain';
   for(const [s,keys] of Object.entries(SERIES_KEYWORDS)){
-    if(keys.some(k=>a.includes(k.toLowerCase()))) return s;
+    if(keys.some(k=>{
+      const esc=k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+      return new RegExp(`(?:^|[^a-z0-9])${esc}(?:$|[^a-z0-9])`,'i').test(a);
+    })) return s;
   }
   return 'Lain';
 }
-function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60)||'n/a';}
+function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,60).replace(/^-+|-+$/g,'')||'n/a';}
 function fileTag(s){return (s==='µs'?'mus':s||'lain').toLowerCase();}
 function coverPath(series,album){return `covers/${fileTag(series)}--${slug(album)}.webp`;}
 
