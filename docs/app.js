@@ -6,10 +6,12 @@ const TIERS=['S','A','B','C','D','F'];
 const TIER_COLOR={S:'var(--s)',A:'var(--a)',B:'var(--b)',C:'var(--c)',D:'var(--d)',F:'var(--f)'};
 const SERIES_KEYWORDS={
  'µs':['µ','printemps','bibi','lily white','\u00b5','muse','a-rise','stray','honoka','kotori','umi','hanayo','rin','maki','nico','eli','nozomi'],
- 'Aqours':['aqours','cyazalea','yyy','wai wai wai','cyaron','azalea','guilty','saint aqours','saint snow','chika','riko','kanan','dia','yoshiko','yohane','hanamaru','mari','ruby'],
- 'Niji':['nijigasaki','nijigaku','qu4rtz','diverdiva','azuna','a・zu','r3birth','yuuki','setsuna','ayumu','kasumi','shizuku','karin','ai','kanata','emma','rina','shioriko','mia','lanzhu'],
- 'Liella':['liella','catchu','kaleidoscope','5yncri5e','sunny','kanon','keke','chisato','sumire','ren','kinako','mei','shiki','natsumi','wien','margarete','tomari'],
- 'Hasunosora':['hasu','hasunosora','nyaovenus','cerise','dollchestra','edel','giiter','kaho','sayaka','kozue','tsuzuri','rurino','megumi','ginko','kosuzu','hime']
+ 'Aqours':['aqours','cyazalea','yyy','wai wai wai','cyaron','azalea','guilty','saint aqours','saint snow','chika','riko','kanan','dia','yoshiko','yohane','hanamaru','mari','ruby','you','gkss'],
+ 'Niji':['nijigasaki','nijigaku','qu4rtz','diverdiva','azuna','a・zu','r3birth','yuuki','setsuna','ayumu','kasumi','shizuku','karin','ai','kanata','emma','rina','shioriko','shiroko','mia','lanzhu','yu'],
+ 'Liella':['liella','catchu','kaleidoscope','kaleidoscore','5yncri5e','syncrise','sunny','kanon','keke','chisato','sumire','ren','kinako','mei','shiki','natsumi','wien','margarete','tomari'],
+ 'Hasunosora':['hasu','hasunosora','nyaovenus','cerise','dollchestra','mira-cra','miracra','mira cra','edel','giiter','kaho','sayaka','kozue','tsuzuri','tsuziri','rurino','megumi','megu','kahomegu','gelato','ginko','kosuzu','hime','ceras'],
+ 'Musical':['school idol musical','musical','tsubakisakuhana','takizakura','sim supports','rurika','yuzuha','yukino','hikaru','maya','anzu','misuzu','toa','rena','sayaka harukaze','madoka','kyoka'],
+ 'Ikizurai-Bu':['ikizurai','ikizurai-bu','ikizuraibu','call me','kidokumachi','kobumi otome','chaki','plumina','mi×nori=tea','minori','sh1on','polka','mai','azabu','akira','hanabi','yukuri','aurora','midori','miracle','noriko','shion','chofu']
 };
 
 function seriesOf(artist){
@@ -24,7 +26,7 @@ function seriesOf(artist){
   return 'Lain';
 }
 function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,60).replace(/^-+|-+$/g,'')||'n/a';}
-function fileTag(s){return (s==='µs'?'mus':s||'lain').toLowerCase();}
+function fileTag(s){return (s==='µs'?'mus':s==='Musical'?'lain':s==='Ikizurai-Bu'?'lain':s||'lain').toLowerCase();}
 function coverPath(series,album){return `covers/${fileTag(series)}--${slug(album)}.webp`;}
 
 async function load(){
@@ -130,7 +132,7 @@ function setupEvents(){
 function renderSeriesNav(){
   const counts={};
   Object.values(albums).forEach(a=>{counts[a.series]=(counts[a.series]||0)+a.songs.length;});
-  const order=['µs','Aqours','Niji','Liella','Hasunosora','Lain'];
+  const order=['µs','Aqours','Niji','Liella','Hasunosora','Musical','Ikizurai-Bu','Lain'];
   const nav=document.getElementById('seriesnav');
   nav.innerHTML='';
   [['All',songs.length],...order.map(s=>[s,counts[s]||0])].forEach(([label,n],i)=>{

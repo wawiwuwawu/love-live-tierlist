@@ -8372,11 +8372,13 @@
  "875": {
   "song": "IcHiGo milK love",
   "artist": "Hime, Kaho, Ginko, Izumi",
-  "album": null,
-  "art": "",
-  "source": null,
+  "album": "cho,toutoiLOVE / Nepsilonw Black",
+  "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
+  "source": "itunes",
   "mbid": "c09963d3-367f-4217-8da6-75215528efba",
-  "mb_release": "ちょ、尊いLOVE / Nεw Black"
+  "mb_release": "ちょ、尊いLOVE / Nεw Black",
+  "albumId": 1891258726,
+  "album_orig": "cho,toutoiLOVE / Nepsilonw Black"
  },
  "876": {
   "song": "Otome Anthology",
