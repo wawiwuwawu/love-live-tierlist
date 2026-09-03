@@ -279,7 +279,7 @@ function openModal(album){
       <span class="drag-handle" title="Tarik lagu ini ke tier">⋮⋮</span>
       <span class="song-title" title="${esc(s.title)}">${esc(s.title)}</span>
       <span class="artist">· ${esc(s.artist||'')}</span>
-      <select data-id="${s.id}">${TIERS.map(t=>`<option value="${t}" ${getTier(s.id)===t?'selected':''}>${t}</option>`).join('')}<option value="">—</option></select>
+      <select data-id="${s.id}"><option value="">— Tier —</option>${TIERS.map(t=>`<option value="${t}" ${getTier(s.id)===t?'selected':''}>${t}</option>`).join('')}</select>
     </li>
   `).join('') + (album.songs.length>60?`<div class="empty">+${album.songs.length-60} lagu lagi…</div>`:'');
 

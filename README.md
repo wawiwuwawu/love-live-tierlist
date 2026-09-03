@@ -13,7 +13,7 @@ A static, open-source web app to rank all **898 Love Live! songs** (µ's · Aqou
 
 [**Live demo**](https://wawiwuwawu.github.io/love-live-tierlist/) · [Report a bug](../../issues/new?assignees=&labels=bug&template=bug_report.yml) · [Request a feature](../../issues/new?assignees=&labels=enhancement&template=feature_request.yml)
 
-*Unofficial fan project — not affiliated with Sunrise, Bandai Namco Group, or Love Live!*
+*Unofficial fan project*
 
 </div>
 
