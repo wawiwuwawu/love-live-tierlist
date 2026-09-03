@@ -3564,7 +3564,7 @@
   "397": {
     "song": "1.2.3!",
     "artist": "Liella!",
-    "album": "Mirai Yoho Hallelujah! / Tiny Stars (Episode 3 Version) - Single",
+    "album": "Mirai Yoho Hallelujah! / Tiny Stars [Episode 1 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/c1/b3/6cc1b32c-ac5f-f12d-b6f2-a5cebc632dd1/4540774241422.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891005858,
@@ -3575,7 +3575,7 @@
   "398": {
     "song": "GOING UP",
     "artist": "Liella!",
-    "album": "Mirai Yoho Hallelujah! / Tiny Stars (Episode 1 Version) - Single",
+    "album": "Mirai Yoho Hallelujah! / Tiny Stars [Episode 1 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a5/c2/85/a5c28545-96b7-8f7d-2fb5-ad0f3c705803/4540774241415.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891006058,
@@ -3586,7 +3586,7 @@
   "399": {
     "song": "Mirai Yohou Hallelujah!",
     "artist": "Liella!",
-    "album": "Precious Springtime",
+    "album": "Mirai Yoho Hallelujah! / Tiny Stars [Episode 1 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/86/49/59/864959f6-a26d-5986-577a-7db43363ebe8/859757834884_cover.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1616934015,
@@ -3595,7 +3595,7 @@
   "400": {
     "song": "Tiny Stars",
     "artist": "Kanon, Keke",
-    "album": "Mirai Yoho Hallelujah! / Tiny Stars (Episode 3 Version) - Single",
+    "album": "Mirai Yoho Hallelujah! / Tiny Stars [Episode 1 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/c1/b3/6cc1b32c-ac5f-f12d-b6f2-a5cebc632dd1/4540774241422.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891005858,
@@ -3929,14 +3929,13 @@
   "432": {
     "song": "Anniversary",
     "artist": "Keke / Ren (solos only)",
-    "album": "H album -H・A・N・D-",
+    "album": "Liella! no Uta",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/38/4b/c5384b37-b6a1-e6a7-def2-617b34dfb183/4517331094524.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1591338974,
     "album_orig": "H album -H・A・N・D-",
     "mbid": "2aaa8e51-8b31-420a-a7cf-e87fbd3c9f06",
-    "mb_release": "Inside the System Is the Spark",
-    "cover": "liella--anniversary.webp"
+    "mb_release": "Inside the System Is the Spark"
   },
   "433": {
     "song": "Dears",
@@ -3947,8 +3946,7 @@
     "mbid": "7f0351b3-78f4-49fe-982d-6e7d817324ea",
     "mb_release": "DearS / Guilty",
     "albumId": 1891258726,
-    "album_orig": "Liella! no Uta",
-    "cover": "liella--dears.webp"
+    "album_orig": "Liella! no Uta"
   },
   "434": {
     "song": "Departure",
@@ -3970,8 +3968,7 @@
     "mbid": "8e9127c2-e9fd-4d7e-b8fe-225391037b83",
     "mb_release": "Dancemania Super Techno",
     "albumId": 1891258726,
-    "album_orig": "Liella! no Uta",
-    "cover": "liella--memories.webp"
+    "album_orig": "Liella! no Uta"
   },
   "436": {
     "song": "Message",
@@ -4009,15 +4006,14 @@
   "439": {
     "song": "Ringing!",
     "artist": "Chisato / Keke (solos only)",
-    "album": "Ringing - Single",
+    "album": "Liella! no Uta",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/27/f1/e427f158-52ca-be5e-4644-c89115f87185/4580789741210.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1851128954,
     "album_orig": "Ringing - Single",
     "mbid": "9f2f95bf-e5b6-447a-a6e3-6d220b05e0f5",
     "mb_release": "Ringing",
-    "jp_title": "鈴々",
-    "cover": "liella--ringing.webp"
+    "jp_title": "鈴々"
   },
   "440": {
     "song": "LIVE with a smile!",
@@ -4186,14 +4182,13 @@
   "456": {
     "song": "Tu Tu Tu!",
     "artist": "Liella!",
-    "album": "Shooting Star - Single",
+    "album": "Love Live! Superstar!! Season 1 Bonus CD Vol. 6",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f4/92/26/f4922642-65b0-a123-9725-06c258f2b082/23UMGIM95508.rgb.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1722565972,
     "album_orig": "Shooting Star - Single",
     "mbid": "71d2b056-bf16-4354-af4c-f98fae5e10fd",
-    "mb_release": "Un domani così",
-    "cover": "liella--tu-tu-tu.webp"
+    "mb_release": "Un domani così"
   },
   "457": {
     "song": "Aozora o Matteru",
@@ -4569,7 +4564,7 @@
   "494": {
     "song": "Irozuite Toumei",
     "artist": "Liella!",
-    "album": "Welcome to Bokura no Sekai / Go!! Restart (Episode 1 Version) - Single",
+    "album": "Welcome to Bokura no Sekai / Go!! Restart [Episode 1 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -4670,7 +4665,7 @@
   "504": {
     "song": "Utopia Magic",
     "artist": "Liella!++",
-    "album": "Vitamin SUMMER! / Chance Day, Chance Way! (Episode 8 Version) - Single",
+    "album": "Vitamin SUMMER! / Chance Day, Chance Way! [Episode 8 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -4680,7 +4675,7 @@
   "505": {
     "song": "Vitamin SUMMER!",
     "artist": "Liella!++",
-    "album": "Vitamin SUMMER! / Chance Day, Chance Way! (Episode 8 Version) - Single",
+    "album": "Vitamin SUMMER! / Chance Day, Chance Way! [Episode 8 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -4765,7 +4760,7 @@
   "513": {
     "song": "Mirai no Oto ga Kikoeru",
     "artist": "Liella!++",
-    "album": "Sing! Shine! Smile! / Mirai no Oto ga Kikoeru (Episode 10 Version) - Single",
+    "album": "Sing! Shine! Smile! / Mirai no Oto ga Kikoeru [Episode 10 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -4775,7 +4770,7 @@
   "514": {
     "song": "Namae Yobiau You ni",
     "artist": "Liella!++",
-    "album": "Sing! Shine! Smile! / Mirai no Oto ga Kikoeru (Episode 10 Version) - Single",
+    "album": "Sing! Shine! Smile! / Mirai no Oto ga Kikoeru [Episode 10 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -4785,7 +4780,7 @@
   "515": {
     "song": "Sing! Shine! Smile!",
     "artist": "Liella!++",
-    "album": "Sing! Shine! Smile!/Mirai no Oto ga Kikoeru [Episode 10 Version] - Single",
+    "album": "Sing! Shine! Smile! / Mirai no Oto ga Kikoeru [Episode 10 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ad/ed/ce/adedceeb-f365-19c7-c751-aeb2d94f8912/4540774243150.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1822745582,
@@ -4796,20 +4791,19 @@
   "516": {
     "song": "TO BE CONTINUED",
     "artist": "Liella!++",
-    "album": "People People",
+    "album": "Sing! Shine! Smile! / Mirai no Oto ga Kikoeru [Episode 10 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/60/d8/d9/60d8d94d-6ffa-1513-c100-3adea0078494/jk_MON8_7th_PeoplePeople_big.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1822746414,
     "album_orig": "People People",
     "mbid": "557e8f89-c631-4b0b-addb-f8db4a0677bd",
     "mb_release": "Pass the Ammo",
-    "jp_title": "君だけを見ていた",
-    "cover": "liella--to-be-continued.webp"
+    "jp_title": "君だけを見ていた"
   },
   "517": {
     "song": "Dreamer Coaster",
     "artist": "Kanon / Kinako (Solos only)",
-    "album": "rieranouta2",
+    "album": "Liella! no Uta 2",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/35/bd/a035bd8f-a4b4-8880-78bf-a3bb5e150095/4540774250066.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1822746950,
@@ -4821,13 +4815,12 @@
   "518": {
     "song": "Endless Circuit",
     "artist": "Keke / Sumire (Solos Only)",
-    "album": "Endless Circuit / Path Home (Extended Mix) - Single",
+    "album": "Liella! no Uta 2",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/27/bf/2427bfb0-858a-6724-71e6-b7fe51c69700/cover.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1768094318,
     "album_orig": "Endless Circuit / Path Home (Extended Mix) - Single",
-    "jp_title": "エンドレスサーキット (唐 可可 Ver.)",
-    "cover": "liella--endless-circuit.webp"
+    "jp_title": "エンドレスサーキット (唐 可可 Ver.)"
   },
   "519": {
     "song": "Kakeru Merry-Go-Round",
@@ -4847,8 +4840,7 @@
     "source": "itunes",
     "albumId": 1891258726,
     "jp_title": "迷宮讃歌 (鬼塚夏美 Ver.)",
-    "album_orig": "Liella! no Uta 2",
-    "cover": "liella--meikyuu-sanka.webp"
+    "album_orig": "Liella! no Uta 2"
   },
   "521": {
     "song": "Parade wa Itsumo",
@@ -5764,7 +5756,7 @@
   "609": {
     "song": "Kimi no Tame Boku no Tame",
     "artist": "Aqours",
-    "album": "Kiminotamebokunotame - EP",
+    "album": "KIMINOTAMEBOKUNOTAME - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ce/26/51/ce26511b-c744-8ea9-5e7e-e67c87cde4c4/4540774244102.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258900,
@@ -6686,7 +6678,7 @@
   "700": {
     "song": "Bloom the smile, Bloom the dream!",
     "artist": "Hasunosora Girls' High School Idol Club (104)",
-    "album": "Bloom the smile, Bloom the dream! - EP",
+    "album": "Bloom the Smile / Bloom the Dream - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ab/02/dc/ab02dcce-eeda-28ea-48e6-f569b6b01182/4540774245710.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1751905463,
@@ -7026,7 +7018,7 @@
   "734": {
     "song": "Dazzling Game",
     "artist": "Liella!+++",
-    "album": "Dazzling Game - Single",
+    "album": "ZETTAITEKI LOVER / Dazzling Game [Episode 6 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/88/37/d0/8837d0a9-923c-402f-0a67-575c3a75ad2c/4540774742431.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1777385150,
@@ -7037,7 +7029,7 @@
   "735": {
     "song": "Makka.",
     "artist": "Liella!++",
-    "album": "SICK-yanderuEP- - EP",
+    "album": "ZETTAITEKI LOVER / Dazzling Game [Episode 6 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/15/c7/c815c7bd-273b-e260-68a3-016c955480bf/199806221280.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1849086400,
@@ -7059,7 +7051,7 @@
   "737": {
     "song": "Zettaiteki LOVER",
     "artist": "Liella!+++",
-    "album": "ZETTAITEKI LOVER - Single",
+    "album": "ZETTAITEKI LOVER / Dazzling Game [Episode 6 Version] - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/79/b8/b8/79b8b805-84b6-c507-afb4-561fcc7222b4/4540774741687.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1774569590,
@@ -7452,7 +7444,7 @@
   "776": {
     "song": "Tsumi DA・YO・NE",
     "artist": "Mei, Shiki",
-    "album": "SICK: YANDERU-EP - EP",
+    "album": "Love Live! Superstar!! 3rd Season Bonus CD Vol. 4",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -7502,7 +7494,7 @@
   "781": {
     "song": "Omoware Marionette",
     "artist": "Kanon, Chisato, Ren, Natsumi, Margarete",
-    "album": "City Lights Vol. 1-5",
+    "album": "City Lights, Vol. 1.5",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -8155,7 +8147,7 @@
   "846": {
     "song": "Centimeter・Rendezvous",
     "artist": "Noriko",
-    "album": "Koi no One-time Password - EP",
+    "album": "Koi no One-Time Password - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/79/53/c7795375-5463-7eda-a388-ca88c0974f7b/4540774247561.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1837132582,
@@ -8319,7 +8311,7 @@
   "863": {
     "song": "High! Motivation",
     "artist": "Liella!+++",
-    "album": "OPEN THE G☆TE!!!",
+    "album": "OPEN THE G☆TE!!! - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "mbid": "ea85576c-3fe7-4676-b19c-0b5891157697",
@@ -9040,7 +9032,7 @@
   "933": {
     "song": "Tokubetsu Janai Mahou",
     "artist": "Kanon, Keke, Kinako, Natsumi",
-    "album": "Hyper Glowing - EP",
+    "album": "Hyper Glowing! - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -9049,7 +9041,7 @@
   "934": {
     "song": "Winds of YELL",
     "artist": "Chisato, Suire, Mei, Margarete",
-    "album": "Hyper Glowing - EP",
+    "album": "Hyper Glowing! - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "mbid": "6a588317-b84a-4ba9-ba06-5db8b0ff8491",
@@ -9236,7 +9228,7 @@
   "953": {
     "song": "Skip・Capsule",
     "artist": "Liella!+++",
-    "album": "Hyper Glowing - EP",
+    "album": "Hyper Glowing! - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
