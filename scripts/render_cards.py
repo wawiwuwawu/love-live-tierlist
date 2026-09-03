@@ -20,7 +20,7 @@ BANNER_H = 150
 
 def slug(s):
     s = (s or "").lower()
-    s = re.sub(r"[^a-z0-9]+", "-", s)[:60].strip("-")
+    s = re.sub(r"[^a-z0-9]+", "-", s)[:120].strip("-")
     return s or "n-a"
 
 def seriestag(s): return ("mus" if s == "µs" else ("lain" if s in ("Musical", "Ikizurai-Bu") else (s or "lain"))).lower()
@@ -108,8 +108,8 @@ def render_card(album, art_url, out_path):
     return img.size, os.path.getsize(out_path)
 
 def build_albums():
-    songs = json.load(open(SONGS))
-    meta = json.load(open(METADATA))
+    songs = json.load(open(SONGS, encoding='utf-8'))
+    meta = json.load(open(METADATA, encoding='utf-8'))
     albums = {}   # key: tag--slug -> {title, series, art}
     for s in songs:
         m = meta.get(str(s["id"])) or {}

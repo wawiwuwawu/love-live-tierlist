@@ -25,7 +25,7 @@ function seriesOf(artist){
   }
   return 'Lain';
 }
-function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,60).replace(/^-+|-+$/g,'')||'n/a';}
+function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,120).replace(/^-+|-+$/g,'')||'n/a';}
 function fileTag(s){return (s==='µs'?'mus':s==='Musical'?'lain':s==='Ikizurai-Bu'?'lain':s||'lain').toLowerCase();}
 function coverPath(series,album){return `covers/${fileTag(series)}--${slug(album)}.webp`;}
 function songCover(id,series,album){
@@ -61,7 +61,11 @@ function buildAlbums(){
     const album=m.album || m.collectionName || '(tanpa album)';
     const series=seriesOf(s.artist);
     const key=series+'||'+album;
-    if(!albums[key]) albums[key]={series,album,art:m.art||'',songs:[],ids:[]};
+    if(!albums[key]){
+      albums[key]={series,album,art:m.art||'',cover:m.cover||'',songs:[],ids:[]};
+    } else if(!albums[key].cover && m.cover){
+      albums[key].cover=m.cover;
+    }
     albums[key].songs.push({id:s.id,title:s.title,artist:s.artist,center:s.center,date:s.date});
     albums[key].ids.push(s.id);
   }
