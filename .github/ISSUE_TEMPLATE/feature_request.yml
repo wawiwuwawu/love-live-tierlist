@@ -1,0 +1,35 @@
+name: Feature request
+description: Suggest an idea for the tierlist.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting! Describe the problem you're facing, not just the feature name.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / context
+      description: What are you trying to do, and why isn't the current site enough?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What should the feature do or look like?
+      placeholder: "e.g. Add a stats tab showing how many songs are in each tier…"
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Any workarounds you already tried?
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: Data (new songs, kanji titles, MusicBrainz IDs, covers)
+        - label: Frontend (UI / UX)
+        - label: Pipeline (scripts / automation)

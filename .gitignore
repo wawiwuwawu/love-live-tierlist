@@ -6,6 +6,9 @@ __pycache__/
 missing.json
 missing2.json
 suspicious_covers.json
+fixlist.json
+mb_map.json
+mb_checkpoint.json
 docs/covers/_src/
 ll_book.xlsx
 ll_sheet.csv

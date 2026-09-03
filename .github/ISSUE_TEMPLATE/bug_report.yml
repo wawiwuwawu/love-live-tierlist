@@ -1,0 +1,55 @@
+name: Bug report
+description: Something on the tierlist site isn't working as expected.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please fill in as much as you can — the more detail, the faster we can look into it.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: 1. Go to … 2. Click … 3. Scroll to … 4. See error
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: song
+    attributes:
+      label: Affected song / album
+      description: (if data-related) e.g. "Reboot — DOLLCHESTRA (105)" or a cover that looks wrong.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & version
+      placeholder: e.g. Chrome 126
+  - type: dropdown
+    id: view
+    attributes:
+      label: View
+      description: Which view were you using?
+      options:
+        - By Song (direct drag)
+        - By Album
+        - Song detail modal
+        - Other
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue you agree to follow our Code of Conduct.
+      options:
+        - label: I agree
+          required: true
