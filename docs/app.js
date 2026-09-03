@@ -28,6 +28,16 @@ function seriesOf(artist){
 function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,60).replace(/^-+|-+$/g,'')||'n/a';}
 function fileTag(s){return (s==='µs'?'mus':s==='Musical'?'lain':s==='Ikizurai-Bu'?'lain':s||'lain').toLowerCase();}
 function coverPath(series,album){return `covers/${fileTag(series)}--${slug(album)}.webp`;}
+function songCover(id,series,album){
+  const m=meta[String(id)]||{};
+  if(m.cover){
+    if(m.cover.startsWith('http://')||m.cover.startsWith('https://')||m.cover.startsWith('covers/')){
+      return m.cover;
+    }
+    return `covers/${m.cover}`;
+  }
+  return coverPath(series,album);
+}
 
 async function load(){
   [songs, meta] = await Promise.all([
@@ -221,7 +231,7 @@ function renderSongGrid(){
     const m=meta[String(s.id)]||{};
     const albumName=m.album || m.collectionName || '(tanpa album)';
     const sSeries=seriesOf(s.artist);
-    const artSrc=coverPath(sSeries,albumName);
+    const artSrc=songCover(s.id,sSeries,albumName);
     const curTier=getTier(s.id);
 
     const card=document.createElement('div');
@@ -332,7 +342,7 @@ function openSongDetailModal(id){
   const m = meta[String(id)] || {};
   const albumName = m.album || m.collectionName || '(tanpa album)';
   const sSeries = seriesOf(s.artist);
-  const artSrc = coverPath(sSeries, albumName);
+  const artSrc = songCover(id, sSeries, albumName);
   const curTier = getTier(id);
 
   const body = document.getElementById('song-detail-body');
@@ -475,7 +485,7 @@ function renderTierlist(){
       const m=meta[String(id)]||{};
       const albumName=m.album || m.collectionName || '(tanpa album)';
       const sSeries=seriesOf(s.artist);
-      const artSrc=coverPath(sSeries, albumName);
+      const artSrc=songCover(id, sSeries, albumName);
 
       const c=document.createElement('div');c.className='tier-card';c.draggable=true;
       c.dataset.id=id;c.dataset.tier=t;
