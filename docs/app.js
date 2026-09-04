@@ -9,8 +9,8 @@ const SERIES_KEYWORDS={
  'Aqours':['aqours','cyazalea','yyy','wai wai wai','cyaron','azalea','guilty','saint aqours','saint snow','chika','riko','kanan','dia','yoshiko','yohane','hanamaru','mari','ruby','you','gkss'],
  'Niji':['nijigasaki','nijigaku','qu4rtz','diverdiva','azuna','a・zu','r3birth','yuuki','setsuna','ayumu','kasumi','shizuku','karin','ai','kanata','emma','rina','shioriko','shiroko','mia','lanzhu','yu'],
  'Liella':['liella','catchu','kaleidoscope','kaleidoscore','5yncri5e','syncrise','sunny','kanon','keke','chisato','sumire','ren','kinako','mei','shiki','natsumi','wien','margarete','tomari'],
- 'Hasunosora':['hasu','hasunosora','nyaovenus','cerise','dollchestra','mira-cra','miracra','mira cra','edel','giiter','kaho','sayaka','kozue','tsuzuri','tsuziri','rurino','megumi','megu','kahomegu','gelato','ginko','kosuzu','hime','ceras'],
  'Musical':['school idol musical','musical','tsubakisakuhana','takizakura','sim supports','rurika','yuzuha','yukino','hikaru','maya','anzu','misuzu','toa','rena','sayaka harukaze','madoka','kyoka'],
+ 'Hasunosora':['hasu','hasunosora','nyaovenus','cerise','dollchestra','mira-cra','miracra','mira cra','edel','giiter','kaho','sayaka','kozue','tsuzuri','tsuziri','rurino','megumi','megu','kahomegu','gelato','ginko','kosuzu','hime','ceras'],
  'Ikizurai-Bu':['ikizurai','ikizurai-bu','ikizuraibu','call me','kidokumachi','kobumi otome','chaki','plumina','mi×nori=tea','minori','sh1on','polka','mai','azabu','akira','hanabi','yukuri','aurora','midori','miracle','noriko','shion','chofu']
 };
 

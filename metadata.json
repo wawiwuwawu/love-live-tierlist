@@ -2173,7 +2173,8 @@
     "albumId": 1711217949,
     "album_orig": "Piano Mindfulness",
     "mbid": "a966f324-a2ba-4fec-bf47-7c7ac7269ccb",
-    "mb_release": "Destination Bomp! The Best of BOMP RECORDS’ First 20 Years"
+    "mb_release": "Destination Bomp! The Best of BOMP RECORDS’ First 20 Years",
+    "cover": "niji--evergreen.webp"
   },
   "264": {
     "song": "Meccha Going!!",
@@ -3973,15 +3974,14 @@
   "436": {
     "song": "Message",
     "artist": "Kanon / Sumire (solos only)",
-    "album": "Message - Single",
+    "album": "Liella! no Uta",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/01/a8/af/01a8aff2-6413-14e1-f95a-0282fabb04ba/jacket_BVXX00230B00Z_550.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1536008055,
     "album_orig": "Message - Single",
     "mbid": "30043c8a-c1b1-4136-99a7-3620123b0505",
     "mb_release": "New Repertoire",
-    "jp_title": "MESSAGE -メッセージ-",
-    "cover": "liella--message.webp"
+    "jp_title": "MESSAGE -メッセージ-"
   },
   "437": {
     "song": "Oh! Ready Steady Positive",
@@ -5280,7 +5280,7 @@
   "564": {
     "song": "Ashita wa Kitto",
     "artist": "Rurika",
-    "album": "TV Drama \"Otona no Natsuyasumi\" Original Soundtrack",
+    "album": "School Idol Musical",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/7a/cb/cb/7acbcb95-3c99-f2c0-f6ed-0a8ae265f647/PCCA_02179.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1838424570,
@@ -5355,7 +5355,7 @@
   "571": {
     "song": "Kagayakashii Mirai",
     "artist": "Takizakura Girls Academy, SIM Supports",
-    "album": "Bokurano Kagayakashii Mirai - Single",
+    "album": "School Idol Musical",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/37/11/f2/3711f298-92eb-d905-7aaa-66cd3baf12c3/20UMGIM01522.rgb.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1838424570,
@@ -5494,7 +5494,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "MIRACLE NEW STORY - Single"
+    "album_orig": "MIRACLE NEW STORY - Single",
+    "cover": "liella--kirakyun.webp"
   },
   "585": {
     "song": "MIRACLE NEW STORY",
@@ -5536,7 +5537,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6e/6e/e1/6e6ee12e-4809-5120-7adc-009e09e1c27a/4540774909346.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891568777,
-    "album_orig": "LoveLive! Sunshine!! Third Solo Concert Album ～THE STORY OF OVER THE RAINBOW～ star-studded Mari Ohara"
+    "album_orig": "LoveLive! Sunshine!! Third Solo Concert Album ～THE STORY OF OVER THE RAINBOW～ star-studded Mari Ohara",
+    "cover": "aqours--mata-kimi-ni-aunda.webp"
   },
   "589": {
     "song": "Holiday∞Holiday",
@@ -5635,7 +5637,8 @@
     "album_orig": "UNIVERSE!!",
     "mbid": "3e21f27d-d984-431e-af3a-9f3d9d809342",
     "mb_release": "Delight Slight Lightspeed",
-    "albumId": 1891258726
+    "albumId": 1891258726,
+    "cover": "liella--universe.webp"
   },
   "598": {
     "song": "SINGING, DREAMING, NOW!",
@@ -5761,7 +5764,8 @@
     "source": "itunes",
     "albumId": 1891258900,
     "jp_title": "眠れぬ森の君のため",
-    "album_orig": "Kiminotamebokunotame - EP"
+    "album_orig": "Kiminotamebokunotame - EP",
+    "cover": "aqours--kimi-no-tame-boku-no-tame.webp"
   },
   "610": {
     "song": "SILENT PAIN",
@@ -5788,7 +5792,7 @@
   "612": {
     "song": "DEEPNESS",
     "artist": "Kaho, Kozue, Sayaka Murano, Tsuziri",
-    "album": "Super Best Records -15th Celebration-",
+    "album": "Genyou Yakou - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ab/42/39/ab4239ed-ce48-f2b0-212f-988160798a7a/jacket_BVCL30005B00Z_550.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1538117950,
@@ -5798,7 +5802,7 @@
   "613": {
     "song": "Genyou Yakou",
     "artist": "Cerise Bouquet",
-    "album": "Genyo Yako - EP",
+    "album": "Genyou Yakou - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/7c/17/6a7c17ce-401a-8977-0db1-1349ef75c9c0/4540774244089.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1765320081,
@@ -5816,7 +5820,7 @@
   "615": {
     "song": "Kawaii no susume",
     "artist": "Cerise Bouquet",
-    "album": "Genyo Yako - EP",
+    "album": "Genyou Yakou - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/7c/17/6a7c17ce-401a-8977-0db1-1349ef75c9c0/4540774244089.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1765320081,
@@ -5906,7 +5910,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "Natsumeki Pain"
+    "album_orig": "Natsumeki Pain",
+    "cover": "hasunosora--hakuchuu-la-mode.webp"
   },
   "624": {
     "song": "Kokon Touzai",
@@ -5916,7 +5921,8 @@
     "source": "itunes",
     "albumId": 1891258726,
     "jp_title": "古今東西",
-    "album_orig": "Natsumeki Pain"
+    "album_orig": "Natsumeki Pain",
+    "cover": "hasunosora--kokon-touzai.webp"
   },
   "625": {
     "song": "Legato",
@@ -5927,7 +5933,8 @@
     "mbid": "d500c3e3-f4d5-4fbd-bf01-67b7005eb597",
     "mb_release": "Unison",
     "albumId": 1891258726,
-    "album_orig": "Natsumeki Pain"
+    "album_orig": "Natsumeki Pain",
+    "cover": "hasunosora--legato.webp"
   },
   "626": {
     "song": "Natsumeki Pain",
@@ -5959,7 +5966,7 @@
   "629": {
     "song": "Yup! Yup! Yup!",
     "artist": "Hasunosora Girl's High School Idol Club",
-    "album": "Yup Yup Yup (Yup x3) - Single",
+    "album": "Natsumeki Pain",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/43/13/55/43135596-38fb-8ca5-024d-95344f04faf0/3663729222435_cover.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1765300786,
@@ -5974,7 +5981,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "Natsumeki Pain"
+    "album_orig": "Natsumeki Pain",
+    "cover": "hasunosora--zanyou.webp"
   },
   "631": {
     "song": "GIRLS!!",
@@ -5995,7 +6003,8 @@
     "source": "itunes",
     "albumId": 1891258925,
     "jp_title": "ずっと好きだった",
-    "album_orig": "Genjitsu Mysterium - EP"
+    "album_orig": "Genjitsu Mysterium - EP",
+    "cover": "aqours--te-ki-na-music.webp"
   },
   "633": {
     "song": "Wonder sea breeze",
@@ -6006,7 +6015,8 @@
     "albumId": 1891568200,
     "mbid": "24384304-0698-4a9c-b764-2cfd6bdf6b17",
     "mb_release": "GIRLS!!/Wonder sea breeze",
-    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)"
+    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)",
+    "cover": "aqours--wonder-sea-breeze.webp"
   },
   "634": {
     "song": "5201314.0",
@@ -6015,7 +6025,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "Fly with You!!"
+    "album_orig": "Fly with You!!",
+    "cover": "niji--5201314-0.webp"
   },
   "635": {
     "song": "Cherry Bomb",
@@ -6076,7 +6087,8 @@
     "mbid": "0a85ce86-3b30-49fa-890b-a95284ba21d0",
     "mb_release": "Best Singles Collection",
     "jp_title": "幸福論 (悦楽編)",
-    "album_orig": "Fly with You!!"
+    "album_orig": "Fly with You!!",
+    "cover": "niji--koufukuron.webp"
   },
   "641": {
     "song": "Lemonade",
@@ -6156,7 +6168,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/9f/5b/919f5bfb-75db-c35d-b0db-6e691924619d/4540774244249.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258925,
-    "album_orig": "Genjitsu Mysterium - EP"
+    "album_orig": "Genjitsu Mysterium - EP",
+    "cover": "aqours--la-la-yuuki-no-uta.webp"
   },
   "649": {
     "song": "Tick-Tack, Tick-Tack",
@@ -6168,7 +6181,7 @@
     "album_orig": "Tick Tack Tick Tack - Single",
     "mbid": "c8968593-0a5b-4a50-b555-4a87604bfbb8",
     "mb_release": "幻日のヨハネ -SUNSHINE in the MIRROR- オリジナルソングCD２",
-    "cover": "aqours--genjitsu-no-yohane-sunshine-in-the-mirror-bonus-cd-vol-2.webp"
+    "cover": "aqours--tick-tack-tick-tack.webp"
   },
   "650": {
     "song": "Senpen Banka",
@@ -6219,7 +6232,8 @@
     "mbid": "50bc8183-af0c-4b9e-959e-22117fdf2c2a",
     "mb_release": "Sound Relief, Volume One: From CA to NYC",
     "albumId": 1891568200,
-    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)"
+    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)",
+    "cover": "aqours--best-wishes.webp"
   },
   "655": {
     "song": "KNOT",
@@ -6290,18 +6304,20 @@
     "mbid": "32b7c3a3-b22c-453c-8597-edb79f3e29ce",
     "mb_release": "幻日のヨハネ -SUNSHINE in the MIRROR- オリジナルソングCD４",
     "albumId": 1891568200,
-    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)"
+    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)",
+    "cover": "aqours--special-holidays.webp"
   },
   "662": {
     "song": "FANTASTiC",
     "artist": "Liella!+++",
-    "album": "City Lights, Vol. 1.5",
+    "album": "Shekira☆☆☆ - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/70/04/4a/70044a3a-831c-5b19-14d7-051984c7e845/mzi.uhhowutp.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 361815788,
     "album_orig": "City Lights, Vol. 1.5",
     "mbid": "be43173e-c0f9-446e-b801-aecafe3c0644",
-    "mb_release": "Ministry of Sound: Hard NRG: The Album"
+    "mb_release": "Ministry of Sound: Hard NRG: The Album",
+    "cover": "liella--fantastic.webp"
   },
   "663": {
     "song": "Shekira☆☆☆",
@@ -6310,7 +6326,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "Shekira☆☆☆ - Single"
+    "album_orig": "Shekira☆☆☆ - Single",
+    "cover": "liella--shekira.webp"
   },
   "664": {
     "song": "Link to the FUTURE",
@@ -6361,7 +6378,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "Nijigaku Bonus Track Collection Vol.1"
+    "album_orig": "Nijigaku Bonus Track Collection Vol.1",
+    "cover": "niji--radio-taisou-dai-ichi-nijigasaki-high-school-idol-club-ver.webp"
   },
   "669": {
     "song": "Koukishin Journey",
@@ -6370,7 +6388,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bf/25/74/bf257448-b4b3-ea6a-8ff4-5f4abf43e582/4540774907861.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891568200,
-    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)"
+    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)",
+    "cover": "aqours--koukishin-journey.webp"
   },
   "670": {
     "song": "Ao to Shabon",
@@ -6410,7 +6429,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bf/25/74/bf257448-b4b3-ea6a-8ff4-5f4abf43e582/4540774907861.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891568200,
-    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)"
+    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)",
+    "cover": "aqours--numazu-yassa-yoisa-uta.webp"
   },
   "674": {
     "song": "Colorfulness",
@@ -6461,7 +6481,8 @@
     "albumId": 1891568200,
     "mbid": "fb080650-d041-48a8-8992-e3e601a42aa6",
     "mb_release": "幻日のヨハネ -SUNSHINE in the MIRROR- オリジナルソングCD７",
-    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)"
+    "album_orig": "LoveLive! Sunshine!! Aqours CHRONICLE (2021～2024)",
+    "cover": "aqours--bloom-of-colors.webp"
   },
   "679": {
     "song": "Ishin☆Denshin",
@@ -6510,7 +6531,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5a/39/35/5a3935b4-b5f1-9c9d-c3c1-e60a7d5ab253/4540774734733.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891568200,
-    "album_orig": "Nijigaku Bonus Track Collection Vol.1"
+    "album_orig": "Nijigaku Bonus Track Collection Vol.1",
+    "cover": "niji--nijigasaki-gakuen-kouka-rock-ver.webp"
   },
   "684": {
     "song": "Aoku Haruka",
@@ -6535,7 +6557,7 @@
   "686": {
     "song": "Mira-Creation",
     "artist": "Mira-Cra Park! (104)",
-    "album": "The Master and Margarita",
+    "album": "Dream Believers (104ki Version) - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music/71/1b/8c/mzi.osgucytc.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1738893540,
@@ -6662,7 +6684,8 @@
     "mbid": "ec125483-a51b-47a6-86ef-e604b70559a9",
     "mb_release": "RAP MUSIC",
     "albumId": 1891258726,
-    "album_orig": "Liella! no Uta 3 - EP"
+    "album_orig": "Liella! no Uta 3 - EP",
+    "cover": "liella--aikotoba.webp"
   },
   "699": {
     "song": "365 Days",
@@ -6693,7 +6716,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "School Idol Musical"
+    "album_orig": "School Idol Musical",
+    "cover": "lain--anata-ni-muchuu.webp"
   },
   "702": {
     "song": "Ima Sugu Hajimeyo!",
@@ -6702,7 +6726,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "School Idol Musical"
+    "album_orig": "School Idol Musical",
+    "cover": "lain--ima-sugu-hajimeyo.webp"
   },
   "703": {
     "song": "Ishiki Shi Au Toka Hikare Au Toka",
@@ -6711,7 +6736,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "School Idol Musical"
+    "album_orig": "School Idol Musical",
+    "cover": "lain--ishiki-shi-au-toka-hikare-au-toka.webp"
   },
   "704": {
     "song": "Kono Saki mo Zutto",
@@ -6720,16 +6746,18 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "School Idol Musical"
+    "album_orig": "School Idol Musical",
+    "cover": "lain--kono-saki-mo-zutto.webp"
   },
   "705": {
     "song": "Ouen Shite ne♡",
     "artist": "Yukino, Anzu, Rena, Sayaka Harukaze",
-    "album": "Bloom the Smile / Bloom the Dream - EP",
+    "album": "School Idol Musical",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "Bloom the Smile / Bloom the Dream - EP"
+    "album_orig": "Bloom the Smile / Bloom the Dream - EP",
+    "cover": "lain--ouen-shite-ne.webp"
   },
   "706": {
     "song": "Parfait Parfait Koushinkyoku",
@@ -6738,7 +6766,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "School Idol Musical"
+    "album_orig": "School Idol Musical",
+    "cover": "lain--parfait-parfait-koushinkyoku.webp"
   },
   "707": {
     "song": "Seishun no Sanka",
@@ -6747,7 +6776,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "School Idol Musical"
+    "album_orig": "School Idol Musical",
+    "cover": "lain--seishun-no-sanka.webp"
   },
   "708": {
     "song": "Shuyaku ni Narenai Shuyaku",
@@ -6756,18 +6786,20 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "School Idol Musical"
+    "album_orig": "School Idol Musical",
+    "cover": "lain--shuyaku-ni-narenai-shuyaku.webp"
   },
   "709": {
     "song": "So My Way",
     "artist": "Hikaru, Sayaka Harukaze",
-    "album": "Bloom the Smile / Bloom the Dream - EP",
+    "album": "School Idol Musical",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "mbid": "4477bcb2-bd00-4448-9915-3b3fcdaedf56",
     "mb_release": "椿滝桜女学院高等学校スクールアイドル部 後夜祭アルバム！",
     "albumId": 1891258726,
-    "album_orig": "Bloom the Smile / Bloom the Dream - EP"
+    "album_orig": "Bloom the Smile / Bloom the Dream - EP",
+    "cover": "lain--so-my-way.webp"
   },
   "710": {
     "song": "Watashi no Seiza",
@@ -6776,7 +6808,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "School Idol Musical"
+    "album_orig": "School Idol Musical",
+    "cover": "lain--watashi-no-seiza.webp"
   },
   "711": {
     "song": "Yume wa Doko Kara",
@@ -6785,7 +6818,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "School Idol Musical"
+    "album_orig": "School Idol Musical",
+    "cover": "lain--yume-wa-doko-kara.webp"
   },
   "712": {
     "song": "Yumemigachi Girl",
@@ -6795,7 +6829,8 @@
     "source": "itunes",
     "albumId": 1891258726,
     "jp_title": "夢見ガチガール",
-    "album_orig": "School Idol Musical"
+    "album_orig": "School Idol Musical",
+    "cover": "lain--yumemigachi-girl.webp"
   },
   "713": {
     "song": "Tsukuyomi Kurage",
@@ -6988,7 +7023,7 @@
   "731": {
     "song": "Birdcage",
     "artist": "DOLLCHESTRA (104)",
-    "album": "Cannot Be, Whatsoever",
+    "album": "Hanamusubi / Birdcage / Joushou Kiryuu",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c1/bc/3d/c1bc3d50-89d1-a15b-2175-7d1b7b3dd502/cover.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1672226963,
@@ -6999,7 +7034,7 @@
   "732": {
     "song": "Hanamusubi",
     "artist": "Cerise Bouquet (104)",
-    "album": "Hanamusubi / Birdcage / Josho Kiryu - EP",
+    "album": "Hanamusubi / Birdcage / Joushou Kiryuu",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b5/5a/1a/b55a1a26-f207-c505-1f9e-e21fe6301aff/4540774246397.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1778299282,
@@ -7008,7 +7043,7 @@
   "733": {
     "song": "Joushou Kiryuu",
     "artist": "Mira-Cra Park! (104)",
-    "album": "Aqua Timez FINAL LIVE - last dance",
+    "album": "Hanamusubi / Birdcage / Joushou Kiryuu",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/24/37/2b/24372b65-396b-bda1-f61e-6ce535f5b253/jacket_ESCL05210B00Z_550.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1814765964,
@@ -7035,7 +7070,8 @@
     "albumId": 1849086400,
     "album_orig": "SICK-やんでるEP- - EP",
     "mbid": "e4a5ff46-1b72-45a6-b0ac-0e650ed09ff2",
-    "mb_release": "Hitomibore e.p."
+    "mb_release": "Hitomibore e.p.",
+    "cover": "liella--makka.webp"
   },
   "736": {
     "song": "QUESTION99",
@@ -7065,7 +7101,8 @@
     "source": "itunes",
     "albumId": 1891258955,
     "jp_title": "永久hours",
-    "album_orig": "Eikyu Hours - EP"
+    "album_orig": "Eikyu Hours - EP",
+    "cover": "aqours--eikyuu-hours.webp"
   },
   "739": {
     "song": "Bokura no Tabi wa Owaranai",
@@ -7083,7 +7120,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/2b/ef/d12bef77-62f4-7f1c-aa32-84fc903d6fb7/4540774244584.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258980,
-    "album_orig": "Deep Blue - EP"
+    "album_orig": "Deep Blue - EP",
+    "cover": "aqours--futari-de-hitotsu.webp"
   },
   "741": {
     "song": "Egao no Promise",
@@ -7137,7 +7175,7 @@
   "746": {
     "song": "11th Moon",
     "artist": "Margarete, Tomari",
-    "album": "Liella! no Uta 3 - EP",
+    "album": "Liella! no Uta 3",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/ca/e1/a3cae1d8-1b1e-d00a-6dbc-23dd0aed7f4f/4540774251421.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1787242096,
@@ -7146,19 +7184,20 @@
   "747": {
     "song": "dolce",
     "artist": "Margarete / Tomari (solos only)",
-    "album": "Dolce - Single",
+    "album": "Liella! no Uta 3",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/40/86/e6/4086e68c-9a08-db7d-3c9d-f71805f16056/aao-0032.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1726874627,
     "album_orig": "Dolce - Single",
     "mbid": "8eb02f1f-ba87-4cfb-acf1-640a398f255f",
     "mb_release": "Infanzia Oggi",
-    "jp_title": "dolce (ウィーン・マルガレーテ Ver.)"
+    "jp_title": "dolce (ウィーン・マルガレーテ Ver.)",
+    "cover": "liella--dolce.webp"
   },
   "748": {
     "song": "Summer Escape!!",
     "artist": "Kinako, Mei, Shiki, Natsumi",
-    "album": "Liella! no Uta 3 - EP",
+    "album": "Liella! no Uta 3",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/ca/e1/a3cae1d8-1b1e-d00a-6dbc-23dd0aed7f4f/4540774251421.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1787242096,
@@ -7169,7 +7208,7 @@
   "749": {
     "song": "Hitohira Dake",
     "artist": "Kanon, Keke, Chisato, Sumire, Ren",
-    "album": "Liella! no Uta 3 - EP",
+    "album": "Liella! no Uta 3",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/ca/e1/a3cae1d8-1b1e-d00a-6dbc-23dd0aed7f4f/4540774251421.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1787242096,
@@ -7178,7 +7217,7 @@
   "750": {
     "song": "Musubu Melody",
     "artist": "Liella!+++",
-    "album": "Liella! no Uta 3 - EP",
+    "album": "Liella! no Uta 3",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a3/ca/e1/a3cae1d8-1b1e-d00a-6dbc-23dd0aed7f4f/4540774251421.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1787242096,
@@ -7319,7 +7358,8 @@
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
-    "album_orig": "Zenhoi Kyun - EP"
+    "album_orig": "Zenhoi Kyun - EP",
+    "cover": "hasunosora--zenhoui-kyun.webp"
   },
   "764": {
     "song": "Kakurenbo Shiyou",
@@ -7353,7 +7393,7 @@
   "767": {
     "song": "COMPASS",
     "artist": "DOLLCHESTRA (104)",
-    "album": "REFLECTION{Drip}",
+    "album": "COMPASS - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "mbid": "5a43aebd-0bb8-4e94-95e6-eda806c177e3",
@@ -7364,7 +7404,7 @@
   "768": {
     "song": "Rem",
     "artist": "DOLLCHESTRA (104)",
-    "album": "REFLECTION{Drip}",
+    "album": "COMPASS - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9f/36/f6/9f36f608-e85c-57e6-2423-410c0cf99f91/dj.etmfeznv.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1374952426,
@@ -7376,7 +7416,7 @@
   "769": {
     "song": "Haji wa Jinsei no Kakisute",
     "artist": "Ginko, Kosuzu, Hime",
-    "album": "Oide yo! Ishikawa Daikanko",
+    "album": "Oide yo! Ishikawa Daikankou",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ef/98/5b/ef985bfd-e762-fab6-1402-444dcc93e461/4540774251490.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1797455082,
@@ -7385,7 +7425,7 @@
   "770": {
     "song": "Oide yo! Ishikawa Daikankou",
     "artist": "Hasunosora Girls' High School Idol Club (104)",
-    "album": "Oide yo! Ishikawa Daikanko",
+    "album": "Oide yo! Ishikawa Daikankou",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -7394,7 +7434,7 @@
   "771": {
     "song": "Koigeshiki Shouwa Roman",
     "artist": "Cerise Bouquet (104)",
-    "album": "Oide yo! Ishikawa Daikanko",
+    "album": "Oide yo! Ishikawa Daikankou",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -7403,7 +7443,7 @@
   "772": {
     "song": "Veggie・Love・Roux",
     "artist": "DOLLCHESTRA (104)",
-    "album": "Oide yo! Ishikawa Daikanko",
+    "album": "Oide yo! Ishikawa Daikankou",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -7412,7 +7452,7 @@
   "773": {
     "song": "Mahara Jamboree II",
     "artist": "Mira-Cra Park! (104)",
-    "album": "Oide yo! Ishikawa Daikanko",
+    "album": "Oide yo! Ishikawa Daikankou",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ef/98/5b/ef985bfd-e762-fab6-1402-444dcc93e461/4540774251490.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1797455082,
@@ -7421,7 +7461,7 @@
   "774": {
     "song": "Love it! Wonderful Trip!",
     "artist": "Kaho, Sayaka Murano, Rurino",
-    "album": "Oide yo! Ishikawa Daikanko",
+    "album": "Oide yo! Ishikawa Daikankou",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ef/98/5b/ef985bfd-e762-fab6-1402-444dcc93e461/4540774251490.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1797455082,
@@ -7432,7 +7472,7 @@
   "775": {
     "song": "Asterism",
     "artist": "Kozue, Tsuziri, Megumi",
-    "album": "Asterism - Single",
+    "album": "Oide yo! Ishikawa Daikankou",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9c/f0/61/9cf0612a-03ae-902b-1f10-0ab398228549/049306_J.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1501621232,
@@ -7449,7 +7489,8 @@
     "source": "itunes",
     "albumId": 1891258726,
     "jp_title": "Still I Love You〜みつめるよりは幸せ〜",
-    "album_orig": "SICK: YANDERU-EP - EP"
+    "album_orig": "SICK: YANDERU-EP - EP",
+    "cover": "liella--tsumi-da-yo-ne.webp"
   },
   "777": {
     "song": "Nijiiro☆Lumiere",
@@ -7494,12 +7535,13 @@
   "781": {
     "song": "Omoware Marionette",
     "artist": "Kanon, Chisato, Ren, Natsumi, Margarete",
-    "album": "City Lights, Vol. 1.5",
+    "album": "Love Live! Superstar!! 3rd Season Bonus CD Vol. 5",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
     "jp_title": "踊れマリオネット",
-    "album_orig": "City Lights Vol. 1-5"
+    "album_orig": "City Lights Vol. 1-5",
+    "cover": "liella--omoware-marionette.webp"
   },
   "782": {
     "song": "Edelied",
@@ -7742,11 +7784,12 @@
   "805": {
     "song": "Teenage・Loneliness",
     "artist": "Keke, Sumire, Kinako, Tomari",
-    "album": "Borrowed View",
+    "album": "Love Live! Superstar!! 3rd Season Bonus CD Vol. 6",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/3c/23/363c233e-e9d2-ba13-fe4f-f2c09a64a6f4/artwork.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1712177567,
-    "album_orig": "Borrowed View"
+    "album_orig": "Borrowed View",
+    "cover": "liella--teenage-loneliness.webp"
   },
   "806": {
     "song": "be proud",
@@ -7980,7 +8023,7 @@
   "829": {
     "song": "Asakusa Guilty Girl no Uta",
     "artist": "Polka",
-    "album": "Asakusa Guilty Girl no Uta - Single",
+    "album": "Asakusa Guilty Girl no Uta - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/01/b0/4f01b02d-b76b-e1c1-077c-def3252811dd/4540774745616.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1823915889,
@@ -8058,7 +8101,7 @@
   "837": {
     "song": "Itsuka-Ao",
     "artist": "Akira",
-    "album": "Itsuka Ao - Single",
+    "album": "Itsuka-Ao - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fe/81/f6/fe81f681-263d-e9e7-198b-d31a9ba62305/4540774745685.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1825103178,
@@ -8067,7 +8110,7 @@
   "838": {
     "song": "Jet Starter",
     "artist": "Akira",
-    "album": "Itsuka Ao - EP",
+    "album": "Itsuka-Ao - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5d/08/41/5d08410b-294f-03b0-d6a1-37551799fd85/4540774247530.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1834601986,
@@ -8102,7 +8145,8 @@
     "albumId": 1637394374,
     "album_orig": "Sanketsu-girl",
     "mbid": "429d0a3a-9ae2-496d-9e61-8379dcc1198f",
-    "mb_release": "Minna no Uta"
+    "mb_release": "Minna no Uta",
+    "cover": "niji--sanketsu.webp"
   },
   "842": {
     "song": "Yoin",
@@ -8113,12 +8157,13 @@
     "albumId": 1537450570,
     "album_orig": "DIVISION",
     "mbid": "7147ad99-0127-48c8-a35f-1f1c73c0aa39",
-    "mb_release": "Yoin"
+    "mb_release": "Yoin",
+    "cover": "niji--yoin.webp"
   },
   "843": {
     "song": "HomeRun Queen!!",
     "artist": "Miracle",
-    "album": "HomeRun Queen!! - Single",
+    "album": "HomeRun Queen!! - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/33/f6/9233f685-8c67-9601-b6ee-9dab2e703a8f/4540774745708.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1834601650,
@@ -8201,7 +8246,7 @@
   "852": {
     "song": "Pray for Love",
     "artist": "Yukuri",
-    "album": "Pray for love - Single",
+    "album": "Pray for Love - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9c/5c/63/9c5c63aa-7d82-58f2-f156-8b9e48bd3f3c/4540774745722.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1834612984,
@@ -8212,7 +8257,7 @@
   "853": {
     "song": "Futari wa Itsudemo Happy End",
     "artist": "Yukuri",
-    "album": "Futari wa Itsudemo Happy End - Single",
+    "album": "Pray for Love - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -8230,7 +8275,7 @@
   "855": {
     "song": "Kurari to Bright",
     "artist": "Aurora",
-    "album": "Kurari to Bright - Single",
+    "album": "Kimi wa Yoru no Polaris - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -8256,12 +8301,13 @@
     "albumId": 1740796141,
     "album_orig": "Wake Up - Single",
     "mbid": "6934bb58-8148-4cee-9bb7-1393d56baff8",
-    "mb_release": "Dear Sir"
+    "mb_release": "Dear Sir",
+    "cover": "niji--wake-up.webp"
   },
   "858": {
     "song": "Little Green Iinkai",
     "artist": "Midori",
-    "album": "Little Green Iinkai - Single",
+    "album": "Little Green Iinkai - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/4e/25/914e2548-eba2-9ca7-e3e2-6293291156d3/4540774745746.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1834613339,
@@ -8306,7 +8352,8 @@
     "album_orig": "OPEN THE G☆TE!!!",
     "mbid": "43e3ba3a-57a2-48ca-860f-93a9351d80bc",
     "mb_release": "OPEN THE G☆TE!!!",
-    "albumId": 1891258726
+    "albumId": 1891258726,
+    "cover": "liella--open-the-g-te.webp"
   },
   "863": {
     "song": "High! Motivation",
@@ -8317,7 +8364,8 @@
     "mbid": "ea85576c-3fe7-4676-b19c-0b5891157697",
     "mb_release": "Alpine Frequency",
     "albumId": 1891258726,
-    "album_orig": "OPEN THE G☆TE!!!"
+    "album_orig": "OPEN THE G☆TE!!!",
+    "cover": "liella--high-motivation.webp"
   },
   "864": {
     "song": "Yakusoku ni Nare Bokura no Uta",
@@ -8346,7 +8394,8 @@
     "albumId": 1777375183,
     "album_orig": "Circle of Love - Single",
     "mbid": "751f80cc-acae-4fbd-a80e-45939f5d34aa",
-    "mb_release": "While My Guitar Gently Weeps"
+    "mb_release": "While My Guitar Gently Weeps",
+    "cover": "niji--circle-of-love.webp"
   },
   "867": {
     "song": "Burn!!",
@@ -8368,7 +8417,8 @@
     "albumId": 1606452125,
     "album_orig": "Stay (Rihanna) - Single",
     "mbid": "c45addbf-aca7-49ec-a42a-89dcef58ae83",
-    "mb_release": "Smiles Are The Batteries"
+    "mb_release": "Smiles Are The Batteries",
+    "cover": "niji--stay.webp"
   },
   "869": {
     "song": "Like a Treasure",
@@ -8683,7 +8733,7 @@
   "899": {
     "song": "REGAIN AGAIN LLLLOVE",
     "artist": "Ikizurai-Bu!",
-    "album": "REGAIN AGAIN LLLLOVE - Single",
+    "album": "Dou-Da? DOING! / REGAIN AGAIN LLLLOVE - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/01/63/e80163b3-d6c4-dcda-730f-6fa888055986/4540774747597.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1867117342,
@@ -8694,7 +8744,7 @@
   "900": {
     "song": "Dou-Da? DOING!",
     "artist": "Ikizurai-Bu!",
-    "album": "Dou-Da? DOING! - Single",
+    "album": "Dou-Da? DOING! / REGAIN AGAIN LLLLOVE - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "mbid": "31f063a8-a4cd-4c4b-9f81-4e5cbc05161b",
@@ -8705,7 +8755,7 @@
   "901": {
     "song": "Sayo-Shigure",
     "artist": "Cerise Bouquet (105)",
-    "album": "Sayo-Shigure / Reboot / Hip, hip, hooray! / Reijo Mobu!",
+    "album": "Sayo-Shigure / Reboot / Hip, hip, hooray! / Reijou Mob!",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6e/e4/bb/6ee4bb14-4b78-46c9-f4bd-53a4788fd56d/4540774248124.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1870497913,
@@ -8716,7 +8766,7 @@
   "902": {
     "song": "Hip, hip, hooray!",
     "artist": "Mira-Cra Park! (105)",
-    "album": "Sayo-Shigure / Reboot / Hip, hip, hooray! / Reijo Mobu!",
+    "album": "Sayo-Shigure / Reboot / Hip, hip, hooray! / Reijou Mob!",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6e/e4/bb/6ee4bb14-4b78-46c9-f4bd-53a4788fd56d/4540774248124.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1870497913,
@@ -8727,7 +8777,7 @@
   "903": {
     "song": "Reboot",
     "artist": "DOLLCHESTRA (105)",
-    "album": "Reboot - Single",
+    "album": "Sayo-Shigure / Reboot / Hip, hip, hooray! / Reijou Mob!",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/7b/21/33/7b21331c-3f13-9973-9ddb-ab23a10ecaca/AVCK-79416.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1321237801,
@@ -8739,7 +8789,7 @@
   "904": {
     "song": "Reijou Mob!",
     "artist": "Edel Note",
-    "album": "Sayo-Shigure / Reboot / Hip, hip, hooray! / Reijo Mobu!",
+    "album": "Sayo-Shigure / Reboot / Hip, hip, hooray! / Reijou Mob!",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -8970,7 +9020,7 @@
   "927": {
     "song": "SUPER SUMMER SENSATION!!",
     "artist": "Ikizurai-Bu!",
-    "album": "SUPER SUMMER SENSATION!! - Single",
+    "album": "Dou-Da? DOING! / REGAIN AGAIN LLLLOVE - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "mbid": "94fc3576-aa08-42f2-8db8-023b00cd208b",
@@ -9132,7 +9182,7 @@
   "943": {
     "song": "POP LOVE",
     "artist": "Aurora, Miracle",
-    "album": "Miracle's Price - Single",
+    "album": "POP LOVE - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/cd/99/8bcd996c-ea9d-e07a-29ef-23d6b0b0ea04/artwork.jpg/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 6784994119,
@@ -9143,7 +9193,7 @@
   "944": {
     "song": "Spinning Parade",
     "artist": "Polka, Yukuri",
-    "album": "Spinning Parade / Churi CHU Chu Kirari - EP",
+    "album": "Spinning Parade / Churi♡CHU Chu Kirari♪ - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -9152,7 +9202,7 @@
   "945": {
     "song": "Churi♡CHU Chu Kirari♪",
     "artist": "Hanabi, Midori",
-    "album": "Spinning Parade / Churi CHU Chu Kirari - EP",
+    "album": "Spinning Parade / Churi♡CHU Chu Kirari♪ - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -9161,7 +9211,7 @@
   "946": {
     "song": "Darling Wanted!",
     "artist": "Mai, Noriko",
-    "album": "Darling Wanted! / Seishun Soda - EP",
+    "album": "Darling Wanted! - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -9170,7 +9220,7 @@
   "947": {
     "song": "Seishun Soda",
     "artist": "Akira, Shion",
-    "album": "Darling Wanted! / Seishun Soda - EP",
+    "album": "Seishun Soda - Single",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
     "source": "itunes",
     "albumId": 1891258726,
@@ -9214,7 +9264,8 @@
     "albumId": 1440839411,
     "album_orig": "This Is War",
     "mbid": "0beef665-458d-4ba3-8838-005b4917019c",
-    "mb_release": "Church Point, LA"
+    "mb_release": "Church Point, LA",
+    "cover": "niji--bones-bones-bones.webp"
   },
   "952": {
     "song": "Kokoro TAKE OFF",
