@@ -141,6 +141,214 @@ function setupEvents(){
   document.getElementById('dark-toggle').onchange = e => {
     document.body.classList.toggle('dark', e.target.checked);
   };
+
+  // Setup Pointer Events Drag & Drop with Mouse Wheel Scroll support
+  setupPointerDrag();
+}
+
+/* --- Pointer Events Drag & Drop with Mouse Wheel Scroll Support --- */
+let currentDrag = null; // { id, sourceEl, startX, startY, isDragging, ghostEl }
+let lastClientX = 0;
+let lastClientY = 0;
+let autoScrollAnim = null;
+let justFinishedDrag = false;
+let activeDropTierRow = null;
+
+function setupPointerDrag() {
+  window.addEventListener('pointermove', onPointerMove, { passive: false });
+  window.addEventListener('pointerup', onPointerUp, { passive: false });
+  window.addEventListener('pointercancel', onPointerUp, { passive: false });
+
+  // Update target when scrolling with mouse wheel or page scroll during drag
+  window.addEventListener('wheel', () => {
+    if (currentDrag && currentDrag.isDragging) {
+      updateHoverTarget(lastClientX, lastClientY);
+    }
+  }, { passive: true });
+
+  window.addEventListener('scroll', () => {
+    if (currentDrag && currentDrag.isDragging) {
+      updateHoverTarget(lastClientX, lastClientY);
+    }
+  }, { passive: true });
+
+  // Prevent accidental click (e.g. opening detail modal) immediately after dropping a drag
+  window.addEventListener('click', e => {
+    if (justFinishedDrag) {
+      e.stopPropagation();
+      e.preventDefault();
+    }
+  }, true);
+}
+
+function attachPointerDrag(el, songId) {
+  el.addEventListener('pointerdown', e => {
+    // Only primary mouse button or touch
+    if (e.button !== 0 && e.pointerType === 'mouse') return;
+
+    // Ignore interactive controls
+    if (e.target.closest('select, button, input, a, .tier-card-rm')) return;
+
+    // For touch devices, only allow dragging from drag handle or tier card to preserve native page scroll
+    if (e.pointerType === 'touch' && !e.target.closest('.song-card-drag, .drag-handle, .tier-card')) {
+      return;
+    }
+
+    currentDrag = {
+      id: Number(songId),
+      sourceEl: el,
+      startX: e.clientX,
+      startY: e.clientY,
+      isDragging: false,
+      ghostEl: null
+    };
+    lastClientX = e.clientX;
+    lastClientY = e.clientY;
+  });
+}
+
+function createGhostElement(id) {
+  const s = songMap[id] || { id, title: 'Song #' + id, artist: '' };
+  const m = meta[String(id)] || {};
+  const albumName = m.album || m.collectionName || '(tanpa album)';
+  const sSeries = seriesOf(s.artist);
+  const artSrc = songCover(id, sSeries, albumName);
+
+  const ghost = document.createElement('div');
+  ghost.className = 'drag-ghost';
+  ghost.innerHTML = `
+    <img src="${artSrc}" alt="" onerror="this.classList.add('missing-img')">
+    <div class="drag-ghost-info">
+      <div class="drag-ghost-title">${esc(s.title)}</div>
+      <div class="drag-ghost-sub">${esc(s.artist || sSeries)}</div>
+    </div>
+  `;
+  document.body.appendChild(ghost);
+  return ghost;
+}
+
+function onPointerMove(e) {
+  if (!currentDrag) return;
+
+  lastClientX = e.clientX;
+  lastClientY = e.clientY;
+
+  if (!currentDrag.isDragging) {
+    const dist = Math.hypot(e.clientX - currentDrag.startX, e.clientY - currentDrag.startY);
+    if (dist > 6) {
+      currentDrag.isDragging = true;
+      currentDrag.ghostEl = createGhostElement(currentDrag.id);
+      currentDrag.sourceEl.classList.add('is-dragging');
+      document.body.classList.add('dragging-active');
+
+      if (!autoScrollAnim) {
+        autoScrollAnim = requestAnimationFrame(pointerAutoScrollLoop);
+      }
+    }
+  }
+
+  if (currentDrag.isDragging) {
+    e.preventDefault();
+    if (currentDrag.ghostEl) {
+      currentDrag.ghostEl.style.left = e.clientX + 'px';
+      currentDrag.ghostEl.style.top = e.clientY + 'px';
+    }
+    updateHoverTarget(e.clientX, e.clientY);
+  }
+}
+
+function updateHoverTarget(x, y) {
+  if (x == null || y == null) return;
+  const el = document.elementFromPoint(x, y);
+  const trow = el ? el.closest('.trow') : null;
+
+  if (trow !== activeDropTierRow) {
+    if (activeDropTierRow) {
+      activeDropTierRow.classList.remove('drop-active');
+    }
+    activeDropTierRow = trow;
+    if (activeDropTierRow) {
+      activeDropTierRow.classList.add('drop-active');
+    }
+  }
+}
+
+function onPointerUp(e) {
+  if (!currentDrag) return;
+
+  if (currentDrag.isDragging) {
+    if (e) e.preventDefault();
+    const dropTarget = activeDropTierRow || (document.elementFromPoint(lastClientX, lastClientY)?.closest('.trow'));
+
+    if (dropTarget) {
+      const tier = dropTarget.querySelector('.body')?.dataset.tier;
+      if (tier && TIERS.includes(tier)) {
+        const sid = currentDrag.id;
+        setTier(sid, tier);
+        renderTierlist();
+        renderGrid();
+        const s = songMap[sid];
+        showToast(`✅ "${s ? s.title : 'Lagu'}" masuk ke Tier ${tier}`);
+
+        const modal = document.getElementById('modal');
+        if (modal && !modal.classList.contains('hidden')) {
+          modal.classList.add('hidden');
+        }
+      }
+    }
+
+    // Cleanup
+    if (currentDrag.ghostEl && currentDrag.ghostEl.parentNode) {
+      currentDrag.ghostEl.parentNode.removeChild(currentDrag.ghostEl);
+    }
+    if (currentDrag.sourceEl) {
+      currentDrag.sourceEl.classList.remove('is-dragging');
+    }
+    document.body.classList.remove('dragging-active');
+
+    if (activeDropTierRow) {
+      activeDropTierRow.classList.remove('drop-active');
+      activeDropTierRow = null;
+    }
+
+    if (autoScrollAnim) {
+      cancelAnimationFrame(autoScrollAnim);
+      autoScrollAnim = null;
+    }
+
+    justFinishedDrag = true;
+    setTimeout(() => {
+      justFinishedDrag = false;
+    }, 120);
+  }
+
+  currentDrag = null;
+}
+
+function pointerAutoScrollLoop() {
+  if (!currentDrag || !currentDrag.isDragging) {
+    autoScrollAnim = null;
+    return;
+  }
+
+  const threshold = 110;
+  const maxSpeed = 22;
+  const viewportH = window.innerHeight;
+
+  if (lastClientY !== null) {
+    if (lastClientY >= 0 && lastClientY < threshold) {
+      const speed = Math.ceil((1 - Math.max(0, lastClientY) / threshold) * maxSpeed);
+      window.scrollBy(0, -speed);
+      updateHoverTarget(lastClientX, lastClientY);
+    } else if (viewportH - lastClientY < threshold) {
+      const dist = Math.max(0, viewportH - lastClientY);
+      const speed = Math.ceil((1 - dist / threshold) * maxSpeed);
+      window.scrollBy(0, speed);
+      updateHoverTarget(lastClientX, lastClientY);
+    }
+  }
+
+  autoScrollAnim = requestAnimationFrame(pointerAutoScrollLoop);
 }
 
 function renderSeriesNav(){
@@ -240,7 +448,6 @@ function renderSongGrid(){
 
     const card=document.createElement('div');
     card.className='song-card'+(curTier?' tiered':'');
-    card.draggable=true;
     card.dataset.id=s.id;
     card.innerHTML=`
       <div class="song-card-drag" title="Tarik ke tierlist">⋮⋮</div>
@@ -255,11 +462,8 @@ function renderSongGrid(){
       </select>
     `;
 
-    card.addEventListener('dragstart',e=>{
-      e.dataTransfer.setData('text/plain', String(s.id));
-      card.classList.add('dragging');
-    });
-    card.addEventListener('dragend',()=>card.classList.remove('dragging'));
+    attachPointerDrag(card, s.id);
+
     card.querySelector('select').addEventListener('change',e=>{
       e.stopPropagation();
       setTier(s.id, e.target.value);
@@ -279,7 +483,7 @@ function openModal(album){
   const body=document.getElementById('modal-body');
   let art=coverPath(album.series,album.album);
   let ls=album.songs.slice(0,60).map(s=>`
-    <li draggable="true" data-id="${s.id}" class="${isTiered(s.id)?'is-tiered-item':''}">
+    <li data-id="${s.id}" class="${isTiered(s.id)?'is-tiered-item':''}">
       <span class="drag-handle" title="Tarik lagu ini ke tier">⋮⋮</span>
       <span class="song-title" title="${esc(s.title)}">${esc(s.title)}</span>
       <span class="artist">· ${esc(s.artist||'')}</span>
@@ -317,13 +521,9 @@ function openModal(album){
     };
   }
 
-  body.querySelectorAll('li[draggable="true"]').forEach(li=>{
+  body.querySelectorAll('li[data-id]').forEach(li=>{
     const id=+li.dataset.id;
-    li.addEventListener('dragstart',e=>{
-      e.dataTransfer.setData('text/plain', String(id));
-      li.classList.add('dragging');
-    });
-    li.addEventListener('dragend',()=>li.classList.remove('dragging'));
+    attachPointerDrag(li, id);
     li.onclick=e=>{
       if(e.target.tagName.toLowerCase()==='select') return;
       openSongDetailModal(id);
@@ -491,7 +691,7 @@ function renderTierlist(){
       const sSeries=seriesOf(s.artist);
       const artSrc=songCover(id, sSeries, albumName);
 
-      const c=document.createElement('div');c.className='tier-card';c.draggable=true;
+      const c=document.createElement('div');c.className='tier-card';
       c.dataset.id=id;c.dataset.tier=t;
       c.title=`${s.title} (${s.artist||''})`;
       c.innerHTML=`
@@ -499,11 +699,7 @@ function renderTierlist(){
         <div class="tier-card-label">${esc(s.title)}</div>
         <button class="tier-card-rm" title="Lepas dari tier">&times;</button>
       `;
-      c.addEventListener('dragstart',e=>{
-        e.dataTransfer.setData('text/plain', String(id));
-        c.classList.add('dragging');
-      });
-      c.addEventListener('dragend',()=>c.classList.remove('dragging'));
+      attachPointerDrag(c, id);
       c.querySelector('.tier-card-rm').onclick=e=>{
         e.stopPropagation();
         setTier(id,'');
@@ -517,19 +713,6 @@ function renderTierlist(){
       body.appendChild(c);
     });
     if(!ids.length)body.innerHTML='<span class="empty" style="padding:0;font-size:11px">kosong</span>';
-
-    row.addEventListener('dragover',e=>{e.preventDefault();row.classList.add('drop-active');});
-    row.addEventListener('dragleave',()=>row.classList.remove('drop-active'));
-    row.addEventListener('drop',e=>{
-      e.preventDefault();row.classList.remove('drop-active');
-      const rawId=e.dataTransfer.getData('text/plain');
-      const idNum=parseInt(rawId, 10);
-      if(!isNaN(idNum) && idNum > 0){
-        setTier(idNum,t);
-        renderTierlist();
-        renderGrid();
-      }
-    });
     box.appendChild(row);
   }
 }
