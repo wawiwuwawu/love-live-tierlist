@@ -14,14 +14,19 @@ const SERIES_KEYWORDS={
  'Ikizurai-Bu':['ikizurai','ikizurai-bu','ikizuraibu','call me','kidokumachi','kobumi otome','chaki','plumina','mi×nori=tea','minori','sh1on','polka','mai','azabu','akira','hanabi','yukuri','aurora','midori','miracle','noriko','shion','chofu']
 };
 
+const SERIES_PATTERNS = Object.entries(SERIES_KEYWORDS).map(([s, keys]) => ({
+  series: s,
+  regexes: keys.map(k => {
+    const escKey = k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp(`(?:^|[^a-z0-9])${escKey}(?:$|[^a-z0-9])`, 'i');
+  })
+}));
+
 function seriesOf(artist){
-  const a=(artist||'').toLowerCase();
-  if(!a) return 'Lain';
-  for(const [s,keys] of Object.entries(SERIES_KEYWORDS)){
-    if(keys.some(k=>{
-      const esc=k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-      return new RegExp(`(?:^|[^a-z0-9])${esc}(?:$|[^a-z0-9])`,'i').test(a);
-    })) return s;
+  if (!artist) return 'Lain';
+  const a = artist.toLowerCase();
+  for (const { series, regexes } of SERIES_PATTERNS) {
+    if (regexes.some(r => r.test(a))) return series;
   }
   return 'Lain';
 }
@@ -642,10 +647,17 @@ function showToast(msg){
 }
 
 /* --- tiers & storage --- */
+function loadStore(){
+  try {
+    return JSON.parse(localStorage.getItem(STORE)) || {};
+  } catch {
+    return {};
+  }
+}
+
 function getStorage(t){
-  const data = JSON.parse(localStorage.getItem(STORE)||'{}')[t]||{};
+  const data = loadStore()[t] || {};
   delete data['NaN'];
-  delete data[NaN];
   delete data['undefined'];
   delete data['null'];
   return data;
@@ -656,23 +668,30 @@ function isTiered(id){
 }
 
 function getTier(id){
-  for(const t of TIERS) if(getStorage(t)[id]) return t;
+  const store = loadStore();
+  for(const t of TIERS){
+    const tierObj = store[t];
+    if(tierObj && (tierObj[id] || tierObj[String(id)])) return t;
+  }
   return '';
 }
 
-function setTier(id,t){
+function setTier(id, t){
   const numId = Number(id);
-  if(isNaN(numId) || !numId) return;
-  const st=JSON.parse(localStorage.getItem(STORE)||'{}');const s={};
-  for(const x of TIERS){
-    s[x]=getStorage(x);
-    delete s[x][numId];
-    delete s[x][String(numId)];
-    delete s[x]['NaN'];
-    delete s[x][NaN];
+  if(!numId || isNaN(numId)) return;
+  const store = loadStore();
+  for(const tier of TIERS){
+    if(!store[tier]) store[tier] = {};
+    delete store[tier][numId];
+    delete store[tier][String(numId)];
+    delete store[tier]['NaN'];
+    delete store[tier]['undefined'];
+    delete store[tier]['null'];
   }
-  if(t&&TIERS.includes(t)) s[t][numId]=true;
-  localStorage.setItem(STORE,JSON.stringify(s));
+  if(t && TIERS.includes(t)){
+    store[t][numId] = true;
+  }
+  localStorage.setItem(STORE, JSON.stringify(store));
 }
 
 function renderTierlist(){
@@ -780,13 +799,6 @@ function exportPNG(){
     alert('Gagal mengekspor gambar: ' + err.message);
   });
 }
-
-function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-function short(s){return s.length>26?s.slice(0,25)+'…':s;}
-
-load();
-document.getElementById('btn-reset').onclick=()=>{if(confirm('Reset semua tier?')){localStorage.removeItem(STORE);renderTierlist();}};
-document.getElementById('dark-toggle').onchange=e=>{document.body.classList.toggle('dark',e.target.checked)};
 
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function short(s){return s.length>26?s.slice(0,25)+'…':s;}
