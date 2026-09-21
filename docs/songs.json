@@ -7182,5 +7182,141 @@
     "date": "7/xx/2026",
     "center": "",
     "duration": ""
+  },
+  {
+    "id": 954,
+    "title": "Oide yo! Ishikawa Daikankou II",
+    "artist": "Hasunosora Girls' High School Idol Club",
+    "date": "2026-09-21",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 955,
+    "title": "Payappa♪Rizumikku Haato",
+    "artist": "Ruri&To",
+    "date": "2026-09-21",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 956,
+    "title": "Joou no Isu",
+    "artist": "PRINCEε>ε>",
+    "date": "2026-09-21",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 957,
+    "title": "Zenbu, Harukaze ni Natta",
+    "artist": "Ginko, Kosuzu, Hime, Izumi, Ceras",
+    "date": "2026-09-21",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 958,
+    "title": "Tsunaida Kyou no Bokutachi Yori",
+    "artist": "Kozue, Tsuziri, Megumi",
+    "date": "2026-09-21",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 959,
+    "title": "Tale of Primavera",
+    "artist": "Ikizurai-Bu!",
+    "date": "2026-11-25",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 960,
+    "title": "Honno Choppiri",
+    "artist": "Kanon",
+    "date": "2021-10-27",
+    "center": "Kanon",
+    "duration": ""
+  },
+  {
+    "id": 961,
+    "title": "Daisuki no Uta",
+    "artist": "Kanon",
+    "date": "2021-10-27",
+    "center": "Kanon",
+    "duration": ""
+  },
+  {
+    "id": 962,
+    "title": "Gusokumushi no Uta",
+    "artist": "Sumire",
+    "date": "2021-10-27",
+    "center": "Sumire",
+    "duration": ""
+  },
+  {
+    "id": 963,
+    "title": "Nikoichi",
+    "artist": "Hikaru, Mahya",
+    "date": "",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 964,
+    "title": "Kyun Kyun Zutto",
+    "artist": "Anzu",
+    "date": "",
+    "center": "Anzu",
+    "duration": ""
+  },
+  {
+    "id": 965,
+    "title": "Minna Iro",
+    "artist": "Misuzu, Toa, Rena, Sayaka Harukaze",
+    "date": "",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 966,
+    "title": "Chocotto Daisakusen▲",
+    "artist": "Rurika, Yuzuha, Yukino",
+    "date": "",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 967,
+    "title": "Akumu no Asa ni wa♪",
+    "artist": "Rurika, Yukino, Mahya, Misuzu, Sayaka Harukaze",
+    "date": "",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 968,
+    "title": "Tsubaki Taki Zakura Zensen Hattatsuchuu",
+    "artist": "Yuzuha, Hikaru, Anzu, Toa, Rena",
+    "date": "",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 969,
+    "title": "Hello Megu Sanka",
+    "artist": "Megumi",
+    "date": "",
+    "center": "Megumi",
+    "duration": ""
+  },
+  {
+    "id": 970,
+    "title": "As Time Goes By",
+    "artist": "Female Singer (Minami Takayama)",
+    "date": "2015-08-05",
+    "center": "",
+    "duration": ""
   }
 ]
