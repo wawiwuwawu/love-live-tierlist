@@ -10,7 +10,7 @@ const SERIES_KEYWORDS={
  'Niji':['nijigasaki','nijigaku','qu4rtz','diverdiva','azuna','a・zu','r3birth','yuuki','setsuna','ayumu','kasumi','shizuku','karin','ai','kanata','emma','rina','shioriko','shiroko','mia','lanzhu','yu'],
  'Liella':['liella','catchu','kaleidoscope','kaleidoscore','5yncri5e','syncrise','sunny','kanon','keke','chisato','sumire','ren','kinako','mei','shiki','natsumi','wien','margarete','tomari'],
  'Musical':['school idol musical','musical','tsubakisakuhana','takizakura','sim supports','rurika','yuzuha','yukino','hikaru','maya','anzu','misuzu','toa','rena','sayaka harukaze','madoka','kyoka'],
- 'Hasunosora':['hasu','hasunosora','nyaovenus','cerise','dollchestra','mira-cra','miracra','mira cra','edel','giiter','kaho','sayaka','kozue','tsuzuri','tsuziri','rurino','megumi','megu','kahomegu','gelato','ginko','kosuzu','hime','ceras'],
+ 'Hasunosora':['hasu','hasunosora','nyaovenus','cerise','dollchestra','mira-cra','miracra','mira cra','edel','giiter','kaho','sayaka murano','kozue','tsuzuri','tsuziri','rurino','megumi','megu','kahomegu','gelato','ginko','kosuzu','hime','ceras','ruri&to','prince'],
  'Ikizurai-Bu':['ikizurai','ikizurai-bu','ikizuraibu','call me','kidokumachi','kobumi otome','chaki','plumina','mi×nori=tea','minori','sh1on','polka','mai','azabu','akira','hanabi','yukuri','aurora','midori','miracle','noriko','shion','chofu']
 };
 
@@ -43,6 +43,8 @@ function songCover(id,series,album){
   }
   return coverPath(series,album);
 }
+
+function ytVideoId(url){const m=/(?:v=|youtu\.be\/|\/embed\/)([A-Za-z0-9_-]{6,})/.exec(url||'');return m?m[1]:'';}
 
 async function load(){
   [songs, meta] = await Promise.all([
@@ -555,6 +557,7 @@ function openSongDetailModal(id){
   const curTier = getTier(id);
 
   const body = document.getElementById('song-detail-body');
+  const ytV = ytVideoId(m.yt);
   body.innerHTML = `
     <div class="song-detail-header">
       <img src="${artSrc}" alt="" class="song-detail-img" onerror="this.classList.add('missing-img')">
@@ -575,6 +578,13 @@ function openSongDetailModal(id){
         </div>
       </div>
     </div>
+    ${ytV ? `
+    <a class="song-detail-yt" href="${esc(m.yt)}" target="_blank" rel="noopener" title="Buka di YouTube">
+      <img src="https://i.ytimg.com/vi/${ytV}/maxresdefault.jpg" alt="Thumbnail YouTube" loading="lazy"
+           onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://i.ytimg.com/vi/${ytV}/hqdefault.jpg'}else{this.classList.add('missing-img')}">
+      <span class="song-detail-yt-play">▶</span>
+      <span class="song-detail-yt-badge">YouTube</span>
+    </a>` : ''}
     <div class="song-detail-actions">
       <button id="btn-copy-title" class="btn-primary-lg">📋 Salin Judul Lagu</button>
       <button id="btn-copy-full" class="ghost">🎵 Salin (Judul - Artis)</button>
