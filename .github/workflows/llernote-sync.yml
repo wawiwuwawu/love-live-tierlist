@@ -1,0 +1,68 @@
+name: Sync LLerNote
+
+on:
+  schedule:
+    # Weekly, Monday 03:17 UTC. Change the cron if you prefer another window.
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: llernote-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Sync from upstream main
+        run: python scripts/sync_llernote.py --ref main --update-lock
+
+      - name: Verify synced data
+        run: |
+          python -m unittest discover -s scripts/tests -v
+          python scripts/verify_data.py
+          python scripts/sync_llernote.py --check
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open pull request
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          RUN_DATE="$(date -u +%Y-%m-%d)"
+          BRANCH="chore/llernote-sync-$(date -u +%Y%m%d-%H%M%S)"
+          COMMIT="$(python -c "import json; print(json.load(open('scripts/llernote.lock.json'))['commit'])")"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add -A
+          git commit -m "chore(data): sync LLerNote $RUN_DATE"
+          git push -u origin "$BRANCH"
+
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "chore(data): sync LLerNote $RUN_DATE" \
+            --body "Automated LLerNote sync. Upstream commit: $COMMIT. This PR was created by the scheduled llernote-sync workflow; review the data diff and let CI run before merging."

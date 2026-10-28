@@ -6,8 +6,8 @@ const TIERS=['S','A','B','C','D','F'];
 const TIER_COLOR={S:'var(--s)',A:'var(--a)',B:'var(--b)',C:'var(--c)',D:'var(--d)',F:'var(--f)'};
 const SERIES_KEYWORDS={
  'µs':['µ','printemps','bibi','lily white','\u00b5','muse','a-rise','stray','honoka','kotori','umi','hanayo','rin','maki','nico','eli','nozomi'],
- 'Aqours':['aqours','cyazalea','yyy','wai wai wai','cyaron','azalea','guilty','saint aqours','saint snow','chika','riko','kanan','dia','yoshiko','yohane','hanamaru','mari','ruby','you','gkss'],
- 'Niji':['nijigasaki','nijigaku','qu4rtz','diverdiva','azuna','a・zu','r3birth','yuuki','setsuna','ayumu','kasumi','shizuku','karin','ai','kanata','emma','rina','shioriko','shiroko','mia','lanzhu','yu'],
+ 'Aqours':['aqours','cyazalea','yyy','wai wai wai','cyaron','azalea','guilty','saint aqours','saint snow','chika','riko','kanan','dia','yoshiko','yohane','hanamaru','mari','ruby','you','gkss','aiscream'],
+ 'Niji':['nijigasaki','nijigaku','qu4rtz','diverdiva','azuna','a・zu','r3birth','yuuki','setsuna','ayumu','kasumi','shizuku','karin','ai','kanata','emma','rina','shioriko','shiroko','mia','lanzhu','yu','a.l.a.n'],
  'Liella':['liella','catchu','kaleidoscope','kaleidoscore','5yncri5e','syncrise','sunny','kanon','keke','chisato','sumire','ren','kinako','mei','shiki','natsumi','wien','margarete','tomari'],
  'Musical':['school idol musical','musical','tsubakisakuhana','takizakura','sim supports','rurika','yuzuha','yukino','hikaru','maya','anzu','misuzu','toa','rena','sayaka harukaze','madoka','kyoka'],
  'Hasunosora':['hasu','hasunosora','nyaovenus','cerise','dollchestra','mira-cra','miracra','mira cra','edel','giiter','kaho','sayaka murano','kozue','tsuzuri','tsuziri','rurino','megumi','megu','kahomegu','gelato','ginko','kosuzu','hime','ceras','ruri&to','prince'],
@@ -25,6 +25,9 @@ const SERIES_PATTERNS = Object.entries(SERIES_KEYWORDS).map(([s, keys]) => ({
 function seriesOf(artist){
   if (!artist) return 'Lain';
   const a = artist.toLowerCase();
+  // The 2026 AiScReam lineup is filed under Nijigasaki, while the
+  // original unit belongs to Sunshine.
+  if (a.includes('aiscream (2026)')) return 'Niji';
   for (const { series, regexes } of SERIES_PATTERNS) {
     if (regexes.some(r => r.test(a))) return series;
   }
@@ -57,6 +60,8 @@ async function load(){
   renderGrid();
   renderTierlist();
   document.title = `Love Live! Song Tierlist (${songs.length} lagu)`;
+  const songCount = document.getElementById('song-count');
+  if (songCount) songCount.textContent = songs.length;
 }
 
 function buildAlbums(){

@@ -7186,7 +7186,7 @@
   {
     "id": 954,
     "title": "Oide yo! Ishikawa Daikankou II",
-    "artist": "Hasunosora Girls' High School Idol Club",
+    "artist": "Hasunosora Girls' High School Idol Club (105)",
     "date": "2026-09-21",
     "center": "",
     "duration": ""
@@ -7316,6 +7316,22 @@
     "title": "As Time Goes By",
     "artist": "Female Singer (Minami Takayama)",
     "date": "2015-08-05",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 971,
+    "title": "Soleil Smile",
+    "artist": "Hasunosora Girls' High School Idol Club (105)",
+    "date": "2026-10-14",
+    "center": "",
+    "duration": ""
+  },
+  {
+    "id": 972,
+    "title": "Hyaku Okunen Bun no Shiawase",
+    "artist": "Hasunosora Girls' High School Idol Club (105)",
+    "date": "2026-10-14",
     "center": "",
     "duration": ""
   }

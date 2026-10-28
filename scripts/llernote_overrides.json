@@ -1,0 +1,31 @@
+{
+  "913": {
+    "artist": "Hasunosora Girls' High School Idol Club (105)",
+    "title_en": "Oide yo! Ishikawa Daikankou II"
+  },
+  "927": {
+    "local_id": 971,
+    "song": "Soleil Smile",
+    "title_en": "Soleil Smile",
+    "artist": "Hasunosora Girls' High School Idol Club (105)",
+    "yt": "https://youtu.be/CqYex5evGGI?si=0uynMsx4TdwDiC5X",
+    "album": "Soleil Smile - EP",
+    "album_orig": "ソレイユスマイル - EP",
+    "albumId": "6812995082",
+    "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ce/ac/ef/ceacef36-4ca9-a919-c5b5-2eb35e9b7b7b/4540774248360.png/1000x1000bb.jpg",
+    "cover": "hasunosora--soleil-smile-ep.webp",
+    "source": "llernote"
+  },
+  "928": {
+    "local_id": 972,
+    "song": "Hyaku Okunen Bun no Shiawase",
+    "title_en": "Hyaku Okunen Bun no Shiawase",
+    "artist": "Hasunosora Girls' High School Idol Club (105)",
+    "album": "Soleil Smile - EP",
+    "album_orig": "ソレイユスマイル - EP",
+    "albumId": "6812995082",
+    "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ce/ac/ef/ceacef36-4ca9-a919-c5b5-2eb35e9b7b7b/4540774248360.png/1000x1000bb.jpg",
+    "cover": "hasunosora--soleil-smile-ep.webp",
+    "source": "llernote"
+  }
+}

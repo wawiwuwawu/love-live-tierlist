@@ -10,6 +10,26 @@ are pushed changes to `main`, which auto-deploy to GitHub Pages.
 ### Added
 - Open-source repo setup: MIT license, code of conduct, security policy,
   issue/PR templates, Dependabot, community-focused README.
+- LLerNote sync pipeline (`scripts/sync_llernote.py`, `scripts/verify_data.py`)
+  with a pinned commit/hash lock, explicit local overrides, and a stdlib test
+  suite.
+- GitHub Actions: data verification on pushes/PRs and a weekly/manual LLerNote
+  sync that opens a branch + pull request instead of pushing to `main`.
+- Two new Hasunosora 105期 songs: **Soleil Smile** and **Hyaku Okunen Bun no
+  Shiawase** (released 2026-10-14), bringing the catalogue to **917 songs**.
+- README now credits [LLerNote](https://github.com/hamproductions/llernote) as
+  the primary song-data source and documents the sync/verification workflow.
+
+### Changed
+- Synced song metadata with LLerNote commit
+  `c1c62f512921b14f903d0373ac4bce7cb8f1ba6e`: added 13 wiki audio links,
+  corrected YouTube links for songs 949–952, set the official Soleil Smile
+  video override, filled missing release/English data, and normalized metadata
+  titles.
+- Replaced the legacy enrichment scripts with the LLerNote pipeline; removed
+  obsolete one-off/broken scripts and the unused Python dependency list.
+- The site header and document title now derive the song count from the loaded
+  data, and the header is updated to 917 songs.
 
 ## [0.1.0] — 2026-09-01
 

@@ -1,6 +1,11 @@
 # Love Live! All-Series Tierlist — Implementation Plan
 
-> Sumber: Google Sheets (902 lagu) + iTunes/Apple Search API (art) + MusicBrainz (fallback metadata)
+> **Historical document.** This was the original build plan (902-song Google
+> Sheet phase). The live data is now maintained from
+> [LLerNote](https://github.com/hamproductions/llernote) and currently contains
+> 917 songs. See [README.md](README.md) for the current pipeline and commands.
+
+> Sumber awal: Google Sheets (902 lagu) + iTunes/Apple Search API (art) + MusicBrainz (fallback metadata)
 
 ## Ringkasan Terverifikasi
 - **902 lagu**, 239 grup/artist — sheet `Songs` baris 52–953 (col: Song Name, Artist, Date, Center, Duration)
