@@ -25,8 +25,9 @@ into these categories:
   `html2canvas` script from a CDN. If that CDN is ever unavailable, the
   "Export PNG" button silently degrades; nothing is auto-executed beyond that
   script.
-- **Supply chain** — our data pipeline uses `openpyxl`, `pillow`, `requests`,
-  `pykakasi`. We pin versions in `requirements.txt`.
+- **Supply chain** — the data pipeline uses only the Python standard library.
+  The LLerNote upstream snapshot is pinned by commit and SHA-256 hashes in
+  `scripts/llernote.lock.json`; no third-party Python packages are required.
 
 ## Disclosure
 

@@ -11,37 +11,61 @@ big or small are welcome.
 
 ## What you can work on
 
-- **Better data**: missing **kanji titles** (`jp_title`), correct album/cover
-  mappings, more **MusicBrainz IDs**.
+- **Better data**: missing album art, cover mappings, or MusicBrainz IDs.
 - **New series**: when a new Love Live! series (or unit) is added, extend the
-  mapping in `scripts/` and the series tabs in `docs/app.js`.
-- **Frontend**: UI polish, accessibility, performance for 898 cards.
+  series mapping in `docs/app.js` and the metadata in `scripts/`.
+- **Frontend**: UI polish, accessibility, performance for 917 cards.
 - **Docs**: clearer README, better pipeline comments.
 
 ## Working with the data
 
-Songs live in `docs/songs.json`; the per-song enrichment lives in
-`docs/metadata.json`. Both are produced by the pipeline in `scripts/`.
+The canonical data lives in two files, with identical copies under `docs/`:
 
-If you fix a cover or add a kanji title, you can edit `metadata.json` directly
-(or regenerate via the scripts) and submit a PR — the web app reads those JSON
-files as-is.
+- `songs.json` — the 917 songs (`id`, `title`, `artist`, `date`, `center`, `duration`)
+- `metadata.json` — per-song enrichment (`album`, `art`, `cover`, MBID, kanji title, source)
+
+Most song identity fields are generated from
+**[LLerNote](https://github.com/hamproductions/llernote)**. Do not edit
+generated fields by hand unless you are fixing a deliberate local exception:
+
+1. Add the correction to `scripts/llernote_overrides.json`.
+2. Run the sync/verification commands below.
+3. Commit the override file and the regenerated JSON together.
+
+For a new LLerNote song, the sync script chooses the next local `id` and appends
+it to both data files. If the song needs an album, art, or cover, add those to
+the override entry. Local covers live in `docs/covers/` and should be WebP files
+named `{series-tag}--{album-slug}.webp`.
 
 ```bash
-# regenerate everything (MusicBrainz is rate-limited; be patient)
-./.venv/bin/python scripts/enrich.py
-./.venv/bin/python scripts/mb_enrich.py
-./.venv/bin/python scripts/jp_title.py
-./.venv/bin/python scripts/render_cards.py
+# check against the pinned snapshot (no writes)
+python scripts/sync_llernote.py --check
+
+# pull a newer upstream snapshot; writes data + lock
+python scripts/sync_llernote.py --ref main --update-lock
+
+# validate root/docs copies, ids, metadata, dates, and cover references
+python scripts/verify_data.py
+
+# unit tests for the merge/sync rules
+python -m unittest discover -s scripts/tests -v
 ```
+
+The sync script is intentionally conservative: LLerNote values replace local
+values when present, local values are kept when upstream is empty, and explicit
+overrides win over both. It refuses to mix a stale lock with a different
+snapshot unless you pass `--update-lock`.
 
 ## Before submitting
 
 1. Your branch is up to date with `main`.
-2. `node --check docs/app.js` passes if you touched any JS.
-3. Run `python3 -m http.server 8899` from `docs/` and visually confirm your
+2. `python scripts/sync_llernote.py --check` passes.
+3. `python scripts/verify_data.py` passes (warnings about pre-existing missing
+   art are okay unless your change introduces them).
+4. `node --check docs/app.js` passes if you touched any JS.
+5. Run `python3 -m http.server 8899` from `docs/` and visually confirm your
    change.
-4. Write a clear PR description linking any related issue (`fixes #N`).
+6. Write a clear PR description linking any related issue (`fixes #N`).
 
 ## Commit convention
 
@@ -50,14 +74,15 @@ Use conventional commits:
 ```
 feat: add kanji title for <song>
 fix: correct cover for <album>
-data: refresh metadata for Aqours singles
+data: refresh LLerNote snapshot
 docs: expand contributing guide
 ```
 
 ## Opening a PR
 
 - Describe **what** changed and **why**.
-- If it changes data, note the source (e.g. "from Apple/iTunes JP store").
+- If it changes data, note the source (for example, the LLerNote commit or an
+  override entry).
 - Squash messy history if it helps reviewers.
 
 Thanks again — *ganbatte!* 🎤🎶

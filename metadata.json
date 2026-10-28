@@ -250,7 +250,8 @@
     "series": "Love Live! School idol project",
     "llernote_artists": [
       "μ's"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/6/66/Okinawa_Touchaku%21.ogg/revision/latest?cb=20151030172719"
   },
   "68": {
     "song": "Watashitachi wa Mirai no Hana",
@@ -12296,7 +12297,8 @@
     "series": "幻日のヨハネ -SUNSHINE in the MIRROR-",
     "llernote_artists": [
       "ヨハネ"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/3/36/01_Drama_%22Yume_no_Miyako%2C_Yuki_Yukite%22.ogg/revision/latest?cb=20231031010614"
   },
   "633": {
     "song": "Wonder sea breeze",
@@ -12659,7 +12661,8 @@
     "series": "幻日のヨハネ -SUNSHINE in the MIRROR-",
     "llernote_artists": [
       "ヨハネ、ハナマル"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/2/29/01_Drama_%22Futari_ni_Nagareruru_Mono%22.ogg/revision/latest?cb=20231031011336"
   },
   "650": {
     "song": "Senpen Banka",
@@ -12765,7 +12768,8 @@
     "series": "幻日のヨハネ -SUNSHINE in the MIRROR-",
     "llernote_artists": [
       "ダイヤ、マリ"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/0/0b/01_Drama_%22Kimi_ni_Kakeru_Koto_no_Ha%22.ogg/revision/latest?cb=20240401081038"
   },
   "655": {
     "song": "KNOT",
@@ -12913,7 +12917,8 @@
     "series": "幻日のヨハネ -SUNSHINE in the MIRROR-",
     "llernote_artists": [
       "チカ、ヨウ、カナン"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/0/0e/Drama_%22Kaze%2C_Ukitatsu_Hi_no_Tsudoi%22.ogg/revision/latest?cb=20240401081656"
   },
   "662": {
     "song": "FANTASTiC",
@@ -13083,7 +13088,8 @@
     "series": "幻日のヨハネ -SUNSHINE in the MIRROR-",
     "llernote_artists": [
       "ルビィ、リコ"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/7/75/01_Drama_%22Sekkin%21_Kouki%3F_Kokoro_no_Tabi%22.ogg/revision/latest?cb=20240415052259"
   },
   "670": {
     "song": "Ao to Shabon",
@@ -13167,7 +13173,8 @@
     "series": "幻日のヨハネ -SUNSHINE in the MIRROR-",
     "llernote_artists": [
       "ヨハネ、ハナマル、ダイヤ、ルビィ、チカ、ヨウ、カナン、リコ、マリ"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/7/7d/01_Drama_%22Itsukushimu_Kokoro%2C_Mata_Meguru_Kyou%22.ogg/revision/latest?cb=20240415052625"
   },
   "674": {
     "song": "Colorfulness",
@@ -13273,7 +13280,8 @@
     "series": "幻日のヨハネ -SUNSHINE in the MIRROR-",
     "llernote_artists": [
       "ヨハネ、ライラプス、ハナマル、ダイヤ、ルビィ、チカ、ヨウ、カナン、リコ、マリ"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/0/02/01_Drama_%22Saita_Tsuioku%2C_Kokoro_no_Oto%22.ogg/revision/latest?cb=20240415051456"
   },
   "679": {
     "song": "Ishin☆Denshin",
@@ -16772,7 +16780,7 @@
     "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/d/d0/01._HomeRun_Queen%21%21.ogg/revision/latest?cb=20250917132417"
   },
   "844": {
-    "song": "Magical♡Recipe・S'il Vous Plait!",
+    "song": "Magical♡Recipe・S'il Vous Plaît!",
     "artist": "Miracle",
     "album": "HomeRun Queen!! - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/07/ad/8f/07ad8f23-430a-bab9-70b1-6992d06c778c/4540774247554.png/1000x1000bb.jpg",
@@ -18315,7 +18323,7 @@
     "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/5/50/01._EdelinieN.ogg/revision/latest?cb=20260407053653"
   },
   "917": {
-    "song": "Meu Amore・Meerkat",
+    "song": "Meu Amoré・Meerkat",
     "artist": "Edel Note",
     "album": "EdelinieN - EP",
     "art": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/76/09/44760969-1357-8238-9f7b-5bf4043020e5/4540774145232.png/1000x1000bb.jpg",
@@ -18498,7 +18506,8 @@
     "llernote_artists": [
       "AiScReam"
     ],
-    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/f/fe/01._NEXT_CARD.ogg/revision/latest?cb=20260522121435"
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/f/fe/01._NEXT_CARD.ogg/revision/latest?cb=20260522121435",
+    "released_on": "2026-05-23"
   },
   "926": {
     "song": "Hikari no Naka de Hana Saite",
@@ -18994,12 +19003,13 @@
     "jp_title": "潮風サイクリング",
     "title_en": "Shiokaze Cycling",
     "phonetic": "しおかぜさいくりんぐ",
-    "yt": "https://www.youtube.com/watch?v=iM9I-6tYvuM",
+    "yt": "https://www.youtube.com/watch?v=5wFKYm66hMk",
     "released_on": "2026-09-23",
     "series": "Nijigasaki High School Idol Club",
     "llernote_artists": [
       "QU4RTZ"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/0/01/01._Shiokaze_Cycling.ogg/revision/latest?cb=20260923043826"
   },
   "950": {
     "song": "Shiiwa Well",
@@ -19012,12 +19022,14 @@
     "llernote_id": "921",
     "jp_title": "シークウェル",
     "phonetic": "しーくうぇる",
-    "yt": "https://www.youtube.com/watch?v=iM9I-6tYvuM",
+    "yt": "https://www.youtube.com/watch?v=eXKdvbdK5Xs",
     "released_on": "2026-09-23",
     "series": "Nijigasaki High School Idol Club",
     "llernote_artists": [
       "QU4RTZ"
-    ]
+    ],
+    "title_en": "Shinyuu",
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/5/59/Shinyuu.ogg/revision/latest?cb=20231116170618"
   },
   "951": {
     "song": "BONES BONES BONES",
@@ -19034,12 +19046,13 @@
     "jp_title": "BONES BONES BONES",
     "title_en": "BONES BONES BONES",
     "phonetic": "ぼーんずぼーんずぼーんず",
-    "yt": "https://www.youtube.com/watch?v=JQKYTDujMJg",
+    "yt": "https://www.youtube.com/watch?v=dvSyrt3Eov8",
     "released_on": "2026-10-07",
     "series": "Nijigasaki High School Idol Club",
     "llernote_artists": [
       "R3BIRTH"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/f/fe/01._BONES_BONES_BONES.ogg/revision/latest?cb=20261007003008"
   },
   "952": {
     "song": "Kokoro TAKE OFF",
@@ -19053,12 +19066,13 @@
     "jp_title": "ココロ TAKE OFF",
     "title_en": "Kokoro TAKE OFF",
     "phonetic": "こころていくおふ",
-    "yt": "https://www.youtube.com/watch?v=JQKYTDujMJg",
+    "yt": "https://www.youtube.com/watch?v=yV1CY6ofSKM",
     "released_on": "2026-10-07",
     "series": "Nijigasaki High School Idol Club",
     "llernote_artists": [
       "R3BIRTH"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/a/af/02._Kokoro_TAKE_OFF.ogg/revision/latest?cb=20261007003016"
   },
   "953": {
     "song": "Skip・Capsule",
@@ -19080,7 +19094,7 @@
   },
   "954": {
     "song": "Oide yo! Ishikawa Daikankou II",
-    "artist": "Hasunosora Girls' High School Idol Club",
+    "artist": "Hasunosora Girls' High School Idol Club (105)",
     "album": "Oide yo! Ishikawa Daikankou II",
     "art": "",
     "source": "llernote",
@@ -19093,7 +19107,8 @@
     "series": "Hasunosora Girls' High School Idol Club",
     "llernote_artists": [
       "蓮ノ空女学院スクールアイドルクラブ"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/6/66/01._Oide_yo%21_Ishikawa_Daikankou.ogg/revision/latest?cb=20250325112702"
   },
   "955": {
     "song": "Payappa♪Rizumikku Haato",
@@ -19336,7 +19351,8 @@
     "series": "Hasunosora Girls' High School Idol Club",
     "llernote_artists": [
       "藤島 慈"
-    ]
+    ],
+    "yt": "https://www.youtube.com/watch?v=t8-4pHSEGQw"
   },
   "970": {
     "song": "As Time Goes By",
@@ -19353,6 +19369,46 @@
     "series": "Love Live! School idol project",
     "llernote_artists": [
       "女性シンガー"
+    ]
+  },
+  "971": {
+    "song": "Soleil Smile",
+    "artist": "Hasunosora Girls' High School Idol Club (105)",
+    "album": "Soleil Smile - EP",
+    "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ce/ac/ef/ceacef36-4ca9-a919-c5b5-2eb35e9b7b7b/4540774248360.png/1000x1000bb.jpg",
+    "source": "llernote",
+    "albumId": "6812995082",
+    "album_orig": "ソレイユスマイル - EP",
+    "cover": "hasunosora--soleil-smile-ep.webp",
+    "jp_title": "ソレイユスマイル",
+    "llernote_id": "927",
+    "title_en": "Soleil Smile",
+    "phonetic": "それいゆすまいる",
+    "yt": "https://youtu.be/CqYex5evGGI?si=0uynMsx4TdwDiC5X",
+    "released_on": "2026-10-14",
+    "series": "Hasunosora Girls' High School Idol Club",
+    "llernote_artists": [
+      "蓮ノ空女学院スクールアイドルクラブ"
+    ]
+  },
+  "972": {
+    "song": "Hyaku Okunen Bun no Shiawase",
+    "artist": "Hasunosora Girls' High School Idol Club (105)",
+    "album": "Soleil Smile - EP",
+    "art": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ce/ac/ef/ceacef36-4ca9-a919-c5b5-2eb35e9b7b7b/4540774248360.png/1000x1000bb.jpg",
+    "source": "llernote",
+    "albumId": "6812995082",
+    "album_orig": "ソレイユスマイル - EP",
+    "cover": "hasunosora--soleil-smile-ep.webp",
+    "jp_title": "百億年分のしあわせ",
+    "llernote_id": "928",
+    "title_en": "Hyaku Okunen Bun no Shiawase",
+    "phonetic": "ひゃくおくねんぶんのしあわせ",
+    "yt": "https://www.youtube.com/watch?v=JOUAXJyxVXk",
+    "released_on": "2026-10-14",
+    "series": "Hasunosora Girls' High School Idol Club",
+    "llernote_artists": [
+      "蓮ノ空女学院スクールアイドルクラブ"
     ]
   }
 }

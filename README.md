@@ -4,7 +4,7 @@
 
 **The complete interactive tierlist for every Love Live! song.**
 
-A static, open-source web app to rank all **898 Love Live! songs** (µ's · Aqours · Nijigasaki · Liella! · Hasunosora · others) by tier — with drag-and-drop, per-song album art, MusicBrainz IDs and kanji titles.
+A static, open-source web app to rank all **917 Love Live! songs** (µ's · Aqours · Nijigasaki · Liella! · Hasunosora · School Idol Musical · Yohane · BLUEBIRD) by tier — with drag-and-drop, per-song album art, MusicBrainz IDs and kanji titles.
 
 ![GitHub License](https://img.shields.io/github/license/wawiwuwawu/love-live-tierlist)
 ![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-blueviolet)
@@ -21,7 +21,7 @@ A static, open-source web app to rank all **898 Love Live! songs** (µ's · Aqou
 
 ## ✨ Features
 
-- **898 songs**, grouped by series: µ's · Aqours · Nijigasaki · Liella! · Hasunosora · Lain (other/units)
+- **917 songs**, grouped by series: µ's · Aqours · Nijigasaki · Liella! · Hasunosora · School Idol Musical · Yohane · BLUEBIRD
 - **Global tierlist** (S/A/B/C/D/F) with **drag-and-drop** — ranks songs across *all* series at once
 - Two views: **By Album** (grid of album art) and **By Song** (direct drag)
 - **Per-song detail modal** with:
@@ -37,64 +37,104 @@ A static, open-source web app to rank all **898 Love Live! songs** (µ's · Aqou
 
 ## 🗂 Data
 
-- **Song list:** `The Love Live! Google Sheet by BS Anime` (informal community reference of ~900 songs)
-- **Album/song identity:** [MusicBrainz](https://musicbrainz.org) IDs (MBID) — the authoritative source for release mapping (~49% of songs have an MBID; the rest are newer unit / game-exclusive songs not yet in the database)
-- **Cover art:** Apple / iTunes Search API (highest availability for JP releases)
-- **Kanji titles:** iTunes JP store (`*.jp_title` in `metadata.json`)
-- Speculative / unreleased placeholders (e.g. the "Niji movie 3" rows) are **excluded** by default.
+The catalogue is maintained from **[LLerNote](https://github.com/hamproductions/llernote)** — an
+open-source, offline-first Love Live! song database. Its `data/song-info.json` is the
+source of truth for:
+
+- Japanese titles (`jp_title`), English/romaji titles (`title_en`), and phonetics (`phonetic`)
+- Release dates, series membership, artist credits, YouTube links, and wiki audio
+- New songs when LLerNote adds them to the catalogue
+
+Additional data comes from:
+
+- **Album / cover art:** Apple / iTunes Search API (highest availability for JP releases)
+- **MusicBrainz:** release metadata and MBIDs where available (493 of 917 songs)
+- **Manual corrections:** `scripts/llernote_overrides.json` for local display names,
+  new-song album/art mappings, and cases where the project intentionally differs from
+  upstream (for example, the English title of “Oide yo! Ishikawa Daikankou II”).
+
+LLerNote data is pinned in [`scripts/llernote.lock.json`](scripts/llernote.lock.json)
+(commit + SHA-256 hashes of the five upstream JSON files). This keeps builds and
+verification reproducible even when the upstream `main` branch moves. The lock is
+updated by the sync workflow; see below.
 
 ## 📁 Project structure
 
 ```
 .
-├── docs/                  # ← GitHub Pages root (the deployable static site)
-│   ├── index.html        #   single-page app (per-song / per-album views)
-│   ├── app.js            #   all frontend logic
+├── docs/                       # ← GitHub Pages root (the deployable static site)
+│   ├── index.html              #   single-page app (per-song / per-album views)
+│   ├── app.js                  #   all frontend logic
 │   ├── style.css
-│   ├── songs.json        #   the 898 songs
-│   ├── metadata.json     #   per-song: album, cover, MBID, kanji title, source
-│   └── covers/           #   rendered album-cover cards (WebP)
-├── scripts/              # data pipeline (Python 3.11+, Python venv)
-│   ├── enrich.py         #   iTunes + MusicBrainz metadata fetch
-│   ├── mb_enrich.py      #   MusicBrainz ID matching (rate-limited, resumable)
-│   ├── jp_title.py       #   kanji title fetch (iTunes JP)
-│   └── render_cards.py   #   compose album-cover cards (Pillow → WebP)
-├── songs.json / metadata.json   # pipeline copies (same as docs/)
+│   ├── songs.json              #   the 917 songs
+│   ├── metadata.json           #   per-song: album, cover, MBID, kanji title, source
+│   └── covers/                 #   album-cover WebP files
+├── scripts/                    # LLerNote pipeline (Python 3.11+, stdlib only)
+│   ├── sync_llernote.py        #   sync upstream data + write the lock
+│   ├── verify_data.py          #   structural and cross-file validation
+│   ├── llernote_common.py      #   shared sync/verification helpers
+│   ├── llernote_overrides.json #   explicit local corrections
+│   ├── llernote.lock.json      #   pinned upstream commit + file hashes
+│   └── tests/                  #   stdlib unittest suite
+├── .github/workflows/          # CI verification + scheduled LLerNote PR
+├── songs.json / metadata.json  # pipeline copies (same as docs/)
 └── LICENSE · CONTRIBUTING.md · CHANGELOG.md …
 ```
 
 ## 🚀 Getting started
 
-The site is **100% static** — no build step. Run it locally:
+The site is **100% static** — no build step and no runtime dependencies. Run it locally:
 
 ```bash
-# Python 3.11+, create a venv
-python3 -m venv .venv && . .venv/bin/activate
-pip install -r requirements.txt   # or: openpyxl pillow requests pykakasi
-
 # serve the deployed site
-cd docs && python3 -m http.server 8899
+cd docs
+python3 -m http.server 8899
 # open http://localhost:8899
 ```
 
-### Rebuild the data (optional)
+The Python scripts use only the standard library, so no virtualenv or
+`pip install` is required.
+
+### Sync and verify the data
 
 ```bash
-./.venv/bin/python scripts/enrich.py        # album + cover metadata
-./.venv/bin/python scripts/mb_enrich.py     # MusicBrainz IDs (resumable, ~1 req/s)
-./.venv/bin/python scripts/jp_title.py      # kanji titles
-./.venv/bin/python scripts/render_cards.py  # regenerate covers/*.webp
+# Check the local data against the pinned LLerNote snapshot
+python scripts/sync_llernote.py --check
+
+# Fetch the latest upstream main, update data, and refresh the lock
+python scripts/sync_llernote.py --ref main --update-lock
+
+# Structural checks: root/docs copies, ids, metadata, dates, covers
+python scripts/verify_data.py
+
+# Unit tests for the sync/merge rules
+python -m unittest discover -s scripts/tests -v
 ```
 
-> MusicBrainz enforces ~1 request/second. `mb_enrich.py` saves checkpoints
-> (`mb_checkpoint.json`) so interrupted runs resume where they left off.
+`sync_llernote.py` never silently deletes local songs or hand-written values:
+LLerNote values win when present, local values are kept when upstream is empty,
+and `llernote_overrides.json` wins over both. New upstream songs are appended
+with the next local id; if a new song has no album/cover, add an override and
+a cover file, then rerun `verify_data.py`.
+
+## 🤖 Automation
+
+Two GitHub Actions workflows keep the data current:
+
+- **`verify.yml`** runs on every push and pull request: unit tests, local data
+  validation, and a drift check against the pinned LLerNote snapshot.
+- **`llernote-sync.yml`** runs weekly and on manual dispatch: syncs upstream
+  `main`, verifies the result, commits to a `chore/llernote-sync-*` branch, and
+  opens a pull request against `main` instead of pushing directly.
+
+The scheduled sync creates a normal PR for review; it does not auto-merge.
 
 ## 📦 Deployment
 
 **GitHub Pages serves `main` / `docs` directly** — no separate branch needed.
 
-1. Make your edits under `docs/` (or run the scripts to regenerate data).
-2. Push to `main` — GitHub Pages rebuilds automatically.
+1. Merge data/UI changes into `main` (the sync workflow opens a PR for LLerNote updates).
+2. GitHub Pages rebuilds automatically from `docs/`.
 3. Done: `<user>.github.io/love-live-tierlist/`
 
 ## 🤝 Contributing
@@ -102,7 +142,11 @@ cd docs && python3 -m http.server 8899
 Contributions are welcome — missing kanji titles, better cover mappings, UI
 polish, or new Love Live! series. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+When changing song data, prefer updating `scripts/llernote_overrides.json` or
+the LLerNote upstream project instead of editing the generated JSON by hand.
+
 ## 📜 License
 
 [MIT](LICENSE). All Love Live! series trademarks/characters/covers belong to
-their owners; this project is a fan work.
+their owners; this project is a fan work. LLerNote is a separate community
+project; see its repository for its own terms and credits.

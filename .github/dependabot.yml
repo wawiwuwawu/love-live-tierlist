@@ -1,14 +1,7 @@
 # Keep dependencies up to date
 version: 2
 updates:
-  # Python data pipeline
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10
-
-  # GitHub Actions workflows (if any are added later)
+  # GitHub Actions workflows
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
