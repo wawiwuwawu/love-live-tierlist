@@ -1,7 +1,240 @@
 /* Love Live! All-Series Song Tierlist */
 const STORE='ll_tiers_v1';
+const LANG_KEY='ll_lang_v1';
+const THEME_KEY='ll_theme_v1';
 let songs=[], meta={}, albums={}, songMap={};
 let currentSeries='All', currentView='songs', searchQuery='', hideTiered=true;
+let currentLang='en', currentTheme='light';
+let activeAlbum=null, activeSongId=null;
+
+const I18N={
+  en:{
+    'meta.title': `Love Live! Song Tierlist ({count} songs)`,
+    'header.subtitlePrefix': `µ's · Aqours · Nijigasaki · Liella! · Hasunosora · Musical · Yohane · BLUEBIRD —`,
+    'header.subtitleSuffix': `songs, one tierlist`,
+    'search.placeholder': `🔍 Search songs or albums...`,
+    'view.albums': `📁 By Album`,
+    'view.songs': `🎵 By Song (Direct Drag)`,
+    'toolbar.hideTiered': `Hide tiered`,
+    'actions.exportPng': `📷 Export PNG`,
+    'actions.backup': `💾 Backup`,
+    'actions.backupTitle': `Save data to a JSON file`,
+    'actions.import': `📂 Import`,
+    'actions.importTitle': `Load data from a JSON file`,
+    'actions.reset': `Reset`,
+    'theme.label': `Dark mode`,
+    'lang.label': `Language`,
+    'tierlist.title': `Global Tierlist`,
+    'tierlist.tip': `💡 Drag song covers from the gallery below directly onto a tier row`,
+    'tierlist.clear': `Clear All Tiers`,
+    'grid.songs': `Pick & Drag Songs to Tierlist`,
+    'grid.albums': `Album & Single List`,
+    'export.heading': `📷 Tierlist PNG Export`,
+    'export.download': `⬇️ Download Image (PNG)`,
+    'nav.all': `All`,
+    'series.other': `Other`,
+    'stats': `{albums} albums · {songs} songs · {tiered} tiered`,
+    'empty.albums': `No matching albums.`,
+    'empty.songs': `🎉 All songs are already tiered! (Or no songs match your search.)`,
+    'album.none': `(no album)`,
+    'album.count': `{count} songs`,
+    'album.moreSongs': `+{count} more songs…`,
+    'album.setAll': `Set all songs to tier:`,
+    'album.choose': `— Choose —`,
+    'album.tierOption': `Tier {tier}`,
+    'album.clearOption': `Reset (Clear)`,
+    'album.cleared': `Cleared all songs in {album}`,
+    'album.setAllToast': `✅ Set all songs to Tier {tier}`,
+    'song.fallback': `Song #{id}`,
+    'song.fallbackSimple': `Song`,
+    'song.dragToTierlist': `Drag to tierlist`,
+    'song.dragToTier': `Drag this song to a tier`,
+    'song.removeFromTier': `Remove from tier`,
+    'detail.copyJpTitle': `Copy Japanese title`,
+    'detail.copyJp': `📋 Copy`,
+    'detail.copyTitle': `📋 Copy Song Title`,
+    'detail.copyFull': `🎵 Copy (Title - Artist)`,
+    'detail.released': `📅 Released: {date}`,
+    'detail.center': `⭐ Center: {center}`,
+    'detail.currentTier': `Current tier:`,
+    'detail.noTier': `— Not tiered —`,
+    'detail.youtube': `Open on YouTube`,
+    'detail.youtubeAlt': `YouTube thumbnail`,
+    'toast.drag': `✅ "{title}" added to Tier {tier}`,
+    'toast.copyTitle': `✅ Song title copied!`,
+    'toast.copyFull': `✅ (Title - Artist) copied!`,
+    'toast.copyJp': `✅ Japanese title copied!`,
+    'toast.copyFail': `Failed to copy text.`,
+    'toast.imported': `✅ Tierlist data imported!`,
+    'toast.invalidJson': `❌ Invalid JSON file.`,
+    'toast.exportLibrary': `The html2canvas library is not ready. Make sure you are connected to the internet.`,
+    'toast.generating': `⏳ Generating...`,
+    'toast.exportFailed': `Failed to export image: {error}`,
+    'confirm.clear': `Remove all songs from the tierlist?`,
+    'confirm.reset': `Reset all tierlist data?`,
+    'tier.empty': `empty`,
+    'grid.tierPlaceholder': `— Tier —`
+  },
+  id:{
+    'meta.title': `Love Live! Song Tierlist ({count} lagu)`,
+    'header.subtitlePrefix': `µ's · Aqours · Nijigasaki · Liella! · Hasunosora · Musical · Yohane · BLUEBIRD —`,
+    'header.subtitleSuffix': `lagu, satu tierlist`,
+    'search.placeholder': `🔍 Cari lagu atau album...`,
+    'view.albums': `📁 Per Album`,
+    'view.songs': `🎵 Per Lagu (Direct Drag)`,
+    'toolbar.hideTiered': `Sembunyikan ter-tier`,
+    'actions.exportPng': `📷 Export PNG`,
+    'actions.backup': `💾 Backup`,
+    'actions.backupTitle': `Simpan data ke file JSON`,
+    'actions.import': `📂 Import`,
+    'actions.importTitle': `Muat data dari file JSON`,
+    'actions.reset': `Reset`,
+    'theme.label': `Mode gelap`,
+    'lang.label': `Bahasa`,
+    'tierlist.title': `Tierlist Global`,
+    'tierlist.tip': `💡 Tarik (drag) foto lagu dari galeri bawah langsung ke baris tier`,
+    'tierlist.clear': `Kosongkan Semua Tier`,
+    'grid.songs': `Pilih & Drag Lagu Ke Tierlist`,
+    'grid.albums': `Daftar Album & Single`,
+    'export.heading': `📷 Hasil Export Tierlist PNG`,
+    'export.download': `⬇️ Unduh Gambar (PNG)`,
+    'nav.all': `Semua`,
+    'series.other': `Lain`,
+    'stats': `{albums} album · {songs} lagu · {tiered} ter-tier`,
+    'empty.albums': `Belum ada album yang cocok.`,
+    'empty.songs': `🎉 Semua lagu telah masuk ke tierlist! (Atau tidak ada lagu yang cocok dengan pencarian).`,
+    'album.none': `(tanpa album)`,
+    'album.count': `{count} lagu`,
+    'album.moreSongs': `+{count} lagu lagi…`,
+    'album.setAll': `Set Semua Lagu ke Tier:`,
+    'album.choose': `— Pilih —`,
+    'album.tierOption': `Tier {tier}`,
+    'album.clearOption': `Reset (Kosongkan)`,
+    'album.cleared': `Semua lagu di {album} sudah dikosongkan`,
+    'album.setAllToast': `✅ Semua lagu diset ke Tier {tier}`,
+    'song.fallback': `Lagu #{id}`,
+    'song.fallbackSimple': `Lagu`,
+    'song.dragToTierlist': `Tarik ke tierlist`,
+    'song.dragToTier': `Tarik lagu ini ke tier`,
+    'song.removeFromTier': `Lepas dari tier`,
+    'detail.copyJpTitle': `Salin judul kanji`,
+    'detail.copyJp': `📋 Salin`,
+    'detail.copyTitle': `📋 Salin Judul Lagu`,
+    'detail.copyFull': `🎵 Salin (Judul - Artis)`,
+    'detail.released': `📅 Rilis: {date}`,
+    'detail.center': `⭐ Center: {center}`,
+    'detail.currentTier': `Tier Saat Ini:`,
+    'detail.noTier': `— Belum Ter-tier —`,
+    'detail.youtube': `Buka di YouTube`,
+    'detail.youtubeAlt': `Thumbnail YouTube`,
+    'toast.drag': `✅ "{title}" masuk ke Tier {tier}`,
+    'toast.copyTitle': `✅ Judul lagu berhasil disalin!`,
+    'toast.copyFull': `✅ (Judul - Artis) berhasil disalin!`,
+    'toast.copyJp': `✅ Judul kanji berhasil disalin!`,
+    'toast.copyFail': `Gagal menyalin teks.`,
+    'toast.imported': `✅ Data tierlist berhasil di-import!`,
+    'toast.invalidJson': `❌ File JSON tidak valid.`,
+    'toast.exportLibrary': `Library html2canvas belum siap. Pastikan koneksi internet terhubung.`,
+    'toast.generating': `⏳ Membuat...`,
+    'toast.exportFailed': `Gagal mengekspor gambar: {error}`,
+    'confirm.clear': `Kosongkan semua lagu dari tierlist?`,
+    'confirm.reset': `Reset semua data tierlist?`,
+    'tier.empty': `kosong`,
+    'grid.tierPlaceholder': `— Tier —`
+  }
+};
+
+function t(key, vars={}){
+  const table=I18N[currentLang]||I18N.en;
+  const text=table[key] ?? I18N.en[key] ?? key;
+  return String(text).replace(/\{(\w+)\}/g, (_, name) => vars[name] !== undefined ? String(vars[name]) : `{${name}}`);
+}
+
+function getStoredLang(){
+  try { return localStorage.getItem(LANG_KEY)==='id' ? 'id' : 'en'; } catch { return 'en'; }
+}
+function getStoredTheme(){
+  try { return localStorage.getItem(THEME_KEY)==='dark' ? 'dark' : 'light'; } catch { return 'light'; }
+}
+function applyStaticTranslations(){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    el.textContent=t(el.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{
+    el.placeholder=t(el.dataset.i18nPlaceholder);
+  });
+  document.querySelectorAll('[data-i18n-title]').forEach(el=>{
+    el.title=t(el.dataset.i18nTitle);
+  });
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(el=>{
+    el.setAttribute('aria-label', t(el.dataset.i18nAriaLabel));
+  });
+}
+function syncLangButtons(){
+  document.querySelectorAll('[data-lang]').forEach(btn=>{
+    const active=btn.dataset.lang===currentLang;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', String(active));
+  });
+}
+function setLanguage(lang, persist=true){
+  if(lang!=='en' && lang!=='id') return;
+  currentLang=lang;
+  if(persist){ try { localStorage.setItem(LANG_KEY, lang); } catch {} }
+  document.documentElement.lang=lang;
+  applyStaticTranslations();
+  syncLangButtons();
+  if(songs.length){
+    renderSeriesNav();
+    renderGrid();
+    renderTierlist();
+    document.title=t('meta.title', {count:songs.length});
+  }
+  refreshOpenModals();
+}
+function setTheme(dark, persist=true){
+  currentTheme=dark ? 'dark' : 'light';
+  document.documentElement.classList.toggle('dark', !!dark);
+  if(persist){ try { localStorage.setItem(THEME_KEY, currentTheme); } catch {} }
+  const input=document.getElementById('dark-toggle');
+  if(input){
+    input.checked=!!dark;
+    input.setAttribute('aria-checked', String(!!dark));
+  }
+}
+function initPreferences(){
+  currentLang=getStoredLang();
+  currentTheme=getStoredTheme();
+  document.documentElement.lang=currentLang;
+  document.documentElement.classList.toggle('dark', currentTheme==='dark');
+  applyStaticTranslations();
+  syncLangButtons();
+  const input=document.getElementById('dark-toggle');
+  if(input){
+    input.checked=currentTheme==='dark';
+    input.setAttribute('aria-checked', String(currentTheme==='dark'));
+  }
+}
+function updateGridTitle(){
+  const el=document.getElementById('grid-title');
+  if(el) el.textContent=t(currentView==='albums' ? 'grid.albums' : 'grid.songs');
+}
+function displayAlbum(album){
+  return album==='(tanpa album)' ? t('album.none') : album;
+}
+function seriesLabel(series){
+  return series==='Lain' ? t('series.other') : series;
+}
+function refreshOpenModals(){
+  const albumModal=document.getElementById('modal');
+  if(albumModal && !albumModal.classList.contains('hidden') && activeAlbum){
+    openModal(activeAlbum);
+  }
+  const detailModal=document.getElementById('song-detail-modal');
+  if(detailModal && !detailModal.classList.contains('hidden') && activeSongId!=null){
+    openSongDetailModal(activeSongId);
+  }
+}
 const TIERS=['S','A','B','C','D','F'];
 const TIER_COLOR={S:'var(--s)',A:'var(--a)',B:'var(--b)',C:'var(--c)',D:'var(--d)',F:'var(--f)'};
 const SERIES_KEYWORDS={
@@ -50,6 +283,7 @@ function songCover(id,series,album){
 function ytVideoId(url){const m=/(?:v=|youtu\.be\/|\/embed\/)([A-Za-z0-9_-]{6,})/.exec(url||'');return m?m[1]:'';}
 
 async function load(){
+  initPreferences();
   [songs, meta] = await Promise.all([
     fetch('songs.json').then(r=>r.json()),
     fetch('metadata.json').then(r=>r.json())
@@ -59,7 +293,7 @@ async function load(){
   renderSeriesNav();
   renderGrid();
   renderTierlist();
-  document.title = `Love Live! Song Tierlist (${songs.length} lagu)`;
+  document.title = t('meta.title', {count:songs.length});
   const songCount = document.getElementById('song-count');
   if (songCount) songCount.textContent = songs.length;
 }
@@ -99,14 +333,14 @@ function setupEvents(){
       currentView='albums';
       btnAlbums.classList.add('active');
       btnSongs.classList.remove('active');
-      document.getElementById('grid-title').textContent = 'Daftar Album & Single';
+      updateGridTitle();
       renderGrid();
     };
     btnSongs.onclick=()=>{
       currentView='songs';
       btnSongs.classList.add('active');
       btnAlbums.classList.remove('active');
-      document.getElementById('grid-title').textContent = 'Pilih & Drag Lagu Ke Tierlist';
+      updateGridTitle();
       renderGrid();
     };
   }
@@ -129,14 +363,14 @@ function setupEvents(){
 
   // Clear & Reset
   document.getElementById('btn-clear-tiers').onclick = () => {
-    if(confirm('Kosongkan semua lagu dari tierlist?')){
+    if(confirm(t('confirm.clear'))){
       localStorage.removeItem(STORE);
       renderTierlist();
       renderGrid();
     }
   };
   document.getElementById('btn-reset').onclick = () => {
-    if(confirm('Reset semua data tierlist?')){
+    if(confirm(t('confirm.reset'))){
       localStorage.removeItem(STORE);
       renderTierlist();
       renderGrid();
@@ -150,9 +384,14 @@ function setupEvents(){
     if(e.target.id==='export-modal') e.target.classList.add('hidden');
   });
 
-  document.getElementById('dark-toggle').onchange = e => {
-    document.body.classList.toggle('dark', e.target.checked);
-  };
+  document.querySelectorAll('[data-lang]').forEach(btn=>{
+    btn.onclick=()=>setLanguage(btn.dataset.lang);
+  });
+
+  const darkToggle = document.getElementById('dark-toggle');
+  if(darkToggle){
+    darkToggle.onchange = e => setTheme(e.target.checked);
+  }
 
   // Setup Pointer Events Drag & Drop with Mouse Wheel Scroll support
   setupPointerDrag();
@@ -220,7 +459,7 @@ function attachPointerDrag(el, songId) {
 }
 
 function createGhostElement(id) {
-  const s = songMap[id] || { id, title: 'Song #' + id, artist: '' };
+  const s = songMap[id] || { id, title: t('song.fallback', {id}), artist: '' };
   const m = meta[String(id)] || {};
   const albumName = m.album || m.collectionName || '(tanpa album)';
   const sSeries = seriesOf(s.artist);
@@ -300,11 +539,12 @@ function onPointerUp(e) {
         renderTierlist();
         renderGrid();
         const s = songMap[sid];
-        showToast(`✅ "${s ? s.title : 'Lagu'}" masuk ke Tier ${tier}`);
+        showToast(t('toast.drag', {title:s ? s.title : t('song.fallbackSimple'), tier}));
 
         const modal = document.getElementById('modal');
         if (modal && !modal.classList.contains('hidden')) {
           modal.classList.add('hidden');
+          activeAlbum=null;
         }
       }
     }
@@ -369,14 +609,18 @@ function renderSeriesNav(){
   const order=['µs','Aqours','Niji','Liella','Hasunosora','Musical','Ikizurai-Bu','Lain'];
   const nav=document.getElementById('seriesnav');
   nav.innerHTML='';
-  [['All',songs.length],...order.map(s=>[s,counts[s]||0])].forEach(([label,n],i)=>{
+  const entries=[
+    {key:'All', label:t('nav.all'), count:songs.length},
+    ...order.map(series=>({key:series, label:seriesLabel(series), count:counts[series]||0}))
+  ];
+  entries.forEach(({key,label,count})=>{
     const b=document.createElement('button');
-    b.innerHTML=label==='All'?`Semua <span class="c">${n}</span>`:`${label} <span class="c">${n}</span>`;
-    if(i===0) b.classList.add('active');
+    b.innerHTML=`${label} <span class="c">${count}</span>`;
+    if(currentSeries===key) b.classList.add('active');
     b.onclick=()=>{
       nav.querySelectorAll('button').forEach(x=>x.classList.remove('active'));
       b.classList.add('active');
-      currentSeries = label;
+      currentSeries = key;
       renderGrid();
     };
     nav.appendChild(b);
@@ -386,8 +630,12 @@ function renderSeriesNav(){
 
 function updateStats(){
   const totalTiered = countTotalTiered();
-  const t=document.getElementById('stats');
-  t.textContent=`${Object.keys(albums).length} album · ${songs.length} lagu · ${totalTiered} ter-tier`;
+  const stats=document.getElementById('stats');
+  stats.textContent=t('stats', {
+    albums:Object.keys(albums).length,
+    songs:songs.length,
+    tiered:totalTiered
+  });
 }
 
 function countTotalTiered(){
@@ -399,6 +647,7 @@ function countTotalTiered(){
 }
 
 function renderGrid(){
+  updateGridTitle();
   if(currentView === 'songs'){
     renderSongGrid();
   } else {
@@ -416,12 +665,13 @@ function renderAlbumGrid(){
   if(searchQuery){
     list=list.filter(a=>a.album.toLowerCase().includes(searchQuery) || a.songs.some(s=>s.title.toLowerCase().includes(searchQuery)));
   }
-  if(!list.length){g.innerHTML='<div class="empty">Belum ada album yang cocok.</div>';return;}
+  if(!list.length){g.innerHTML=`<div class="empty">${esc(t('empty.albums'))}</div>`;return;}
   list.sort((a,b)=>(a.series+b.album).localeCompare(b.series+a.album));
   for(const a of list){
     const card=document.createElement('div');card.className='card';
     const slugName=coverPath(a.series,a.album);
-    card.innerHTML=`<img loading="lazy" src="${slugName}" alt="${esc(a.album)}" draggable="false" onerror="this.classList.add('missing-img');"><div class="cap"><span title="${esc(a.album)}">${esc(short(a.album))}</span><span class="n">${a.songs.length}</span></div>`;
+    const albumLabel=displayAlbum(a.album);
+    card.innerHTML=`<img loading="lazy" src="${slugName}" alt="${esc(albumLabel)}" draggable="false" onerror="this.classList.add('missing-img');"><div class="cap"><span title="${esc(albumLabel)}">${esc(short(albumLabel))}</span><span class="n">${a.songs.length}</span></div>`;
     card.onclick=()=>openModal(a);
     g.appendChild(card);
   }
@@ -447,7 +697,7 @@ function renderSongGrid(){
   }
 
   if(!list.length){
-    g.innerHTML='<div class="empty">🎉 Semua lagu telah masuk ke tierlist! (Atau tidak ada lagu yang cocok dengan pencarian).</div>';
+    g.innerHTML=`<div class="empty">${esc(t('empty.songs'))}</div>`;
     return;
   }
 
@@ -462,15 +712,15 @@ function renderSongGrid(){
     card.className='song-card'+(curTier?' tiered':'');
     card.dataset.id=s.id;
     card.innerHTML=`
-      <div class="song-card-drag" title="Tarik ke tierlist">⋮⋮</div>
+      <div class="song-card-drag" title="${esc(t('song.dragToTierlist'))}">⋮⋮</div>
       <img src="${artSrc}" alt="" draggable="false" onerror="this.classList.add('missing-img')">
       <div class="song-card-info">
         <div class="song-card-title" title="${esc(s.title)}">${esc(s.title)}</div>
         <div class="song-card-sub" title="${esc(s.artist||'')}">${esc(s.artist||'')}</div>
       </div>
       <select data-id="${s.id}">
-        <option value="">— Tier —</option>
-        ${TIERS.map(t=>`<option value="${t}" ${curTier===t?'selected':''}>${t}</option>`).join('')}
+        <option value="">${esc(t('grid.tierPlaceholder'))}</option>
+        ${TIERS.map(tier=>`<option value="${tier}" ${curTier===tier?'selected':''}>${tier}</option>`).join('')}
       </select>
     `;
 
@@ -496,27 +746,28 @@ function openModal(album){
   let art=coverPath(album.series,album.album);
   let ls=album.songs.slice(0,60).map(s=>`
     <li data-id="${s.id}" class="${isTiered(s.id)?'is-tiered-item':''}">
-      <span class="drag-handle" title="Tarik lagu ini ke tier">⋮⋮</span>
+      <span class="drag-handle" title="${esc(t('song.dragToTier'))}">⋮⋮</span>
       <span class="song-title" title="${esc(s.title)}">${esc(s.title)}</span>
       <span class="artist">· ${esc(s.artist||'')}</span>
-      <select data-id="${s.id}"><option value="">— Tier —</option>${TIERS.map(t=>`<option value="${t}" ${getTier(s.id)===t?'selected':''}>${t}</option>`).join('')}</select>
+      <select data-id="${s.id}"><option value="">${esc(t('grid.tierPlaceholder'))}</option>${TIERS.map(tier=>`<option value="${tier}" ${getTier(s.id)===tier?'selected':''}>${tier}</option>`).join('')}</select>
     </li>
-  `).join('') + (album.songs.length>60?`<div class="empty">+${album.songs.length-60} lagu lagi…</div>`:'');
+  `).join('') + (album.songs.length>60?`<div class="empty">${esc(t('album.moreSongs', {count:album.songs.length-60}))}</div>`:'');
 
   body.innerHTML=`
     <div class="alb"><img src="${art}" draggable="false" onerror="this.classList.add('missing-img')"><div class="meta">
-      <h3>${esc(album.album)} <mark class="tag">${album.series}</mark></h3>
-      <div class="album-meta-sub">${album.songs.length} lagu</div>
+      <h3>${esc(displayAlbum(album.album))} <mark class="tag">${seriesLabel(album.series)}</mark></h3>
+      <div class="album-meta-sub">${esc(t('album.count', {count:album.songs.length}))}</div>
       <div class="album-batch-rank">
-        <span>Set Semua Lagu ke Tier:</span>
+        <span>${esc(t('album.setAll'))}</span>
         <select id="batch-album-select">
-          <option value="">— Pilih —</option>
-          ${TIERS.map(t=>`<option value="${t}">Tier ${t}</option>`).join('')}
-          <option value="CLEAR">Riset (Kosongkan)</option>
+          <option value="">${esc(t('album.choose'))}</option>
+          ${TIERS.map(tier=>`<option value="${tier}">${esc(t('album.tierOption', {tier}))}</option>`).join('')}
+          <option value="CLEAR">${esc(t('album.clearOption'))}</option>
         </select>
       </div>
     </div></div>
     <ul class="songlist">${ls}</ul>`;
+  activeAlbum=album;
   document.getElementById('modal').classList.remove('hidden');
 
   const batchSel = document.getElementById('batch-album-select');
@@ -529,7 +780,9 @@ function openModal(album){
       renderTierlist();
       renderGrid();
       openModal(album);
-      showToast(val === 'CLEAR' ? `Cleared all songs in ${album.album}` : `✅ Set semua lagu ke Tier ${val}`);
+      showToast(val === 'CLEAR'
+        ? t('album.cleared', {album:displayAlbum(album.album)})
+        : t('album.setAllToast', {tier:val}));
     };
   }
 
@@ -548,8 +801,8 @@ function openModal(album){
     renderGrid();
   });
 }
-document.getElementById('modal-close').onclick=()=>document.getElementById('modal').classList.add('hidden');
-document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')e.target.classList.add('hidden');});
+document.getElementById('modal-close').onclick=()=>{activeAlbum=null;document.getElementById('modal').classList.add('hidden');};
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal'){activeAlbum=null;e.target.classList.add('hidden');}});
 
 /* --- Song Detail Modal & Toast --- */
 function openSongDetailModal(id){
@@ -568,34 +821,35 @@ function openSongDetailModal(id){
       <img src="${artSrc}" alt="" class="song-detail-img" onerror="this.classList.add('missing-img')">
       <div class="song-detail-meta">
         <h2>${esc(s.title)}</h2>
-        ${m.jp_title ? `<p class="song-detail-jp">🇯🇵 <span class="jp-text">${esc(m.jp_title)}</span> <button class="ghost" id="btn-copy-jp" title="Salin judul kanji">📋 Salin</button></p>` : ''}
+        ${m.jp_title ? `<p class="song-detail-jp">🇯🇵 <span class="jp-text">${esc(m.jp_title)}</span> <button class="ghost" id="btn-copy-jp" title="${esc(t('detail.copyJpTitle'))}">${esc(t('detail.copyJp'))}</button></p>` : ''}
         <p class="song-detail-artist">🎤 ${esc(s.artist || 'Love Live!')}</p>
-        <p class="song-detail-album">💿 Album: <strong>${esc(albumName)}</strong> <mark class="tag">${sSeries}</mark></p>
-        ${s.date ? `<p class="song-detail-extra">📅 Rilis: ${esc(s.date)}</p>` : ''}
-        ${s.center ? `<p class="song-detail-extra">⭐ Center: ${esc(s.center)}</p>` : ''}
+        <p class="song-detail-album">💿 Album: <strong>${esc(displayAlbum(albumName))}</strong> <mark class="tag">${seriesLabel(sSeries)}</mark></p>
+        ${s.date ? `<p class="song-detail-extra">${esc(t('detail.released', {date:s.date}))}</p>` : ''}
+        ${s.center ? `<p class="song-detail-extra">${esc(t('detail.center', {center:s.center}))}</p>` : ''}
         
         <div class="song-detail-tier-select">
-          <label>Tier Saat Ini:</label>
+          <label>${esc(t('detail.currentTier'))}</label>
           <select id="detail-tier-select">
-            <option value="">— Belum Ter-tier —</option>
-            ${TIERS.map(t => `<option value="${t}" ${curTier === t ? 'selected' : ''}>Tier ${t}</option>`).join('')}
+            <option value="">${esc(t('detail.noTier'))}</option>
+            ${TIERS.map(tier => `<option value="${tier}" ${curTier === tier ? 'selected' : ''}>${esc(t('album.tierOption', {tier}))}</option>`).join('')}
           </select>
         </div>
       </div>
     </div>
     ${ytV ? `
-    <a class="song-detail-yt" href="${esc(m.yt)}" target="_blank" rel="noopener" title="Buka di YouTube">
-      <img src="https://i.ytimg.com/vi/${ytV}/maxresdefault.jpg" alt="Thumbnail YouTube" loading="lazy"
+    <a class="song-detail-yt" href="${esc(m.yt)}" target="_blank" rel="noopener" title="${esc(t('detail.youtube'))}">
+      <img src="https://i.ytimg.com/vi/${ytV}/maxresdefault.jpg" alt="${esc(t('detail.youtubeAlt'))}" loading="lazy"
            onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://i.ytimg.com/vi/${ytV}/hqdefault.jpg'}else{this.classList.add('missing-img')}">
       <span class="song-detail-yt-play">▶</span>
       <span class="song-detail-yt-badge">YouTube</span>
     </a>` : ''}
     <div class="song-detail-actions">
-      <button id="btn-copy-title" class="btn-primary-lg">📋 Salin Judul Lagu</button>
-      <button id="btn-copy-full" class="ghost">🎵 Salin (Judul - Artis)</button>
+      <button id="btn-copy-title" class="btn-primary-lg">${esc(t('detail.copyTitle'))}</button>
+      <button id="btn-copy-full" class="ghost">${esc(t('detail.copyFull'))}</button>
     </div>
   `;
 
+  activeSongId=id;
   document.getElementById('song-detail-modal').classList.remove('hidden');
 
   document.getElementById('detail-tier-select').onchange = e => {
@@ -605,22 +859,28 @@ function openSongDetailModal(id){
   };
 
   document.getElementById('btn-copy-title').onclick = () => {
-    copyToClipboard(s.title, '✅ Judul lagu berhasil disalin!');
+    copyToClipboard(s.title, t('toast.copyTitle'));
   };
 
   document.getElementById('btn-copy-full').onclick = () => {
-    copyToClipboard(`${s.title} - ${s.artist || ''}`, '✅ (Judul - Artis) berhasil disalin!');
+    copyToClipboard(`${s.title} - ${s.artist || ''}`, t('toast.copyFull'));
   };
 
   const jpBtn = document.getElementById('btn-copy-jp');
   if (jpBtn && m.jp_title) {
-    jpBtn.onclick = () => copyToClipboard(m.jp_title, '✅ Judul kanji berhasil disalin!');
+    jpBtn.onclick = () => copyToClipboard(m.jp_title, t('toast.copyJp'));
   }
 }
 
-document.getElementById('song-detail-close').onclick = () => document.getElementById('song-detail-modal').classList.add('hidden');
+document.getElementById('song-detail-close').onclick = () => {
+  activeSongId=null;
+  document.getElementById('song-detail-modal').classList.add('hidden');
+};
 document.getElementById('song-detail-modal').addEventListener('click', e => {
-  if(e.target.id==='song-detail-modal') e.target.classList.add('hidden');
+  if(e.target.id==='song-detail-modal'){
+    activeSongId=null;
+    e.target.classList.add('hidden');
+  }
 });
 
 function copyToClipboard(text, successMsg){
@@ -644,7 +904,7 @@ function fallbackCopy(text, successMsg){
     document.execCommand('copy');
     showToast(successMsg);
   } catch (err) {
-    alert('Gagal menyalin teks.');
+    alert(t('toast.copyFail'));
   }
   document.body.removeChild(textArea);
 }
@@ -712,26 +972,26 @@ function setTier(id, t){
 function renderTierlist(){
   const box=document.getElementById('tiers');
   box.innerHTML='';
-  const remmap={};for(const t of TIERS){remmap[t]={...getStorage(t)};}
-  for(const t of TIERS){
-    const ids=Object.keys(remmap[t]).map(Number).filter(id=>!isNaN(id)&&id>0);
+  const remmap={};for(const tier of TIERS){remmap[tier]={...getStorage(tier)};}
+  for(const tier of TIERS){
+    const ids=Object.keys(remmap[tier]).map(Number).filter(id=>!isNaN(id)&&id>0);
     const row=document.createElement('div');row.className='trow';
-    row.innerHTML=`<div class="lab ${t.toLowerCase()}">${t}</div><div class="body" data-tier="${t}"></div>`;
+    row.innerHTML=`<div class="lab ${tier.toLowerCase()}">${tier}</div><div class="body" data-tier="${tier}"></div>`;
     const body=row.querySelector('.body');
     ids.forEach(id=>{
-      const s=songMap[id]||{id, title:'Song #'+id, artist:''};
+      const s=songMap[id]||{id, title:t('song.fallback', {id}), artist:''};
       const m=meta[String(id)]||{};
       const albumName=m.album || m.collectionName || '(tanpa album)';
       const sSeries=seriesOf(s.artist);
       const artSrc=songCover(id, sSeries, albumName);
 
       const c=document.createElement('div');c.className='tier-card';
-      c.dataset.id=id;c.dataset.tier=t;
+      c.dataset.id=id;c.dataset.tier=tier;
       c.title=`${s.title} (${s.artist||''})`;
       c.innerHTML=`
         <img class="tier-card-img" src="${artSrc}" alt="${esc(s.title)}" draggable="false" onerror="this.classList.add('missing-img');">
         <div class="tier-card-label">${esc(s.title)}</div>
-        <button class="tier-card-rm" title="Lepas dari tier">&times;</button>
+        <button class="tier-card-rm" title="${esc(t('song.removeFromTier'))}">&times;</button>
       `;
       attachPointerDrag(c, id);
       c.querySelector('.tier-card-rm').onclick=e=>{
@@ -746,7 +1006,7 @@ function renderTierlist(){
       };
       body.appendChild(c);
     });
-    if(!ids.length)body.innerHTML='<span class="empty" style="padding:0;font-size:11px">kosong</span>';
+    if(!ids.length)body.innerHTML=`<span class="empty" style="padding:0;font-size:11px">${esc(t('tier.empty'))}</span>`;
     box.appendChild(row);
   }
 }
@@ -772,10 +1032,10 @@ function importJSON(file){
         localStorage.setItem(STORE, JSON.stringify(parsed));
         renderTierlist();
         renderGrid();
-        alert('✅ Data tierlist berhasil di-import!');
+        alert(t('toast.imported'));
       }
     } catch(err){
-      alert('❌ File JSON tidak valid.');
+      alert(t('toast.invalidJson'));
     }
   };
   reader.readAsText(file);
@@ -784,20 +1044,20 @@ function importJSON(file){
 /* --- PNG Export (html2canvas) --- */
 function exportPNG(){
   if(typeof html2canvas === 'undefined'){
-    alert('Library html2canvas belum siap. Pastikan koneksi internet terhubung.');
+    alert(t('toast.exportLibrary'));
     return;
   }
   const tierSection = document.getElementById('tierlist');
   const btn = document.getElementById('btn-export-png');
-  btn.textContent = '⏳ Generating...';
+  btn.textContent = t('toast.generating');
   btn.disabled = true;
 
   html2canvas(tierSection, {
     scale: 2,
     useCORS: true,
-    backgroundColor: getComputedStyle(document.body).getPropertyValue('--bg') || '#14121d'
+    backgroundColor: getComputedStyle(document.body).getPropertyValue('--bg') || '#f4f1f8'
   }).then(canvas => {
-    btn.textContent = '📷 Export PNG';
+    btn.textContent = t('actions.exportPng');
     btn.disabled = false;
     const container = document.getElementById('export-preview-container');
     container.innerHTML = '';
@@ -809,9 +1069,9 @@ function exportPNG(){
     downloadLink.href = img.src;
     document.getElementById('export-modal').classList.remove('hidden');
   }).catch(err => {
-    btn.textContent = '📷 Export PNG';
+    btn.textContent = t('actions.exportPng');
     btn.disabled = false;
-    alert('Gagal mengekspor gambar: ' + err.message);
+    alert(t('toast.exportFailed', {error:err.message}));
   });
 }
 

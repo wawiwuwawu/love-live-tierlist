@@ -4,7 +4,7 @@
 
 **The complete interactive tierlist for every Love Live! song.**
 
-A static, open-source web app to rank all **917 Love Live! songs** (µ's · Aqours · Nijigasaki · Liella! · Hasunosora · School Idol Musical · Yohane · BLUEBIRD) by tier — with drag-and-drop, per-song album art, MusicBrainz IDs and kanji titles.
+A static, open-source web app to rank all **917 Love Live! songs** (µ's · Aqours · Nijigasaki · Liella! · Hasunosora · School Idol Musical · Yohane · BLUEBIRD) by tier — with drag-and-drop, per-song album art, MusicBrainz IDs, kanji titles, and a bilingual English/Indonesian interface.
 
 ![GitHub License](https://img.shields.io/github/license/wawiwuwawu/love-live-tierlist)
 ![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-blueviolet)
@@ -30,9 +30,10 @@ A static, open-source web app to rank all **917 Love Live! songs** (µ's · Aqou
   - Artist, album, release date, center, tier selector
 - **Copy to clipboard**: song title, kanji, or `Title - Artist`
 - **Search** by song title, artist, or album
+- **English by default** with a one-click **Bahasa Indonesia** toggle; the choice is remembered
 - **localStorage persistence** — your rankings survive page reloads; **Export/Import** JSON as backup
 - **Export PNG** — capture your tierlist as an image (via `html2canvas`)
-- **Dark mode**
+- **Light mode by default**, with a persistent dark-mode switch (no flash on reload)
 - Fully **static** → free hosting on GitHub Pages, no backend
 
 ## 🗂 Data

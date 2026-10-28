@@ -30,6 +30,13 @@ are pushed changes to `main`, which auto-deploy to GitHub Pages.
   obsolete one-off/broken scripts and the unused Python dependency list.
 - The site header and document title now derive the song count from the loaded
   data, and the header is updated to 917 songs.
+- The interface is now English by default with a persistent EN/ID language
+  switch. The theme now defaults to light, with an accessible persistent dark
+  switch and no flash on load.
+
+### Fixed
+- `scripts/verify_data.py` now prints Japanese series names correctly on
+  Windows consoles using legacy code pages.
 
 ## [0.1.0] — 2026-09-01
 

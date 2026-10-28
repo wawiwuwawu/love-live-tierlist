@@ -4,7 +4,8 @@
   --s:#ef5350; --a:#fb8c00; --b:#fbc02d; --c:#66bb6a; --d:#42a5f5; --f:#9e9e9e;
   --radius:14px; --shadow:0 6px 20px rgba(60,40,90,.10);
 }
-body.dark{
+html.dark{color-scheme:dark}
+html.dark body{
   --bg:#14121d; --card:#1d1a2b; --text:#ece7f7; --muted:#9a91b5;
   --border:#2b2640; --shadow:0 6px 20px rgba(0,0,0,.45);
 }
@@ -12,9 +13,12 @@ body.dark{
 body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);transition:.25s}
 #app{max-width:1180px;margin:0 auto;padding:24px 18px 80px}
 
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.top-title{min-width:0}
 .top h1{font-size:26px;margin:0;letter-spacing:.2px}
 .top h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .sub{margin:6px 0 0;color:var(--muted);font-size:14px}
+.prefs{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-top:4px}
 
 .series{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
 .series button{border:1px solid var(--border);background:var(--card);color:var(--text);
@@ -32,7 +36,17 @@ body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;backgrou
 .actions{display:flex;gap:10px;align-items:center}
 button.ghost{border:1px solid var(--border);background:var(--card);color:var(--text);padding:7px 13px;border-radius:10px;cursor:pointer}
 button.ghost:hover{border-color:var(--accent);color:var(--accent)}
-.switch{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+.lang-switch{display:inline-flex;align-items:center;gap:2px;background:var(--card);border:1px solid var(--border);border-radius:999px;padding:2px}
+.lang-switch button{border:0;background:transparent;color:var(--muted);font-size:11px;font-weight:700;padding:4px 8px;border-radius:999px;cursor:pointer;letter-spacing:.04em}
+.lang-switch button.active{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff}
+.lang-switch button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.switch{position:relative;display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);cursor:pointer;user-select:none}
+.switch input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer;z-index:2}
+.switch-track{position:relative;width:38px;height:22px;background:var(--border);border-radius:999px;transition:background .2s;flex:0 0 auto}
+.switch-track::after{content:"";position:absolute;width:18px;height:18px;left:2px;top:2px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .2s}
+.switch input:checked + .switch-track{background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.switch input:checked + .switch-track::after{transform:translateX(16px)}
+.switch input:focus-visible + .switch-track{outline:2px solid var(--accent);outline-offset:2px}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;cursor:pointer;
@@ -115,7 +129,7 @@ button.ghost-sm:hover{border-color:var(--s);color:var(--s)}
   transition:opacity .25s, transform .25s;
   pointer-events:none;
 }
-body.dark .toast{
+html.dark .toast{
   background:#ece7f7;
   color:#14121d;
 }

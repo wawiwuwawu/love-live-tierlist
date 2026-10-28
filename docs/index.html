@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Love Live! All-Series Song Tierlist</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎀</text></svg>" />
+<script>
+  (function () {
+    try {
+      if (localStorage.getItem('ll_theme_v1') === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    } catch (e) {}
+  })();
+</script>
 <link rel="stylesheet" href="style.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
 <div id="app">
   <header class="top">
-    <h1>🎀 Love Live! <span>Song Tierlist</span></h1>
-    <p class="sub">µ's · Aqours · Nijigasaki · Liella! · Hasunosora · Musical · Yohane · BLUEBIRD — <span id="song-count">917</span> lagu, satu tierlist</p>
+    <div class="top-title">
+      <h1>🎀 Love Live! <span>Song Tierlist</span></h1>
+      <p class="sub"><span data-i18n="header.subtitlePrefix">µ's · Aqours · Nijigasaki · Liella! · Hasunosora · Musical · Yohane · BLUEBIRD —</span> <span id="song-count">917</span> <span data-i18n="header.subtitleSuffix">songs, one tierlist</span></p>
+    </div>
+    <div class="prefs">
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria-label="lang.label">
+        <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+        <button type="button" data-lang="id" aria-pressed="false">ID</button>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="dark-toggle" role="switch" aria-checked="false" />
+        <span class="switch-track" aria-hidden="true"></span>
+        <span data-i18n="theme.label">Dark mode</span>
+      </label>
+    </div>
   </header>
 
   <!-- Series nav -->
@@ -20,24 +43,23 @@
   <!-- Toolbar -->
   <div class="toolbar">
     <div class="search-box">
-      <input type="search" id="search-input" placeholder="🔍 Cari lagu atau album..." />
+      <input type="search" id="search-input" placeholder="🔍 Search songs or albums..." data-i18n-placeholder="search.placeholder" />
     </div>
     <div class="view-switch">
-      <button id="btn-view-albums">📁 Per Album</button>
-      <button id="btn-view-songs" class="active">🎵 Per Lagu (Direct Drag)</button>
+      <button id="btn-view-albums" data-i18n="view.albums">📁 By Album</button>
+      <button id="btn-view-songs" class="active" data-i18n="view.songs">🎵 By Song (Direct Drag)</button>
     </div>
     <label class="toggle-label">
       <input type="checkbox" id="hide-tiered-toggle" checked />
-      <span>Sembunyikan ter-tier</span>
+      <span data-i18n="toolbar.hideTiered">Hide tiered</span>
     </label>
     <div class="stats" id="stats"></div>
     <div class="actions">
-      <button id="btn-export-png" class="btn-primary">📷 Export PNG</button>
-      <button id="btn-export-json" class="ghost" title="Simpan data ke file JSON">💾 Backup</button>
-      <button id="btn-import-json" class="ghost" title="Muat data dari file JSON">📂 Import</button>
+      <button id="btn-export-png" class="btn-primary" data-i18n="actions.exportPng">📷 Export PNG</button>
+      <button id="btn-export-json" class="ghost" title="Save data to a JSON file" data-i18n="actions.backup" data-i18n-title="actions.backupTitle">💾 Backup</button>
+      <button id="btn-import-json" class="ghost" title="Load data from a JSON file" data-i18n="actions.import" data-i18n-title="actions.importTitle">📂 Import</button>
       <input type="file" id="json-file-input" accept=".json" style="display:none" />
-      <button id="btn-reset" class="ghost">Reset</button>
-      <label class="switch"><input type="checkbox" id="dark-toggle" checked /><span>Dark</span></label>
+      <button id="btn-reset" class="ghost" data-i18n="actions.reset">Reset</button>
     </div>
   </div>
 
@@ -45,11 +67,11 @@
   <section id="tierlist" class="tiers">
     <div class="tier-head">
       <div class="tier-head-title">
-        <span>Tierlist Global</span>
-        <span class="tier-tip">💡 Tarik (drag) foto lagu dari galeri bawah langsung ke baris tier</span>
+        <span data-i18n="tierlist.title">Global Tierlist</span>
+        <span class="tier-tip" data-i18n="tierlist.tip">💡 Drag song covers from the gallery below directly onto a tier row</span>
       </div>
       <div class="tier-head-actions">
-        <button id="btn-clear-tiers" class="ghost-sm">Kosongkan Semua Tier</button>
+        <button id="btn-clear-tiers" class="ghost-sm" data-i18n="tierlist.clear">Clear All Tiers</button>
       </div>
     </div>
     <div id="tiers"></div>
@@ -57,7 +79,7 @@
 
   <!-- Album / Song grid -->
   <div class="grid-header">
-    <h2 id="grid-title">Pilih & Drag Lagu Ke Tierlist</h2>
+    <h2 id="grid-title" data-i18n="grid.songs">Pick & Drag Songs to Tierlist</h2>
   </div>
   <section id="grid" class="grid"></section>
 </div>
@@ -82,10 +104,10 @@
 <div id="export-modal" class="modal hidden">
   <div class="modal-box export-box">
     <button id="export-close" class="close">&times;</button>
-    <h3>📷 Hasil Export Tierlist PNG</h3>
+    <h3 data-i18n="export.heading">📷 Tierlist PNG Export</h3>
     <div id="export-preview-container" class="export-preview"></div>
     <div class="export-actions">
-      <a id="download-png-link" class="btn-primary-lg" download="love-live-tierlist.png">⬇️ Unduh Gambar (PNG)</a>
+      <a id="download-png-link" class="btn-primary-lg" download="love-live-tierlist.png" data-i18n="export.download">⬇️ Download Image (PNG)</a>
     </div>
   </div>
 </div>

@@ -15,6 +15,8 @@ big or small are welcome.
 - **New series**: when a new Love Live! series (or unit) is added, extend the
   series mapping in `docs/app.js` and the metadata in `scripts/`.
 - **Frontend**: UI polish, accessibility, performance for 917 cards.
+  - UI copy lives in the `en` and `id` tables in `docs/app.js`; add both
+    translations when changing labels. English is the default language.
 - **Docs**: clearer README, better pipeline comments.
 
 ## Working with the data

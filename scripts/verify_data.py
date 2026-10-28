@@ -288,6 +288,13 @@ def check_snapshot(
 
 
 def main(argv: list[str] | None = None) -> int:
+    # Keep Japanese series names readable on Windows consoles using legacy
+    # code pages instead of crashing during the summary output.
+    for stream in (sys.stdout, sys.stderr):
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass
     args = parse_args(argv)
     root: Path = args.root.resolve()
     try:
