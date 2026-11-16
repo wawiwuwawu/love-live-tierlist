@@ -1,8 +1,8 @@
 {
   "repo": "https://github.com/hamproductions/llernote.git",
-  "commit": "ac3afffd9be7d50a4f274e2a7103b3094de5b934",
+  "commit": "4d217143f97c2829cb17624a9d49d8bbefb3c523",
   "files": {
-    "song-info.json": "2030fc50a86e197d35fbafa4e4be2e4f4daaef4202ff87181c62f5c3fc205d52",
+    "song-info.json": "57d70aeadb3763ce1438ac04b0b0f47ae47714946701a9b09711972386088c98",
     "artists-info.json": "dc28ab17e08b767dde8512f1fa140df907bbd1074d0099a7a51fad80753424aa",
     "units.json": "87147cc80ee17e3c9c9eabbcbb3a3f45547fef74e956a99ca9885dd08eb2617f",
     "series-info.json": "95fa3499a0aec3af621bd094eb64a6cd5d0d8e00fff3d732e748379db9ada6a7",
