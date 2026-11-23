@@ -19432,12 +19432,13 @@
     "llernote_id": "929",
     "title_en": "Songbirds",
     "phonetic": "そんぐばーず",
-    "yt": "https://www.youtube.com/watch?v=v9vEQs8yPes",
+    "yt": "https://www.youtube.com/watch?v=kNoW7ZfUiGc",
     "released_on": "2026-11-18",
     "series": "Love Live! Superstar!!",
     "llernote_artists": [
       "Liella!"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/4/4f/01._Songbirds.ogg/revision/latest?cb=20261118055502"
   },
   "974": {
     "song": "Dreaming Free",
@@ -19449,7 +19450,7 @@
     "llernote_id": "930",
     "title_en": "Dreaming Free",
     "phonetic": "どりーみんぐふりー",
-    "yt": "",
+    "yt": "https://www.youtube.com/watch?v=uY1p0N07DfQ",
     "released_on": "",
     "series": "Nijigasaki High School Idol Club",
     "llernote_artists": [
@@ -19466,12 +19467,13 @@
     "llernote_id": "931",
     "title_en": "Target:01",
     "phonetic": "たーげっとわん",
-    "yt": "https://www.youtube.com/watch?v=v9vEQs8yPes",
+    "yt": "https://www.youtube.com/watch?v=VW8WGUUdnGQ",
     "released_on": "2026-11-18",
     "series": "Love Live! Superstar!!",
     "llernote_artists": [
       "ウィーン・マルガレーテ、鬼塚冬毬"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/4/4c/02._Target01.ogg/revision/latest?cb=20261118055511"
   },
   "976": {
     "song": "Gimme Gimme Nonstop",
@@ -19483,12 +19485,13 @@
     "llernote_id": "932",
     "title_en": "Gimme Gimme Nonstop",
     "phonetic": "ぎみぎみのんすとっぷ",
-    "yt": "https://www.youtube.com/watch?v=v9vEQs8yPes",
+    "yt": "https://www.youtube.com/watch?v=OYKqR0_Yh5s",
     "released_on": "2026-11-18",
     "series": "Love Live! Superstar!!",
     "llernote_artists": [
       "桜小路きな子、米女メイ、若菜四季、鬼塚夏美"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/0/0e/03._Gimme_Gimme_Nonstop.ogg/revision/latest?cb=20261118055520"
   },
   "977": {
     "song": "Senro no Saki mo Kyou no Sora",
@@ -19500,11 +19503,12 @@
     "llernote_id": "933",
     "title_en": "Senro no Saki mo Kyou no Sora",
     "phonetic": "せんろのさきもきょうのそら",
-    "yt": "https://www.youtube.com/watch?v=v9vEQs8yPes",
+    "yt": "https://www.youtube.com/watch?v=0CrYE_ZoN2w",
     "released_on": "2026-11-18",
     "series": "Love Live! Superstar!!",
     "llernote_artists": [
       "澁谷かのん、唐 可可、嵐 千砂都、平安名すみれ、葉月 恋"
-    ]
+    ],
+    "wiki_audio": "https://static.wikia.nocookie.net/love-live/images/8/8d/04._Senro_no_Saki_mo_Kyou_no_Sora.ogg/revision/latest?cb=20261118055530"
   }
 }
